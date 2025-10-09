@@ -38,6 +38,8 @@
 - Refatoração para funcionar com o modo síncrono exigido pela SEFAZ.
 - Adaptação do XML para popular a tag TpIntegra na forma de pagamento Pix.
 
+___
+
 # NFeTop 300
 
 ### 300.2
