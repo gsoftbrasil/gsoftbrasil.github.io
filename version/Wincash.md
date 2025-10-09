@@ -10,6 +10,8 @@
 * Fix - Performance NFe_Titulos @patrick9as https://github.com/gsoftbrasil/ERP-GSOFT/commit/ee23bb8b81e9d7e28deb7659fc4bc391153a58d2
 * Fix - Erro ao baixar dependências @patrick9as https://github.com/gsoftbrasil/ERP-GSOFT/commit/ee23bb8b81e9d7e28deb7659fc4bc391153a58d2
 
+___
+
 # Wincash 3001
 
 ### 3001.12 (07/10/2025)
@@ -33,7 +35,6 @@
   * **Promissória protestável (restante) - bobina**: Imprime os títulos restantes a serem pagos na impressora de bobina.
   * **Promissória protestável (por título) - carta**: Imprime os títulos em formato de impressão A4.
 <img width="975" height="360" alt="image" src="https://github.com/user-attachments/assets/87443e80-7b6c-4210-be6c-79b26f6dea63" />
-
 
 ### 3001.9 (19/09/2025)
 * Nota Promissória agora imprime novamente direto na bobina.
