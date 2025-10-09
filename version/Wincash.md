@@ -1,10 +1,30 @@
+# Wincash 3002
+
+## 3002.4 (09/10/2025)
+* 3002.3 - ACBr e NFe_Titulos by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/283
+* [PR] patrick/fix/9373/relatorio_multi_loja by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/284
+* [PR] Patrick/9305/cod barras entrada by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/286
+
+### 3002.3 (07/10/2025)
+* [PR] Fix - ACBr  by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/282
+* Fix - Performance NFe_Titulos @patrick9as https://github.com/gsoftbrasil/ERP-GSOFT/commit/ee23bb8b81e9d7e28deb7659fc4bc391153a58d2
+* Fix - Erro ao baixar dependências @patrick9as https://github.com/gsoftbrasil/ERP-GSOFT/commit/ee23bb8b81e9d7e28deb7659fc4bc391153a58d2
+
 # Wincash 3001
 
 ### 3001.12 (07/10/2025)
-- ...
+* Correção do filtro de títulos recebidos que considerava os clientes… by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/271
+* Atualização do caption do checkbox by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/273
+* Fabia/feat/9357/descricao formapagto movbancaria by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/272
+* [PR] 9363 - feat/data estimada os by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/274
+* [PR] feat: relatorio de notas fiscais by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/275
+* [PR] patrick/9371/nfe_titulos by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/279
+* [PR] feat - 9370/coluna destino adicionado by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/280
 
 ### 3001.11 (25/09/2025)
-- ...
+* Gil/feat/lista transmissao whatsapp by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/267
+* Correções visuais by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/269
+* Correções visuais by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/270
 
 ### 3001.10 (19/09/2025) 
 * Correção importante nos parâmetros da Nota Promissória
