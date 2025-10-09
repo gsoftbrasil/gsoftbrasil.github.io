@@ -1,6 +1,6 @@
 # Wincash 3002
 
-## 3002.4 (09/10/2025)
+### 3002.4 (09/10/2025)
 * 3002.3 - ACBr e NFe_Titulos by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/283
 * [PR] patrick/fix/9373/relatorio_multi_loja by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/284
 * [PR] Patrick/9305/cod barras entrada by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/286
