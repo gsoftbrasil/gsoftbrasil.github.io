@@ -1,4 +1,5 @@
 # Wincash 3002
+[Download](https://servidor.gsoft.com.br/wincash/3002/WinCash.exe)
 
 ### 3002.5 (10/10/2025)
 Agora é possível realizar o filtro do relatório de contas a pagar por NFe ou NF(nota não fiscal).
