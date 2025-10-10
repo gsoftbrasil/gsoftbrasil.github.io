@@ -1,5 +1,9 @@
 # Wincash 3002
 
+### 3002.5 (10/10/2025)
+Agora é possível realizar o filtro do relatório de contas a pagar por NFe ou NF(nota não fiscal).
+<img height="250" alt="image" src="https://github.com/user-attachments/assets/d822ae2d-b02f-49d3-831d-56b71da4d011" />
+
 ### 3002.4 (09/10/2025)
 * 3002.3 - ACBr e NFe_Titulos by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/283
 * [PR] patrick/fix/9373/relatorio_multi_loja by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/284
