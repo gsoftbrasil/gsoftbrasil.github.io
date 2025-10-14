@@ -1,6 +1,19 @@
 # Wincash 3002
 [Download](https://servidor.gsoft.com.br/wincash/3002/WinCash.exe)
 
+### 3002.6 (13/10/2025)
+* [PR] Atualização de dependências by @patrick9as in #4
+* Merge pull request #4 from gsoftbrasil/develop by @patrick9as in #5
+* Merge pull request #3 from gsoftbrasil/develop by @patrick9as in #6
+* Main/12 by @patrick9as in #57
+* Merge pull request #291 from gsoftbrasil/develop by @patrick9as in #292
+* Patrick/feat/lucro real2 by @patrick9as in #296
+* Feat/lucro real by @patrick9as in #294
+* Wincash 3002.6 by @patrick9as in #297
+* Merge pull request #297 from gsoftbrasil/develop by @patrick9as in #298
+* correção gitignore by @patrick9as in #299
+* feat: nova estrutura DataSetSerialize by @patrick9as in #300
+
 ### 3002.5 (10/10/2025)
 Agora é possível realizar o filtro do relatório de contas a pagar por NFe ou NF(nota não fiscal).
 <img height="250" alt="image" src="https://github.com/user-attachments/assets/d822ae2d-b02f-49d3-831d-56b71da4d011" />
