@@ -1,6 +1,17 @@
 # Wincash 3002
 [Download](https://servidor.gsoft.com.br/wincash/3002/WinCash.exe)
 
+### 3002.7 (16/10/2025)
+* Main/12 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/301
+* [PR] Patrick/hotfix/9381/dre by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/306
+* [PR] 9380 - Fix/Tela Splash by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/305
+* [PR] 9378 - Feat/Filtro de NFE Contas a Receber by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/303
+* Main/12 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/307
+* [PR] 9377 - Feat/Desconto por Forma de Pagamento by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/295
+* [PR] feat: NFCeTop encerrar automaticamente e Senha do dia by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/304
+* [PR] 9375 - Refact/Campo Formação de Preço by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/309
+* Wincash 3002.7 e NFCeTop 301.3 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/310
+
 ### 3002.6 (13/10/2025)
 * [PR] Atualização de dependências by @patrick9as in #4
 * Merge pull request #4 from gsoftbrasil/develop by @patrick9as in #5
