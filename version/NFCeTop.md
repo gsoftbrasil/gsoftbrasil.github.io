@@ -1,12 +1,10 @@
 # NFCeTop 301
 [Download](https://servidor.gsoft.com.br/NFCeTop/301/NFCeTop.exe)
 
-### 301.3
-16/10/2025
+### 301.3 (16/10/2025)
 * [PR] feat: NFCeTop encerrar automaticamente e Senha do dia by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/304
 
-### 301.2
-09/10/2025
+### 301.2 (09/10/2025)
 * ``Ticket 9374``: Criado parâmetro para fechar o NFCeTop automaticamente quando não houver uma instância do Wincash ativa.
 * ``Ticket 287``: Aprimoramento do modo contingência.
 * ``PR 288``: Corrigido filtro de notas pendentes ao excluir registros não utilizados na retransmissão do cupom.
@@ -15,12 +13,11 @@ ___
 
 # NFCeTop 300
 [Download](https://servidor.gsoft.com.br/NFCeTop/300/NFCeTop.exe)
-### 300.3
-17/09/2025
+
+### 300.3 (17/09/2025)
 * ``PR 257``: O sistema não entra mais em modo de contingência em mensagens de erro.
 
-### 300.2
-03/09/2025
+### 300.2 (03/09/2025)
 - Inutilização de números em massa no NFCeTop.
 
 ___
@@ -28,12 +25,10 @@ ___
 # NFCeTop 106
 [Download](https://servidor.gsoft.com.br/NFCeTop/106/NFCeTop.exe)
 
-### 106.2
-21/08/2025
+### 106.2 (21/08/2025)
 - Criada configuração para não permitir que o NFCeTop vá para a bandeja do Windows.
 
-### 106.1 
-23/07/2025
+### 106.1 (23/07/2025)
 
 ``Ticket 9260``
 - Agora, ao finalizar uma venda, os seguintes dados essenciais serão copiados para uma nova tabela chamada NFe_Titulos
