@@ -1,5 +1,10 @@
 # NFCeTop 301
 [Download](https://servidor.gsoft.com.br/NFCeTop/301/NFCeTop.exe)
+
+### 301.3
+16/10/2025
+* [PR] feat: NFCeTop encerrar automaticamente e Senha do dia by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/304
+
 ### 301.2
 09/10/2025
 * ``Ticket 9374``: Criado parâmetro para fechar o NFCeTop automaticamente quando não houver uma instância do Wincash ativa.
