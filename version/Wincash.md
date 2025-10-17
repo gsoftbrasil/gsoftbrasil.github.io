@@ -1,6 +1,11 @@
 # Wincash 3002
 [Download](https://servidor.gsoft.com.br/wincash/3002/WinCash.exe)
 
+### 3002.8 (17/10/2025)
+* [PR] Patrick/hotfix/9382/invalid typecast by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/311
+* [PR] Patrick/hotfix/nau integracao by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/312
+* Wincash 3002.8 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/313
+
 ### 3002.7 (16/10/2025)
 * Main/12 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/301
 * [PR] Patrick/hotfix/9381/dre by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/306
