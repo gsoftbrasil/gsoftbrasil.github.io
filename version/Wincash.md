@@ -2,23 +2,24 @@
 [Download](https://servidor.gsoft.com.br/wincash/3002/WinCash.exe)
 
 ### 3002.9 (21/10/2025)
-* [PR] patrick/9386/hotfix/aliq_icms by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/314
+* ``Ticket 9386``: Removida a mensagem “Alíquota de ICMS inválida!” que impedia o cadastro de produtos com alíquota de 12%, mesmo quando já existia uma alíquota de 18% configurada para a UF da empresa.
 
 ### 3002.8 (17/10/2025)
-* [PR] Patrick/hotfix/9382/invalid typecast by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/311
-* [PR] Patrick/hotfix/nau integracao by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/312
-* Wincash 3002.8 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/313
+* ``Ticket 9382``: Removida a conversão de texto UTF8 para ANSI no método de resposta, evitando erros de tipo (“invalid typecast”). Ajustado validação de licença na API para maior estabilidade.
+* ``PR 312``: Melhoria e correções gerais na integração com a plataforma NAU.
 
 ### 3002.7 (16/10/2025)
-* Main/12 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/301
-* [PR] Patrick/hotfix/9381/dre by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/306
-* [PR] 9380 - Fix/Tela Splash by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/305
-* [PR] 9378 - Feat/Filtro de NFE Contas a Receber by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/303
-* Main/12 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/307
-* [PR] 9377 - Feat/Desconto por Forma de Pagamento by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/295
-* [PR] feat: NFCeTop encerrar automaticamente e Senha do dia by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/304
-* [PR] 9375 - Refact/Campo Formação de Preço by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/309
-* Wincash 3002.7 e NFCeTop 301.3 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/310
+* ``Ticket 9381``: DRE - Otimização: removida uma junção desnecessária na consulta de vendas, melhorando o desempenho. Adicionado indicador de atividade e otimizada a impressão de vendas, tornando o processo mais claro e rápido.
+
+* ``Ticket 9380``: tela de inicialização (splash) agora esconde corretamente durante o carregamento.
+
+* ``Ticket 9378``: Agora no relatório de contas a receber é possível filtrar por notas com e sem NFe.
+  <img width="1033" height="748" alt="image" src="https://github.com/user-attachments/assets/333d7669-c837-4749-a62b-1b0cf432d46c" />
+
+* ``Ticket 9377``: Campo de desconto e acréscimo da forma de pagamento funciona corretamente no fechamento da venda.
+
+* ``PR 304``: NFCeTop verifica a cada 2 minutos se existe uma instância do NFCeTo rodando, caso não encontre o sistema é encerrado automaticamente. Além disso, foi implementado a tela de senha do dia ao clicar na aba Configuração.
+* ``Ticket 9373``: Atualizado o campo da formação de preço de 'ICMS sobre Vendas %' para 'DAS %'. Padronização de acordo com o cadastro dos produtos.
 
 ### 3002.6 (13/10/2025)
 * [PR] Atualização de dependências by @patrick9as in #4
@@ -34,36 +35,43 @@
 * feat: nova estrutura DataSetSerialize by @patrick9as in #300
 
 ### 3002.5 (10/10/2025)
-Agora é possível realizar o filtro do relatório de contas a pagar por NFe ou NF(nota não fiscal).
+* Agora é possível realizar o filtro do relatório de contas a pagar por NFe ou NF(nota não fiscal).
 <img height="250" alt="image" src="https://github.com/user-attachments/assets/d822ae2d-b02f-49d3-831d-56b71da4d011" />
 
 ### 3002.4 (09/10/2025)
-* 3002.3 - ACBr e NFe_Titulos by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/283
-* [PR] patrick/fix/9373/relatorio_multi_loja by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/284
-* [PR] Patrick/9305/cod barras entrada by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/286
+* ``Ticket 9373``: Multi Loja - A lógica de filtragem por loja na tela de vendas foi simplificada, tornando o carregamento das informações mais rápido e estável.
+* ``Ticket 9305``: Ao vincular um produto novo a um produto já existente no cadastro durante o lançamento da nota fiscal de entrada, a barra de busca é preenchida automaticamento com codigo de barras da nota fiscal.
 
 ### 3002.3 (07/10/2025)
-* [PR] Fix - ACBr  by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/282
-* Fix - Performance NFe_Titulos @patrick9as https://github.com/gsoftbrasil/ERP-GSOFT/commit/ee23bb8b81e9d7e28deb7659fc4bc391153a58d2
-* Fix - Erro ao baixar dependências @patrick9as https://github.com/gsoftbrasil/ERP-GSOFT/commit/ee23bb8b81e9d7e28deb7659fc4bc391153a58d2
+* ``PR 282``: Ajuste de classe ACBr.
+* ``PR 283``: Ajustada a forma como o sistema busca as informações dos títulos da nota fiscal, deixando o processo mais rápido e estável e atualização ACBr.
 
 ___
 
 # Wincash 3001
 
 ### 3001.12 (07/10/2025)
-* Correção do filtro de títulos recebidos que considerava os clientes… by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/271
-* Atualização do caption do checkbox by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/273
-* Fabia/feat/9357/descricao formapagto movbancaria by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/272
-* [PR] 9363 - feat/data estimada os by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/274
-* [PR] feat: relatorio de notas fiscais by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/275
-* [PR] patrick/9371/nfe_titulos by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/279
-* [PR] feat - 9370/coluna destino adicionado by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/280
+* ``PR 271``: Filtro de títulos recebidos considera flag para filtrar os inativos. O padrão traz apenas os ativos.
+  
+* ``Ticket 9357``: Movimentação bancária agora registra o detalhe da forma de pagamento baixada ou da venda realizada.
+ <img width="1030" height="377" alt="image" src="https://github.com/user-attachments/assets/a2dd5d1e-3176-48dc-a5e6-23c07f03a0c5" />
+
+
+* ``Ticket 9363``: Adicionado campo previsão na OS.
+ <img width="750" height="343" alt="image" src="https://github.com/user-attachments/assets/decb2d17-82ed-4fa0-b783-cde41987e1ba" />
+
+
+* ``PR 275``: Relatório de NFe agora permite a busca de numerações inutilizadas.
+ <img width="1033" height="418" alt="image" src="https://github.com/user-attachments/assets/d3c15e02-3c12-499c-8cc2-1cdca9e6fab7" />
+
+
+* ``Ticket 9371``: Melhora na inserção de títulos na NFe, evitando duplicatas ao adicionar registros já existentes.
+* ``Ticket 9370``: Relatório de contas a receber geral agora exibe a coluna destino, em que mostra qual banco foi realizada a baixa.
+   <img width="1034" height="742" alt="image" src="https://github.com/user-attachments/assets/7a1b8388-4e2f-4f8a-a1c7-52a6f82eaabf" />
 
 ### 3001.11 (25/09/2025)
-* Gil/feat/lista transmissao whatsapp by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/267
-* Correções visuais by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/269
-* Correções visuais by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/270
+* ``PR 267``: Implementação da lista de transmissão, adição dos contatos dos dependentes do cliente.
+* ``PR 269/270`` Correções visuais na central do Whatsapp.
 
 ### 3001.10 (19/09/2025) 
 * Correção importante nos parâmetros da Nota Promissória
