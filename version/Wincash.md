@@ -11,7 +11,7 @@
 ### 3002.7 (16/10/2025)
 * ``Ticket 9381``: DRE - Otimização: removida uma junção desnecessária na consulta de vendas, melhorando o desempenho. Adicionado indicador de atividade e otimizada a impressão de vendas, tornando o processo mais claro e rápido.
 
-* ``Ticket 9380``: tela de inicialização (splash) agora esconde corretamente durante o carregamento.
+* ``Ticket 9380``: Tela de inicialização (splash) agora esconde corretamente durante o carregamento.
 
 * ``Ticket 9378``: Agora no relatório de contas a receber é possível filtrar por notas com e sem NFe.
   <img width="1033" height="748" alt="image" src="https://github.com/user-attachments/assets/333d7669-c837-4749-a62b-1b0cf432d46c" />
