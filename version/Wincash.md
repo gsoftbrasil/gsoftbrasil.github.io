@@ -22,7 +22,7 @@
 * ``Ticket 9373``: Atualizado o campo da formação de preço de 'ICMS sobre Vendas %' para 'DAS %'. Padronização de acordo com o cadastro dos produtos.
 
 ### 3002.6 (13/10/2025)
-* ``PR 296``: Implementação de funcionalidades do lucro real - multitributação no produto, regras cst 10 e 70, entrada de notas com vinculo correto às regras tributarias, cadastro fiscal mais seguro, correções de estabilidade em geral.  
+* ``PR 296``: Implementação de funcionalidades do lucro real - multitributação no produto, regras cst 10 e 70, entrada de notas com vinculo correto às regras tributárias, cadastro fiscal mais seguro, correções de estabilidade em geral.  
 
 ### 3002.5 (10/10/2025)
 * Agora é possível realizar o filtro do relatório de contas a pagar por NFe ou NF(nota não fiscal).
