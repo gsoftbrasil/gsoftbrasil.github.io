@@ -1,6 +1,9 @@
 # Wincash 3002
 [Download](https://servidor.gsoft.com.br/wincash/3002/WinCash.exe)
 
+### 3002.9 (21/10/2025)
+* [PR] patrick/9386/hotfix/aliq_icms by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/314
+
 ### 3002.8 (17/10/2025)
 * [PR] Patrick/hotfix/9382/invalid typecast by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/311
 * [PR] Patrick/hotfix/nau integracao by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/312
