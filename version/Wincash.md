@@ -14,7 +14,7 @@
 * ``Ticket 9380``: Tela de inicialização (splash) agora esconde corretamente durante o carregamento.
 
 * ``Ticket 9378``: Agora no relatório de contas a receber é possível filtrar por notas com e sem NFe.
-  <img width="1033" height="748" alt="image" src="https://github.com/user-attachments/assets/333d7669-c837-4749-a62b-1b0cf432d46c" />
+  <img width="1033" height="748" alt="image" src="https://github.com/user-attachments/assets/d2949e56-35ad-4175-9a2c-69e2b65aa2a1" />
 
 * ``Ticket 9377``: Campo de desconto e acréscimo da forma de pagamento funciona corretamente no fechamento da venda.
 
@@ -44,20 +44,20 @@ ___
 * ``PR 271``: Filtro de títulos recebidos considera flag para filtrar os inativos. O padrão traz apenas os ativos.
   
 * ``Ticket 9357``: Movimentação bancária agora registra o detalhe da forma de pagamento baixada ou da venda realizada.
- <img width="1030" height="377" alt="image" src="https://github.com/user-attachments/assets/a2dd5d1e-3176-48dc-a5e6-23c07f03a0c5" />
+ <img width="1030" height="377" alt="image" src="https://github.com/user-attachments/assets/5223db1a-ffdd-44ac-84c8-ef1f482704f5" />
 
 
 * ``Ticket 9363``: Adicionado campo previsão na OS.
- <img width="750" height="343" alt="image" src="https://github.com/user-attachments/assets/decb2d17-82ed-4fa0-b783-cde41987e1ba" />
+ <img width="750" height="343" alt="image" src="https://github.com/user-attachments/assets/178a6d1f-60f7-45df-b39f-cd52ecb5234b" />
 
 
 * ``PR 275``: Relatório de NFe agora permite a busca de numerações inutilizadas.
- <img width="1033" height="418" alt="image" src="https://github.com/user-attachments/assets/d3c15e02-3c12-499c-8cc2-1cdca9e6fab7" />
+ <img width="1033" height="418" alt="image" src="https://github.com/user-attachments/assets/73c045fc-559b-42a2-ae39-a8e280b43a82" />
 
 
 * ``Ticket 9371``: Melhora na inserção de títulos na NFe, evitando duplicatas ao adicionar registros já existentes.
 * ``Ticket 9370``: Relatório de contas a receber geral agora exibe a coluna destino, em que mostra qual banco foi realizada a baixa.
-   <img width="1034" height="742" alt="image" src="https://github.com/user-attachments/assets/7a1b8388-4e2f-4f8a-a1c7-52a6f82eaabf" />
+   <img width="1034" height="742" alt="image" src="https://github.com/user-attachments/assets/03019c79-2a65-4579-a1d0-e0f0939f7b10" />
 
 ### 3001.11 (25/09/2025)
 * ``PR 267``: Implementação da lista de transmissão, adição dos contatos dos dependentes do cliente.
