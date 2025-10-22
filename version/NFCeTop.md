@@ -1,6 +1,9 @@
 # NFCeTop 301
 [Download](https://servidor.gsoft.com.br/NFCeTop/301/NFCeTop.exe)
 
+### 301.4 (22/10/2025)
+* [PR] Patrick/9386/hotfix/aliq icms by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/316
+
 ### 301.3 (16/10/2025)
 * [PR] feat: NFCeTop encerrar automaticamente e Senha do dia by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/304
 
