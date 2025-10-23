@@ -1,6 +1,9 @@
 # NFCeTop 301
 [Download](https://servidor.gsoft.com.br/NFCeTop/301/NFCeTop.exe)
 
+### 301.5 (22/10/2025)
+* [PR] Patrick/hotfix/9389/nfcetop/reservar numeros by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/318
+
 ### 301.4 (22/10/2025)
 * [PR] Patrick/9386/hotfix/aliq icms by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/316
 
