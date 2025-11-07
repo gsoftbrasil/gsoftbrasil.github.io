@@ -1,4 +1,5 @@
 # NFeTop 301
+[Download](https://servidor.gsoft.com.br/NFeTop/301/NFeTop.exe)
 
 ### 301.15 (27/10/2025)
 * Corrigida a exportação para Excel que deixou de funcionar desde a versão 300.
@@ -35,6 +36,8 @@
 ___
 
 # NFeTop 300
+
+[Download](https://servidor.gsoft.com.br/NFeTop/300/NFeTop.exe)
 
 ### 300.2 (19/08/2025)
 - Correção da conexão do NFeTop com o banco de dados.
