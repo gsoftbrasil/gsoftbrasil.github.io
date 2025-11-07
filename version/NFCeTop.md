@@ -1,14 +1,24 @@
+# NFCeTop 302
+[Download](https://servidor.gsoft.com.br/NFCeTop/302/NFCeTop.exe)
+
+### 302.1 (05/11/2025)
+* O log do sistema agora é obrigatório.
+* Criados mais logs de monitoramento.
+* Corrigido erro de duplicidade ao emitir cupom que não teve retorno da Sefaz.
+* NFCeMonitor: aprimorada inutilização por números faltantes.
+
 # NFCeTop 301
 [Download](https://servidor.gsoft.com.br/NFCeTop/301/NFCeTop.exe)
 
 ### 301.5 (22/10/2025)
-* [PR] Patrick/hotfix/9389/nfcetop/reservar numeros by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/318
+* Corrigido erro onde o sistema reservava numeração de cupom não transmitido.
 
 ### 301.4 (22/10/2025)
-* [PR] Patrick/9386/hotfix/aliq icms by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/316
+* O sistema agora lê a alíquota de ICMS direto do cadastro do produto e não mais da tabela de ICMS.
 
 ### 301.3 (16/10/2025)
-* [PR] feat: NFCeTop encerrar automaticamente e Senha do dia by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/304
+* Criada senha do dia para tela de configuração.
+* Criada configuração para encerrar automaticamente se o Wincash não estiver aberto.
 
 ### 301.2 (09/10/2025)
 * ``Ticket 9374``: Criado parâmetro para fechar o NFCeTop automaticamente quando não houver uma instância do Wincash ativa.
