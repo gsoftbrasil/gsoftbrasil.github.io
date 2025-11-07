@@ -1,6 +1,50 @@
 # Wincash 3002
 [Download](https://servidor.gsoft.com.br/wincash/3002/WinCash.exe)
 
+### 3003.4
+* Merge pull request #345 from gsoftbrasil/develop by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/346
+* [PR] 9411 - Fix/estouro aritmetico orc by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/347
+* Main/12 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/350
+* [PR] patrick/nfcetop/fix/log by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/351
+* [PR] patrick/nfcetop/feat/log_delete by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/352
+* [PR] patrick/nfcetop/fix/inutilizacao by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/338
+* [PR] Refact/Refatoração OrcamentosFluxo by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/348
+* [PR] Patrick/fix/access violation by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/353
+* [PR] Patrick/fix/nfcetop/duplicidade  by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/355
+* Wincash 3003.4, NFCeTop 302.1, WebView 1.0, GsoftAPI 2.1 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/354
+
+### 3003.3 (04/11/2025)
+* [PR] Patrick/fix/access violation by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/349
+
+### 3003.2 (03/11/2025)
+* Merge pull request #342 from gsoftbrasil/develop by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/343
+* [PR] Patrick/fix/orcamentos/fluxo by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/344
+* Wincash 3003.2 e GsofApiGUI 1.1 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/345
+
+### 3003.1 (03/11/2025)
+* Merge pull request #332 from gsoftbrasil/develop by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/333
+* Correção do bug dos itens que ficam zerados no balcão express by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/336
+* [PR] Fabia/9376/orcamento relatorio by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/339
+* [PR] Patrick/9376/orcamento perdas by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/340
+* [PR] 9407 - Feat: Não travar envio do whatsapp se houver algum erro  by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/334
+* [PR] Fix: ajuste manual estoque by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/335
+* [PR] Patrick/fix/orcamentos/fluxo by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/341
+* Wincash 3003.1 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/342
+
+### 3002.12 (29/10/2025)
+* [PR] Feat: SIGEM inicial commit by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/328
+* [PR] 9399 - Feat/consultar por modelo OS by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/329
+* [PR] 9402 - Feat/Parâmetro para nao buscar por codBarras na NFe de Entrada by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/330
+* [PR] patrick/fix/nau_delivery by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/331
+
+### 3002.11 (27/10/2025)
+* Gil/fix/gsat pis e cofins by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/321
+* [PR] 9387 - Feat/desmembramento produtos by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/315
+* [PR] Feat/legenda grid boleto e validação numero whatsapp by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/317
+* [PR] Feat: Exportar para Excel by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/320
+* [PR] 9384 - Feat/Validação campo quantidade balcão express by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/322
+* [PR] Fix: campo quantidade ajuste manual by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/323
+
 ### 3002.10 (22/10/2025)
 * [PR] Patrick/9386/hotfix/aliq icms by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/316
 * [PR] Patrick/hotfix/9389/nfcetop/reservar numeros by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/318
