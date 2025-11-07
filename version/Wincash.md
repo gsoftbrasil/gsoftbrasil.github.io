@@ -1,5 +1,5 @@
 # Wincash 3002
-[Download](https://servidor.gsoft.com.br/wincash/)
+[Download](https://servidor.gsoft.com.br/wincash/3002/Wincash.exe)
 
 ### 3003.4
 * Merge pull request #345 from gsoftbrasil/develop by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/346
@@ -88,6 +88,7 @@
 ___
 
 # Wincash 3001
+[Download](https://servidor.gsoft.com.br/wincash/3001/Wincash.exe)
 
 ### 3001.12 (07/10/2025)
 * ``PR 271``: Filtro de títulos recebidos considera flag para filtrar os inativos. O padrão traz apenas os ativos.
@@ -194,6 +195,7 @@ O recurso se encontra em Clientes > Histórico de Crédito > Vale-Compras.
 ___
 
 # Wincash 3000
+[Download](https://servidor.gsoft.com.br/wincash/3000/Wincash.exe)
 
 ### 3000.17 (29/08/2025)
 - Ajusta filtro de multi empresas na consulta de contas recorrentes
