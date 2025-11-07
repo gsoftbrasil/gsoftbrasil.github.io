@@ -7,6 +7,8 @@
 * Corrigido erro de duplicidade ao emitir cupom que não teve retorno da Sefaz.
 * NFCeMonitor: aprimorada inutilização por números faltantes.
 
+___
+
 # NFCeTop 301
 [Download](https://servidor.gsoft.com.br/NFCeTop/301/NFCeTop.exe)
 
