@@ -1,5 +1,5 @@
 # Wincash 3002
-[Download](https://servidor.gsoft.com.br/wincash/3003/WinCash.exe)
+[Download](https://servidor.gsoft.com.br/wincash/3003/)
 
 ### 3003.4
 * Merge pull request #345 from gsoftbrasil/develop by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/346
