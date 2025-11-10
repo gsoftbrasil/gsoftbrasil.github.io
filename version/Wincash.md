@@ -19,10 +19,70 @@
 
 ### 3003.1 (03/11/2025)
 * ``PR 336``: Correção do erro que fazia alguns itens ficarem com valores zerados durante o fechamento no balcão express.
-* [PR] Fabia/9376/orcamento relatorio by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/339
-* ``Ticket 9376``:
-* [PR] Patrick/9376/orcamento perdas by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/340
-``Ticket 9376``:
+* 
+### ``Ticket 9376``: Fluxo de Orçamentos : Agora você consegue controlar melhor o ciclo de vida dos seus orçamentos.
+- Ao abrir um orçamento, ele entra automaticamente na **etapa de prioridade 1**.  
+- Conforme os dias passam, o sistema **move o orçamento para as próximas etapas**, de acordo com a quantidade de dias definida em cada card.  
+- Assim, você visualiza facilmente o que está em aberto, em contato, em negociação, SAC etc.
+<img width="1015" height="732" alt="image" src="https://github.com/user-attachments/assets/c10180cf-8d13-45bb-99a3-c485525fc86b" />
+
+---
+
+## Como configurar o Fluxo de Orçamentos
+
+1. Acesse:  
+   **Buscar Requisição / Orçamentos > Orçamento > Opções > Gerenciar Fluxo de Orçamentos**
+2. Crie as **etapas (cards)**.
+3. Defina a **quantidade de dias** que cada orçamento pode permanecer em cada etapa.
+4. Salve.  
+   A partir disso, o sistema organizará automaticamente os orçamentos nessas colunas.
+
+---
+
+## Configuração da Gsoft API (obrigatória)
+
+No sistema:
+
+1. Vá em **Configuração do Sistema > Integração > Geral > Gsoft API**.
+2. Configure:
+
+   - **Path do executável**  
+     Caminho completo do `GsoftApiGUI.exe`.
+
+     Estrutura recomendada da pasta da API:
+     - `C:\GSOFT\GsoftApi\GsoftApiGUI.exe`
+     - `C:\GSOFT\GsoftApi\WebView\` (arquivos da interface)
+     - `C:\GSOFT\GsoftApi\Logs\`
+     - `C:\GSOFT\GsoftApi\config.ini`
+
+   - **Porta**  
+     Sugestão: `12100` (ou outra porta livre).
+
+   - **Host**  
+     Normalmente: `localhost`.
+
+Após configurado, o **GsoftApiGUI.exe é iniciado junto com o sistema principal** e permanece **na bandeja do Windows**, garantindo a integração necessária para o Fluxo de Orçamentos.
+<img width="1048" height="763" alt="image" src="https://github.com/user-attachments/assets/94a7e5b5-fa00-4f5c-9ded-f3ace402ffd8" />
+
+---
+
+## Relatório de Fluxo de Orçamentos
+
+Para acompanhar os resultados:
+
+1. Acesse:  
+   **Relatórios > Dem. de Vendas > Orçamentos - Etapas**
+2. Filtre por **período** e **etapa**.
+3. Visualize:
+   - Quantidade de orçamentos
+   - Soma total
+   - Ticket médio
+   - Lista detalhada por código, emissão, cliente, vendedor, etapa e valor
+4. Exporte os dados em **CSV** ou **PDF** quando necessário.
+<img width="1015" height="732" alt="image" src="https://github.com/user-attachments/assets/f06778d5-0d50-4ed4-880a-c0dccf24428b" />
+
+---
+
 * ``Ticket 9407``: Agora quando houver falha no envio será criada uma lista de transmissão com os números que não foram enviados com sucesso.
 Além disso foi implementado o botão de excluir na lista de transmissão.
 <img width="1280" height="408" alt="image" src="https://github.com/user-attachments/assets/8fa6b9e4-8e86-4893-8747-8406615a899a" />
@@ -120,7 +180,8 @@ Durante o processamento do desmembramento:
 
 1. O sistema calcula o **peso final** com base na margem de quebra.  
 2. Os **itens derivados** têm suas quantidades e percentuais recalculados automaticamente.  
-3. O **histórico é atualizado** com o registro completo da operação.  
+3. O **histórico é atualizado** com o registro completo da operação.
+
 ---
 
 * ``PR 317``: Legenda com o significado das siglas no grid.
