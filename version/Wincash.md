@@ -19,12 +19,12 @@
 
 ### 3003.1 (03/11/2025)
 * ``PR 336``: Correção do erro que fazia alguns itens ficarem com valores zerados durante o fechamento no balcão express.
-* 
+  
 ### ``Ticket 9376``: Fluxo de Orçamentos : Agora você consegue controlar melhor o ciclo de vida dos seus orçamentos.
 - Ao abrir um orçamento, ele entra automaticamente na **etapa de prioridade 1**.  
 - Conforme os dias passam, o sistema **move o orçamento para as próximas etapas**, de acordo com a quantidade de dias definida em cada card.  
 - Assim, você visualiza facilmente o que está em aberto, em contato, em negociação, SAC etc.
-<img width="1015" height="732" alt="image" src="https://github.com/user-attachments/assets/c10180cf-8d13-45bb-99a3-c485525fc86b" />
+<img src="https://github.com/user-attachments/assets/c10180cf-8d13-45bb-99a3-c485525fc86b" width="700" />
 
 ---
 
@@ -62,7 +62,8 @@ No sistema:
      Normalmente: `localhost`.
 
 Após configurado, o **GsoftApiGUI.exe é iniciado junto com o sistema principal** e permanece **na bandeja do Windows**, garantindo a integração necessária para o Fluxo de Orçamentos.
-<img width="1048" height="763" alt="image" src="https://github.com/user-attachments/assets/94a7e5b5-fa00-4f5c-9ded-f3ace402ffd8" />
+
+<img src="https://github.com/user-attachments/assets/94a7e5b5-fa00-4f5c-9ded-f3ace402ffd8" width="700" />
 
 ---
 
@@ -79,7 +80,8 @@ Para acompanhar os resultados:
    - Ticket médio
    - Lista detalhada por código, emissão, cliente, vendedor, etapa e valor
 4. Exporte os dados em **CSV** ou **PDF** quando necessário.
-<img width="1015" height="732" alt="image" src="https://github.com/user-attachments/assets/f06778d5-0d50-4ed4-880a-c0dccf24428b" />
+ 
+<img src="https://github.com/user-attachments/assets/f06778d5-0d50-4ed4-880a-c0dccf24428b" width="700"/>
 
 ---
 
