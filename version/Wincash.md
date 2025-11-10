@@ -2,53 +2,142 @@
 [Download](https://servidor.gsoft.com.br/wincash/3002/Wincash.exe)
 
 ### 3003.4
-* Merge pull request #345 from gsoftbrasil/develop by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/346
-* [PR] 9411 - Fix/estouro aritmetico orc by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/347
-* Main/12 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/350
-* [PR] patrick/nfcetop/fix/log by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/351
-* [PR] patrick/nfcetop/feat/log_delete by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/352
-* [PR] patrick/nfcetop/fix/inutilizacao by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/338
-* [PR] Refact/Refatoração OrcamentosFluxo by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/348
-* [PR] Patrick/fix/access violation by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/353
-* [PR] Patrick/fix/nfcetop/duplicidade  by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/355
-* Wincash 3003.4, NFCeTop 302.1, WebView 1.0, GsoftAPI 2.1 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/354
+* ``Ticket 9411``: Corrigido erro de estouro aritmético ao imprimir orçamentos, ajustando os campos e cálculos do DataSet para garantir maior estabilidade e precisão nos valores.
+* ``PR 351``: Log no NFCeTop passa a ser obrigatório para maior controle.
+* ``PR 352``: Adicionado log para exclusão de cupons e reorganização do script, garantindo melhor rastreabilidade e manutenção do código.
+* ``PR 338``: Adicionada integração com ActiveX para a thread de inutilização e implementação do salvamento automático do XML de inutilização no log, além de melhorias de limpeza de memória e organização do código para maior estabilidade.
+* ``PR 348``: Refatoração do módulo Orçamentos Fluxo, com inclusão de interfaces e classes, para acesso a dados, aprimoramento do serviço e atualização dos registros de dependência.
+* ``PR 353``: Criada config para definir se o apiClient está ativo ou não
+* ``PR 355``: Implementadas melhorias na emissão da NFC-e, incluindo checagem automática na SEFAZ para evitar duplicidades, exclusão protegida apenas para cupons rejeitados, mensagens mais claras de erro de NCM e maior estabilidade em falhas de retorno, além da correção de acentuação em relatórios e telas.
 
 ### 3003.3 (04/11/2025)
-* [PR] Patrick/fix/access violation by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/349
+* ``PR 349``: Correção Access Violation ao abrir o sistema.
 
 ### 3003.2 (03/11/2025)
-* Merge pull request #342 from gsoftbrasil/develop by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/343
-* [PR] Patrick/fix/orcamentos/fluxo by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/344
-* Wincash 3003.2 e GsofApiGUI 1.1 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/345
+* ``PR 344``: Correções e melhorias no módulo de orçamentos, incluindo ajuste no campo ApenasDiasUteis, busca filtrada apenas por orçamentos, centralização de threads e reprocessamento automático ao sair da tela de fluxo.
+* ``PR 345``: correções em buscas e threads, ajustes nos campos de configuração da API e melhoria no reprocessamento automático ao sair da tela de fluxo.
 
 ### 3003.1 (03/11/2025)
-* Merge pull request #332 from gsoftbrasil/develop by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/333
-* Correção do bug dos itens que ficam zerados no balcão express by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/336
+* ``PR 336``: Correção do erro que fazia alguns itens ficarem com valores zerados durante o fechamento no balcão express.
 * [PR] Fabia/9376/orcamento relatorio by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/339
+* ``Ticket 9376``:
 * [PR] Patrick/9376/orcamento perdas by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/340
-* [PR] 9407 - Feat: Não travar envio do whatsapp se houver algum erro  by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/334
-* [PR] Fix: ajuste manual estoque by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/335
-* [PR] Patrick/fix/orcamentos/fluxo by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/341
+``Ticket 9376``:
+* ``Ticket 9407``: Agora quando houver falha no envio será criada uma lista de transmissão com os números que não foram enviados com sucesso.
+Além disso foi implementado o botão de excluir na lista de transmissão.
+<img width="1280" height="408" alt="image" src="https://github.com/user-attachments/assets/8fa6b9e4-8e86-4893-8747-8406615a899a" />
+<img width="1017" height="266" alt="image" src="https://github.com/user-attachments/assets/3b4e89b4-d42e-4c7d-ab4d-a9b93d2dfdbf" />
+
+* ``PR 335``: Ajuste manual de estoque com proteção a números exorbitantes.
+* ``PR 341``: integração da chamada da API na abertura do balcão e ajustes gerais de estabilidade e validação nas telas do sistema.
 * Wincash 3003.1 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/342
 
 ### 3002.12 (29/10/2025)
-* [PR] Feat: SIGEM inicial commit by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/328
-* [PR] 9399 - Feat/consultar por modelo OS by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/329
-* [PR] 9402 - Feat/Parâmetro para nao buscar por codBarras na NFe de Entrada by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/330
-* [PR] patrick/fix/nau_delivery by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/331
+* ``PR 328``: Adicionado SIGEM ao projeto de desenvolvimento.
+* ``Ticket 9399``: Agora é possível consultar OS através do modelo.
+* <img width="767" height="422" alt="image" src="https://github.com/user-attachments/assets/ad590c0e-de82-4dc6-8c8c-2700ef18dada" />
+
+* ``Ticket 9402``: Criado parâmetro para não permitir a busca do produto por Código de barras na NFe de Entrada.
+* <img width="632" height="795" alt="image" src="https://github.com/user-attachments/assets/cbf48cb4-9649-46ed-96c4-97c96bcb2da1" />
+
+* ``PR 331``: Ajuste do campo PrecoVenda de Float para Decimal(18,2).
 
 ### 3002.11 (27/10/2025)
-* Gil/fix/gsat pis e cofins by @gsoftdobrasil in https://github.com/gsoftbrasil/ERP-GSOFT/pull/321
-* [PR] 9387 - Feat/desmembramento produtos by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/315
-* [PR] Feat/legenda grid boleto e validação numero whatsapp by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/317
-* [PR] Feat: Exportar para Excel by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/320
-* [PR] 9384 - Feat/Validação campo quantidade balcão express by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/322
-* [PR] Fix: campo quantidade ajuste manual by @fabiaalv3s in https://github.com/gsoftbrasil/ERP-GSOFT/pull/323
+* ``PR 321``: Correção no cálculo do PIS e da COFINS, ajustando as alíquotas para serem divididas por 100 (ex.: 3% → 0,03 e 0,65% → 0,0065), garantindo compatibilidade com o cálculo feito pelo SAT.
+
+### ``Ticket 9387``: Desmembramento de Produtos: Este recurso permite realizar o **desmembramento de produtos** diretamente no módulo de **Operações de Estoque**, possibilitando dividir um produto principal em produtos derivados, controlando **quantidade**, **perda**, **aproveitamento** e **rendimento**.  
+
+A funcionalidade também mantém um **histórico detalhado** de todas as operações realizadas, permitindo auditoria completa dos desmembramentos efetuados no sistema.  
+
+---
+
+## ⚙️ Localização no Sistema  
+
+**Caminho:**  
+```
+Estoque → Operações de Estoque → Desmembramento de Produto
+```
+
+A tela principal é dividida em **duas abas**:
+
+- 🧾 **Desmembramento** — utilizada para cadastrar, alterar e processar os desmembramentos ativos.  
+- 📜 **Histórico** — utilizada para consultar operações já processadas e desprocessar quando necessário.  
+
+---
+
+## 🪶 Aba: Desmembramento  
+
+Nesta aba, o usuário pode **incluir, editar e processar** o desmembramento de produtos.
+
+### 🔢 Campos Principais  
+
+| Campo | Descrição |
+|-------|------------|
+| **Margem de quebra** | Percentual de perda esperada |
+| **Peso Final** | Quantidade resultante após a margem |
+| **Produto a desmembrar** | Produto principal que será dividido |
+| **Produto desmembrado** | Itens derivados após o desmembramento |
+| **Tipo Quant.** | Define se a quantidade é percentual (%) ou absoluta |
+| **Perda** | Indica se o item é perda no processo |
+| **Botão “Processar”** | Finaliza e grava o desmembramento lançando no histórico do estoque de cada item |
+| **Data** | Data da operação |
+
+---
+
+## 📜 Aba: Histórico  
+
+Permite visualizar todos os desmembramentos já processados e desprocessados.
+Desmembramentos desprocessados ficam sem a flag no campo Ativo
+
+### 🔍 Recursos Disponíveis  
+
+- **Filtro por período** (data inicial e final)  
+- **Listagem de operações:**  
+  - Código  
+  - Ativo
+  - Produto  
+  - Descrição  
+  - Unidade  
+  - Data  
+  - Quantidade e perda  
+- **Itens vinculados:** exibe os produtos gerados no desmembramento  
+- **Desprocessar:** reverte o desmembramento e restaura o produto original  
+
+---
+
+## ✅ Regras e Validações  
+
+- Impede cadastrar **mais de um desmembramento ativo** para o mesmo produto (`Ativo = 1`).  
+- Bloqueia a gravação caso a **soma das quantidades dos itens** ultrapasse o **peso final**.  
+- Recalcula automaticamente as **quantidades e percentuais** quando a margem ou o peso são alterados.  
+- O campo **Perda** é utilizado no cálculo de rendimento e aproveitamento.  
+
+---
+
+## 🔄 Processamento Automático  
+
+Durante o processamento do desmembramento:  
+
+1. O sistema calcula o **peso final** com base na margem de quebra.  
+2. Os **itens derivados** têm suas quantidades e percentuais recalculados automaticamente.  
+3. O **histórico é atualizado** com o registro completo da operação.  
+---
+
+* ``PR 317``: Legenda com o significado das siglas no grid.
+* <img width="1055" height="757" alt="image" src="https://github.com/user-attachments/assets/481a917a-217b-4089-bc8e-539cfdb70219" />
+
+* ``PR 320``: Criada a classe uExcel para permitir exportar os relatórios do NFeTop para Excel. 
+* ``Ticket 9384``: Validação no campo de quantidade no balcão express para não permitir valores incoerentes.
+<img width="1873" height="628" alt="image" src="https://github.com/user-attachments/assets/954701f4-331c-4ce9-9eea-fdeccb524cc8" />
+
+* ``PR 323``: Ajustada validação no campo qtde no ajuste manual do estoque.
 
 ### 3002.10 (22/10/2025)
-* [PR] Patrick/9386/hotfix/aliq icms by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/316
-* [PR] Patrick/hotfix/9389/nfcetop/reservar numeros by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/318
-* [PR] Patrick/hotfix/9272/num coo by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/319
+* ``Ticket 9386``: Ajustada a validação da alíquota de ICMS para permitir o uso de alíquotas diferentes da alíquota interna.
+*  ``Ticket 9389``: Durante a emissão do cupom, se acontecer algum erro, o sistema marca automaticamente a operação como “Erro”. Assim, o cupom é salvo apenas como “Gerado” e não é vinculado à venda.
+*  ``Ticket 9272``: Adicionado botão para apagar o NumCOO com validação de cupons transmitidos e senha do dia, além do aumento no tamanho dos campos nProt e NumCOO.
+*  <img width="1031" height="320" alt="image" src="https://github.com/user-attachments/assets/a65eb1f6-b6f7-4663-a343-2525b7586c03" />
+
 
 ### 3002.9 (21/10/2025)
 * ``Ticket 9386``: Removida a mensagem “Alíquota de ICMS inválida!” que impedia o cadastro de produtos com alíquota de 12%, mesmo quando já existia uma alíquota de 18% configurada para a UF da empresa.
