@@ -92,15 +92,14 @@ Além disso foi implementado o botão de excluir na lista de transmissão.
 
 * ``PR 335``: Ajuste manual de estoque com proteção a números exorbitantes.
 * ``PR 341``: integração da chamada da API na abertura do balcão e ajustes gerais de estabilidade e validação nas telas do sistema.
-* Wincash 3003.1 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/342
 
 ### 3002.12 (29/10/2025)
 * ``PR 328``: Adicionado SIGEM ao projeto de desenvolvimento.
 * ``Ticket 9399``: Agora é possível consultar OS através do modelo.
-* <img width="767" height="422" alt="image" src="https://github.com/user-attachments/assets/ad590c0e-de82-4dc6-8c8c-2700ef18dada" />
+  <img width="767" height="422" alt="image" src="https://github.com/user-attachments/assets/ad590c0e-de82-4dc6-8c8c-2700ef18dada" />
 
 * ``Ticket 9402``: Criado parâmetro para não permitir a busca do produto por Código de barras na NFe de Entrada.
-* <img width="632" height="795" alt="image" src="https://github.com/user-attachments/assets/cbf48cb4-9649-46ed-96c4-97c96bcb2da1" />
+  <img width="632" height="795" alt="image" src="https://github.com/user-attachments/assets/cbf48cb4-9649-46ed-96c4-97c96bcb2da1" />
 
 * ``PR 331``: Ajuste do campo PrecoVenda de Float para Decimal(18,2).
 
@@ -187,7 +186,7 @@ Durante o processamento do desmembramento:
 ---
 
 * ``PR 317``: Legenda com o significado das siglas no grid.
-* <img width="1055" height="757" alt="image" src="https://github.com/user-attachments/assets/481a917a-217b-4089-bc8e-539cfdb70219" />
+ <img width="1055" height="757" alt="image" src="https://github.com/user-attachments/assets/481a917a-217b-4089-bc8e-539cfdb70219" />
 
 * ``PR 320``: Criada a classe uExcel para permitir exportar os relatórios do NFeTop para Excel. 
 * ``Ticket 9384``: Validação no campo de quantidade no balcão express para não permitir valores incoerentes.
@@ -199,7 +198,7 @@ Durante o processamento do desmembramento:
 * ``Ticket 9386``: Ajustada a validação da alíquota de ICMS para permitir o uso de alíquotas diferentes da alíquota interna.
 *  ``Ticket 9389``: Durante a emissão do cupom, se acontecer algum erro, o sistema marca automaticamente a operação como “Erro”. Assim, o cupom é salvo apenas como “Gerado” e não é vinculado à venda.
 *  ``Ticket 9272``: Adicionado botão para apagar o NumCOO com validação de cupons transmitidos e senha do dia, além do aumento no tamanho dos campos nProt e NumCOO.
-*  <img width="1031" height="320" alt="image" src="https://github.com/user-attachments/assets/a65eb1f6-b6f7-4663-a343-2525b7586c03" />
+  <img width="1031" height="320" alt="image" src="https://github.com/user-attachments/assets/a65eb1f6-b6f7-4663-a343-2525b7586c03" />
 
 
 ### 3002.9 (21/10/2025)
