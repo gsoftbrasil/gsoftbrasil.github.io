@@ -1,6 +1,26 @@
 # Wincash 3002
 [Download](https://servidor.gsoft.com.br/wincash/3002/Wincash.exe)
 
+### 3003.8
+* Merge pull request #383 from gsoftbrasil/develop by @patrick9as in #384
+* [PR] Patrick/fix/api by @patrick9as in #386
+* Wincash 3003.8 by @patrick9as in #387
+
+### 3003.7
+* [PR] 9423 - Feat/relatorio produto delivery by @fabiaalv3s in #373
+* [PR] 9427 - Feat/validacao nome cliente by @fabiaalv3s in #379
+* [PR] 9430 - Fix/Relatorio de vendas semanal by @fabiaalv3s in #380
+* [PR] 9421 - Feat/relatório classificação fiscal by @fabiaalv3s in #381
+* [PR] Feat/permissao para acessar fluxo de orcamentos by @fabiaalv3s in #382 
+
+### 3003.6
+* [PR] patrick/fix/promissoria by @patrick9as in #376
+
+### 3003.5
+* [PR] 9414 - Fix/correção mensagem contingência by @fabiaalv3s in #370
+* [PR] Fix/fechar tela chave + logs manifesto by @fabiaalv3s in #368
+* [PR] Fix - 9393/desfazer nota estoque by @fabiaalv3s in #365
+
 ### 3003.4
 * ``Ticket 9411``: Corrigido erro de estouro aritmético ao imprimir orçamentos, ajustando os campos e cálculos do DataSet para garantir maior estabilidade e precisão nos valores.
 * ``PR 351``: Log no NFCeTop passa a ser obrigatório para maior controle.
