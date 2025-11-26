@@ -1,6 +1,11 @@
 # NFCeTop 302
 [Download](https://servidor.gsoft.com.br/NFCeTop/302/NFCeTop.exe)
 
+### 302.2 (11/11/2025)
+* Adicinados mais logs para monitoramento.
+* Corrigida a busca pela validade do certificado.
+* Corrigido caractér inválido na busca de inutilização por números faltantes.
+
 ### 302.1 (05/11/2025)
 * O log do sistema agora é obrigatório.
 * Criados mais logs de monitoramento.
