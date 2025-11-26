@@ -1,27 +1,40 @@
 # Wincash 3002
 [Download](https://servidor.gsoft.com.br/wincash/3002/Wincash.exe)
 
-### 3003.8
-* Merge pull request #383 from gsoftbrasil/develop by @patrick9as in #384
-* [PR] Patrick/fix/api by @patrick9as in #386
-* Wincash 3003.8 by @patrick9as in #387
+### 3003.8 (19/11/2025)
+* ``PR 386``: Corrigida arquivo INI da Api. A seção utilizada no arquivo INI mudou de REDE para INTEGRACAO.
 
-### 3003.7
-* [PR] 9423 - Feat/relatorio produto delivery by @fabiaalv3s in #373
-* [PR] 9427 - Feat/validacao nome cliente by @fabiaalv3s in #379
-* [PR] 9430 - Fix/Relatorio de vendas semanal by @fabiaalv3s in #380
-* [PR] 9421 - Feat/relatório classificação fiscal by @fabiaalv3s in #381
-* [PR] Feat/permissao para acessar fluxo de orcamentos by @fabiaalv3s in #382 
+### 3003.7 (18/11/2025)
+* ``Ticket 9423``: Curva ABC agora contempla novo filtro, para trazer apenas os produtos com vinculo ao devlivery.
+  
+  <img width="1061" height="706" alt="image" src="https://github.com/user-attachments/assets/f4521c6d-c759-47bb-976d-4fcc430f56db" />
+ 
+* ``Ticket 9427``: Agora o sistema valida o nome e a razão social do cliente para não permitir '\'.
+Feito para evitar erros na geração de boleto de :
+Erro ao gerar Boleto!, Cannot create file "C:\GSOFT\Wincash\Boletos FA EQUIPAMENTOS E MATERIAIS DE SEGURANCA LTDA\FA EQUIPAM - CONSORCIO EDECONSIL\JCGONTIJO - 12 - 2025 - 1201.pdf". O sistema não pode encontrar o caminho especifico.
+  
+* ``Ticket 9430``: Os valores do relatório de vendas semanal em: Relatórios > Dem. de Vendas > Relatórios de vendas semanal. Agora refletem exatamente o total vendido em cada dia da semana, mesmo em períodos longos. Relatório mais confiável para análise e tomada de decisão.
 
-### 3003.6
-* [PR] patrick/fix/promissoria by @patrick9as in #376
+* ``Ticket 9421``: Agora é possível filtrar os produtos com ou sem classificação fiscal a fim de facilitar a manutenabilidade através do relatório por Excel.
+Para utilizar a funcionalidade é necessário ativar nas permissões do usuário em Relatórios > Produtos > Por Classificação Fiscal.
+O Relatório se encontra na aba: Relatórios > Produtos > Produtos - Classificação Fiscal.
 
-### 3003.5
-* [PR] 9414 - Fix/correção mensagem contingência by @fabiaalv3s in #370
-* [PR] Fix/fechar tela chave + logs manifesto by @fabiaalv3s in #368
-* [PR] Fix - 9393/desfazer nota estoque by @fabiaalv3s in #365
+  <img width="990" height="629" alt="image" src="https://github.com/user-attachments/assets/e56a4887-400e-4781-b493-8d8b9eb95dbe" />
 
-### 3003.4
+* ``PR 382``: Criada permissão de usuário na aba de vendas para permitir acesso ao fluxo de orçamentos
+
+### 3003.6 (14/11/2025)
+* ``PR 376``: Corrigida lógica da promissória para não exibir mensagem se o recurso não estiver habilitado.
+
+### 3003.5 (12/11/2025)
+* ``PR 368``: Agora o 'OK' da tela de aviso da licença funciona corretamente fechando a tela.
+* ``PR 368``: Adicionado logs no manifesto.
+* ``Ticket 9393``: Agora, ao desfazer uma nota de entrada como uso e consumo, o estoque não será ajustado. Lembre-se que para funcionar corretamente é necessário ativar o parâmetro nas configurações:
+
+  <img width="474" height="411" alt="image" src="https://github.com/user-attachments/assets/f090c054-ff8b-4953-a881-451ff979444a" />
+
+
+### 3003.4 (05/11/2025)
 * ``Ticket 9411``: Corrigido erro de estouro aritmético ao imprimir orçamentos, ajustando os campos e cálculos do DataSet para garantir maior estabilidade e precisão nos valores.
 * ``PR 351``: Log no NFCeTop passa a ser obrigatório para maior controle.
 * ``PR 352``: Adicionado log para exclusão de cupons e reorganização do script, garantindo melhor rastreabilidade e manutenção do código.
