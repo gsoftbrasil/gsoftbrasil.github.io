@@ -1,6 +1,12 @@
 # NFeTop 301
 [Download](https://servidor.gsoft.com.br/NFeTop/301/NFeTop.exe)
 
+### 301.17 (18/11/2025)
+* ``Ticket 9425``: Agora o sistema valida se o cliente é PF ou PJ antes de atribuir a IE.  
+
+### 301.16 (12/11/2025)
+* ``Ticket 9414``: Corrigida a mensagem para retornar ao modo normal de emissão.  
+
 ### 301.15 (27/10/2025)
 * Corrigida a exportação para Excel que deixou de funcionar desde a versão 300.
 
