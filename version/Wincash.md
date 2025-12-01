@@ -1,5 +1,24 @@
-# Wincash 3002
-[Download](https://servidor.gsoft.com.br/wincash/3002/Wincash.exe)
+# Wincash 3004
+[Download](https://servidor.gsoft.com.br/wincash/3004/Wincash.exe)
+
+### 3004.1 (28/11/2025)
+* ``PR 389``: Correção da tela de fluxo de orçamentos que não abria caso não tivesse nenhum fluxo criado ainda.
+
+*  ``PR 390``: Agora no fluxo de orçamentos, o sistema busca o vendedor pelo campo correto, garantindo que nome e informações exibidas estejam consistentes com o cadastro. 
+  
+* ``PR 394``: removido filtro de paginação no fluxo de orçamentos.
+  
+* ``Ticket 9435``: Agora, no relatório de estoque, o sistema aceita busca parcial, permitindo localizar resultados mesmo com parte do texto.
+Antes, o filtro exigia que a operação fosse digitada exatamente como registrada.
+  
+* ``Ticket 9433``: Agora é possível filtrar por data no relatório de Cashback, caso nenhuma data seja informada, o sistema trará todos os registros.
+  
+  <img width="830" height="699" alt="image" src="https://github.com/user-attachments/assets/96b69c62-7e6e-4a31-907a-8e5764b837ee" />
+
+* ``Ticket 9436``: Agora o sistema permite definir um limite específico de paginação nas configurações do sistema em: Produtos > Geral > Limite paginação histórico estoque.
+  Esse valor é utilizado na paginação do Histórico de Estoque, garantindo mais controle sobre a performance e a quantidade de registros exibidos por vez. Por padrão, o sistema já vem configurado com o limite de 50 registros, mas você pode ajustar esse número conforme a sua necessidade diretamente nas configurações.
+  
+* ``PR 400``: Removido um cursor que executava rotinas de banco ao iniciar o sistema. A mudança melhora o desempenho e evita operações não necessárias.
 
 ### 3003.8 (19/11/2025)
 * ``PR 386``: Corrigida arquivo INI da Api. A seção utilizada no arquivo INI mudou de REDE para INTEGRACAO.
