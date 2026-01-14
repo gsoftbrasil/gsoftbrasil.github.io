@@ -164,7 +164,7 @@ A funcionalidade também mantém um **histórico detalhado** de todas as operaç
 
 ---
 
-## ⚙️ Localização no Sistema  
+#### ⚙️ Localização no Sistema  
 
 **Caminho:**  
 ```
@@ -178,7 +178,7 @@ A tela principal é dividida em **duas abas**:
 
 ---
 
-## 🪶 Aba: Desmembramento  
+#### 🪶 Aba: Desmembramento  
 
 Nesta aba, o usuário pode **incluir, editar e processar** o desmembramento de produtos.
 
@@ -197,12 +197,12 @@ Nesta aba, o usuário pode **incluir, editar e processar** o desmembramento de p
 
 ---
 
-## 📜 Aba: Histórico  
+#### 📜 Aba: Histórico  
 
 Permite visualizar todos os desmembramentos já processados e desprocessados.
 Desmembramentos desprocessados ficam sem a flag no campo Ativo
 
-### 🔍 Recursos Disponíveis  
+##### 🔍 Recursos Disponíveis  
 
 - **Filtro por período** (data inicial e final)  
 - **Listagem de operações:**  
@@ -218,7 +218,7 @@ Desmembramentos desprocessados ficam sem a flag no campo Ativo
 
 ---
 
-## ✅ Regras e Validações  
+#### ✅ Regras e Validações  
 
 - Impede cadastrar **mais de um desmembramento ativo** para o mesmo produto (`Ativo = 1`).  
 - Bloqueia a gravação caso a **soma das quantidades dos itens** ultrapasse o **peso final**.  
@@ -227,7 +227,7 @@ Desmembramentos desprocessados ficam sem a flag no campo Ativo
 
 ---
 
-## 🔄 Processamento Automático  
+#### 🔄 Processamento Automático  
 
 Durante o processamento do desmembramento:  
 
@@ -242,7 +242,7 @@ Durante o processamento do desmembramento:
 
 * ``PR 320``: Criada a classe uExcel para permitir exportar os relatórios do NFeTop para Excel. 
 * ``Ticket 9384``: Validação no campo de quantidade no balcão express para não permitir valores incoerentes.
-<img width="1873" height="628" alt="image" src="https://github.com/user-attachments/assets/954701f4-331c-4ce9-9eea-fdeccb524cc8" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/954701f4-331c-4ce9-9eea-fdeccb524cc8" />
 
 * ``PR 323``: Ajustada validação no campo qtde no ajuste manual do estoque.
 
