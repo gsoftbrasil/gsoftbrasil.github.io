@@ -41,15 +41,15 @@
   <img width="1540" alt="image" src="https://github.com/user-attachments/assets/40c8bf05-f441-4836-bc57-738708074887" />
 
 * ``Ticket 9442``: Agora é possível adicionar ou editar observações nos Kits. Para isso, siga estes passos: Selecionar o Kit e pressione o Enter > Clique em Alterar para Incluir uma nova observação ou editar existencia. > Após ajustar o texto, cliquem e Gravar para salvar alterações.
-  <img width="1073" height="787" alt="image" src="https://github.com/user-attachments/assets/19a57867-e06d-49d0-ae7f-a768570d8132" />
+  <img width="1073"  alt="image" src="https://github.com/user-attachments/assets/19a57867-e06d-49d0-ae7f-a768570d8132" />
 
 * ``Ticket 9440`` : Corrigida divergência no relatório “Análise de Motivo de Perdas”, que apresentava valores diferentes do relatório “Volume de Itens Perdidos”.
 
 * ``PR 403`` : Relatório de Vendas Sem Cupom. Como acessar: Aba Relatorios > Fiscal > Vendas sem Cupom.
-  <img width="1032" height="772" alt="image" src="https://github.com/user-attachments/assets/477cb176-a6f6-4885-9426-c82aa99c595e" />
+  <img width="1032"  alt="image" src="https://github.com/user-attachments/assets/477cb176-a6f6-4885-9426-c82aa99c595e" />
 
 * ``Ticket 9420``: Corrigido o cálculo de ICMS na formação de preço externa, garantindo que os produtos e suas tabelas de preço sejam atualizados com os valores corretos.
-  <img width="1037" height="788" alt="image" src="https://github.com/user-attachments/assets/2ff3cd05-7350-4e71-a667-b6f2c657b539" />
+  <img width="1037" alt="image" src="https://github.com/user-attachments/assets/2ff3cd05-7350-4e71-a667-b6f2c657b539" />
 
 * ``PR 393`` : Corrigido a performance do LogTracer para evitar erros e padronizar o modelo de escrita dos logs.
 
@@ -69,7 +69,7 @@ Antes, o filtro exigia que a operação fosse digitada exatamente como registrad
   
 * ``Ticket 9433``: Agora é possível filtrar por data no relatório de Cashback, caso nenhuma data seja informada, o sistema trará todos os registros.
   
-  <img width="830" height="699" alt="image" src="https://github.com/user-attachments/assets/96b69c62-7e6e-4a31-907a-8e5764b837ee" />
+  <img width="830" alt="image" src="https://github.com/user-attachments/assets/96b69c62-7e6e-4a31-907a-8e5764b837ee" />
 
 * ``Ticket 9436``: Agora o sistema permite definir um limite específico de paginação nas configurações do sistema em: Produtos > Geral > Limite paginação histórico estoque.
   Esse valor é utilizado na paginação do Histórico de Estoque, garantindo mais controle sobre a performance e a quantidade de registros exibidos por vez. Por padrão, o sistema já vem configurado com o limite de 50 registros, mas você pode ajustar esse número conforme a sua necessidade diretamente nas configurações.
@@ -82,7 +82,7 @@ Antes, o filtro exigia que a operação fosse digitada exatamente como registrad
 ### 3003.7 (18/11/2025)
 * ``Ticket 9423``: Curva ABC agora contempla novo filtro, para trazer apenas os produtos com vinculo ao devlivery.
   
-  <img width="1061" height="706" alt="image" src="https://github.com/user-attachments/assets/f4521c6d-c759-47bb-976d-4fcc430f56db" />
+  <img width="1061" alt="image" src="https://github.com/user-attachments/assets/f4521c6d-c759-47bb-976d-4fcc430f56db" />
  
 * ``Ticket 9427``: Agora o sistema valida o nome e a razão social do cliente para não permitir '\'.
 Feito para evitar erros na geração de boleto de :
@@ -94,7 +94,7 @@ Erro ao gerar Boleto!, Cannot create file "C:\GSOFT\Wincash\Boletos FA EQUIPAMEN
 Para utilizar a funcionalidade é necessário ativar nas permissões do usuário em Relatórios > Produtos > Por Classificação Fiscal.
 O Relatório se encontra na aba: Relatórios > Produtos > Produtos - Classificação Fiscal.
 
-  <img width="990" height="629" alt="image" src="https://github.com/user-attachments/assets/e56a4887-400e-4781-b493-8d8b9eb95dbe" />
+  <img width="990"  alt="image" src="https://github.com/user-attachments/assets/e56a4887-400e-4781-b493-8d8b9eb95dbe" />
 
 * ``PR 382``: Criada permissão de usuário na aba de vendas para permitir acesso ao fluxo de orçamentos
 
@@ -106,7 +106,7 @@ O Relatório se encontra na aba: Relatórios > Produtos > Produtos - Classifica�
 * ``PR 368``: Adicionado logs no manifesto.
 * ``Ticket 9393``: Agora, ao desfazer uma nota de entrada como uso e consumo, o estoque não será ajustado. Lembre-se que para funcionar corretamente é necessário ativar o parâmetro nas configurações:
 
-  <img width="474" height="411" alt="image" src="https://github.com/user-attachments/assets/f090c054-ff8b-4953-a881-451ff979444a" />
+  <img width="474" alt="image" src="https://github.com/user-attachments/assets/f090c054-ff8b-4953-a881-451ff979444a" />
 
 
 ### 3003.4 (05/11/2025)
