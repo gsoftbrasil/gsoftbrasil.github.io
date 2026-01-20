@@ -1,6 +1,16 @@
 # Wincash 3005
-[Download](https://servidor.gsoft.com.br/wincash/3004/Wincash.exe)
+[Download](https://servidor.gsoft.com.br/wincash/3005/Wincash.exe)
 
+### 3005.4 (30/12/2025)
+* ``PR 431 ``: Foi adicionado uma validação se a balança no PDV está ativada antes de setar o campo EdQtd para o mesmo valor de EPeso
+
+### 3005.3 (26/12/2025)
+* ``PR 421``: Foi feita uma correção ao exportar os dados da Curva ABC de Vendas. Agora no arquivo excel reflete exatamente os campos que aparecem no relatório.
+
+### 3005.2 (11/12/2025)
+* ``PR 418``: Criado uma opção para não agrupar os itens no cupom de venda. Para utilizar basta ativar a opção em Configurações do Sistema > PDV > Não agrupar itens do cupom de venda
+  <img width="622" height="398" alt="image" src="https://github.com/user-attachments/assets/38353940-daba-4b79-bc20-deb6948a43b5" />
+  
 ### 3005.1 (11/12/2025)
 * ``Ticket 9443``: Agora é possível visualizar no auditor do sistema quando uma operação de estoque é inserida, processada, desprocessada e excluída.
   <img width="1540" alt="image" src="https://github.com/user-attachments/assets/40c8bf05-f441-4836-bc57-738708074887" />
