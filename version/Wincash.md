@@ -1,3 +1,16 @@
+# Wincash 3010
+[Download](https://servidor.gsoft.com.br/wincash/3010/Wincash.exe)
+
+### 3010.2 (13/01/2026)
+* ``PR 449`` : Observação do kit agora sai na impressão : formulario inteiro (segunda opção). 
+  
+### 3010.1 (12/01/2026)
+* ``PR 447`` : Implementação de um utilitário para melhorar a visão dos parâmetros de conexão do Wincash com o SQL Server. Como verificar: Abra o Wincash > Aba Wincash > 2 cliques em uma área vazia.
+  <img width="1850" height="954" alt="image" src="https://github.com/user-attachments/assets/0cc28447-7eab-4313-8035-7e0e068b1b86" />
+
+  
+
+
 # Wincash 3006
 [Download](https://servidor.gsoft.com.br/wincash/3006/Wincash.exe)
 
