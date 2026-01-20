@@ -1,3 +1,23 @@
+# Wincash 3005
+[Download](https://servidor.gsoft.com.br/wincash/3004/Wincash.exe)
+
+### 3005.1 (11/12/2025)
+* ``Ticket 9443``: Agora é possível visualizar no auditor do sistema quando uma operação de estoque é inserida, processada, desprocessada e excluída.
+  <img width="1540" height="274" alt="image" src="https://github.com/user-attachments/assets/40c8bf05-f441-4836-bc57-738708074887" />
+
+* ``Ticket 9442``: Agora é possível adicionar ou editar observações nos Kits. Para isso, siga estes passos: Selecionar o Kit e pressione o Enter > Clique em Alterar para Incluir uma nova observação ou editar existencia. > Após ajustar o texto, cliquem e Gravar para salvar alterações.
+  <img width="1073" height="787" alt="image" src="https://github.com/user-attachments/assets/19a57867-e06d-49d0-ae7f-a768570d8132" />
+
+* ``Ticket 9440`` : Corrigida divergência no relatório “Análise de Motivo de Perdas”, que apresentava valores diferentes do relatório “Volume de Itens Perdidos”.
+
+* ``PR 403`` : Relatório de Vendas Sem Cupom. Como acessar: Aba Relatorios > Fiscal > Vendas sem Cupom.
+  <img width="1032" height="772" alt="image" src="https://github.com/user-attachments/assets/477cb176-a6f6-4885-9426-c82aa99c595e" />
+
+* ``Ticket 9420``: Corrigido o cálculo de ICMS na formação de preço externa, garantindo que os produtos e suas tabelas de preço sejam atualizados com os valores corretos.
+  <img width="1037" height="788" alt="image" src="https://github.com/user-attachments/assets/2ff3cd05-7350-4e71-a667-b6f2c657b539" />
+
+* ``PR 393`` : Corrigido a performance do LogTracer para evitar erros e padronizar o modelo de escrita dos logs.
+
 
 # Wincash 3004
 [Download](https://servidor.gsoft.com.br/wincash/3004/Wincash.exe)
