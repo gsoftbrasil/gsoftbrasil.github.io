@@ -6,7 +6,7 @@
   
 ### 3010.1 (12/01/2026)
 * ``PR 447`` : Implementação de um utilitário para melhorar a visão dos parâmetros de conexão do Wincash com o SQL Server. Como verificar: Abra o Wincash > Aba Wincash > 2 cliques em uma área vazia.
-  <img width="1850" height="954" alt="image" src="https://github.com/user-attachments/assets/0cc28447-7eab-4313-8035-7e0e068b1b86" />
+  <img width="1850" alt="image" src="https://github.com/user-attachments/assets/0cc28447-7eab-4313-8035-7e0e068b1b86" />
 
   
 
