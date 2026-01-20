@@ -9,7 +9,8 @@
 
 ### 3005.2 (11/12/2025)
 * ``PR 418``: Criado uma opção para não agrupar os itens no cupom de venda. Para utilizar basta ativar a opção em Configurações do Sistema > PDV > Não agrupar itens do cupom de venda
-  <img width="622" height="398" alt="image" src="https://github.com/user-attachments/assets/38353940-daba-4b79-bc20-deb6948a43b5" />
+
+  <img width="622" alt="image" src="https://github.com/user-attachments/assets/38353940-daba-4b79-bc20-deb6948a43b5" />
   
 ### 3005.1 (11/12/2025)
 * ``Ticket 9443``: Agora é possível visualizar no auditor do sistema quando uma operação de estoque é inserida, processada, desprocessada e excluída.
