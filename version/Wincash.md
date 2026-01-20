@@ -2,12 +2,12 @@
 [Download](https://servidor.gsoft.com.br/wincash/3006/Wincash.exe)
 
 ### 3006.3 (05/01/2026)
-*``PR 442`` : Correção de conexao que ficou ativa na tbTabPrecos.
+* ``PR 442`` : Correção de conexao que ficou ativa na tbTabPrecos.
 
-*``PR 443``: Foi adicionado a ExecutaScripts 3006
+* ``PR 443``: Foi adicionado a ExecutaScripts 3006
 
 ### 3006.1 (02/01/2026)
-*``PR 439`` : Build para nova versão 3006.1
+* ``PR 439`` : Build para nova versão 3006.1
 
 # Wincash 3005
 [Download](https://servidor.gsoft.com.br/wincash/3005/Wincash.exe)
