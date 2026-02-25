@@ -1,7 +1,7 @@
 # Wincash 3010
 [Download](https://servidor.gsoft.com.br/wincash/3010/Wincash.exe)
 
-### 3010.15
+### 3010.15 (25/02/2026)
 * ``PR 545`` / ``PR 546``: Adição do campo **Cargo** do funcionário (diferente do campo Função, que é controlado pelo sistema).
 * ``PR 547``: Contas recorrentes passam a exibir e considerar **CodLoja** e **NomeLoja** (suporte multiloja).
 * ``PR 550``: Ajuste nas contas a pagar no modo multiempresa.
@@ -11,31 +11,31 @@
 * ``PR 544``: Corrigida a sobreposição da descrição do item na OS: ao salvar pelo disquete, a descrição passa a aparecer corretamente no PDF.
 * ``PR 567``: Correção no filtro de regras de tributação.
 
-### 3010.13
+### 3010.13 (17/02/2026)
 * ``PR 522``: Correção no envio de boleto via WhatsApp.
 * ``PR 537``: Implementação das **vendas multiloja** (contas a pagar multiloja e DRE mensal multiloja).
 
 
-### 3010.12
+### 3010.12 (10/02/2026)
 * ``PR 520``: O campo **Observação do kit** foi ampliado de 120 para **1500 caracteres**.
 
-### 3010.11
+### 3010.11 (10/02/2026)
 * ``PR 504``: Na Ordem de Serviço, é possível definir um **funcionário responsável** por etapa.
 * ``PR 508``: Quando "Exibir desconto da tabela de preço" está ativo, a impressão de requisição, orçamento e venda deixa de exibir acréscimo negativo; em caso de acréscimo no item, o valor cheio é exibido.
 * ``PR 518``: Consulta **NCM e CEST** passa a exibir a descrição completa (melhoria visual para descrições longas).
 
-### 3010.10
+### 3010.10 (06/02/2026)
 * ``PR 512``: Correção relacionada a produtos com fotos (hotfix 3010.10).
 
-### 3010.9
+### 3010.9 (01/02/2026)
 * Correções de **encoding** na tela de fechamento do balcão express.
 
-### 3010.8
+### 3010.8 (29/01/2026)
 * ``PR 464``: Antes de emitir o cupom fiscal, o sistema verifica se o NFCeTop está em execução e, se não estiver, inicia o executável automaticamente.
 * ``PR 497``: No cadastro de clientes, a aba **Histórico de Compras** passou a usar o número do cupom fiscal (NumCOO) correto, em vez de NumCF.
 * ``PR 499``: O sistema passa a respeitar o parâmetro que define o limite de caracteres do código do produto (EAN-13 ou EAN-8) lido no PDV.
 
-### 3010.5
+### 3010.5 (23/01/2026)
 * ``PR 458``: Correção no campo observação (observação 2).
 * ``PR 460``: No relatório Lista Geral de Produtos, é possível filtrar por produtos **Ativos**, **Inativos** ou **Todos**; o rótulo do checkbox foi ajustado para "Exibir Forn. Inativos".
 * ``PR 441``: No balcão express, é possível **arrastar a janela** para outro monitor e **expandir com duplo clique**.
@@ -48,7 +48,7 @@
 * ``PR 473``: Ajuste na impressão da requisição (validação do tamanho do texto no band, evitando quebra indevida).
 * ``PR 465``: Correção da lógica de seleção de loja no relatório (retorno ao comportamento correto).
 
-### 3010.4
+### 3010.4 (16/01/2026)
 * ``PR 458``: Correção no campo observação 2.
 * ``PR 460``: Relatório Lista Geral — filtro por produtos Ativos/Inativos/Todos e rótulo "Exibir Forn. Inativos".
 * ``PR 441``: Balcão express — arrastar janela para outro monitor e expandir com duplo clique.
