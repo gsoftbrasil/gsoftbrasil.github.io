@@ -1,16 +1,48 @@
-# NFCeTop 302
+# NFCeTop 305 / NFCeMonitor
+[Download NFCeTop](https://servidor.gsoft.com.br/NFCeTop/305/NFCeTop.exe) · NFCeTop e NFCeMonitor são documentados juntos nesta linha de versão.
+
+### 305.7 (17/02/2026)
+**NFCeTop**
+* ``PR 523``: Correção relacionada à placa de rede.
+
+### NFCeMonitor (01/02/2026)
+* ``PR 503``: Timer para minimizar o monitor em 2 segundos; processamento automático passa a executar o botão filtrar; validação apenas de notas modelo 65; migração da chave ATIVAR_AUTOMATICAMENTE para clientes que ainda usavam a key antiga.
+
+### 305.6 (29/01/2026 e 10/02/2026)
+**NFCeTop**
+* ``PR 517``: Ajuste na senha do dia na tela de configuração.
+**NFCeMonitor**
+* ``PR 495``: Correção de encoding em arquivos.
+* ``PR 496``: Ajustes em contingência e cupons rejeitados.
+
+### 305.5 (30/12/2025)
+* ``PR 428``: Hotfix para erro HTTP.
+
+### 305.4 (26/12/2025)
+* ``PR 425``: Hotfix para erro 503.
+
+### 305.3 (11/12/2025)
+* ``PR 415``: Correção no cupom gerado.
+
+### 305.1 (11/12/2025)
+* Lançamento da linha 305 do NFCeTop e do NFCeMonitor (incluída na release Wincash 3005.1).
+
+___
+
+# NFCeTop 302 / NFCeMonitor
 [Download](https://servidor.gsoft.com.br/NFCeTop/302/NFCeTop.exe)
 
 ### 302.2 (11/11/2025)
-* Adicinados mais logs para monitoramento.
-* Corrigida a busca pela validade do certificado.
-* Corrigido caractér inválido na busca de inutilização por números faltantes.
+**NFCeTop e NFCeMonitor**
+* ``PR 361``: Novos logs para monitoramento e ajuste na interface.
+* ``PR 363``: Exibição da data de validade do certificado ao buscar.
+* ``PR 364``: Correção de caractere inválido na ordenação (inutilização por números faltantes).
 
 ### 302.1 (05/11/2025)
 * O log do sistema agora é obrigatório.
 * Criados mais logs de monitoramento.
 * Corrigido erro de duplicidade ao emitir cupom que não teve retorno da Sefaz.
-* NFCeMonitor: aprimorada inutilização por números faltantes.
+* **NFCeMonitor:** aprimorada inutilização por números faltantes.
 
 ___
 
