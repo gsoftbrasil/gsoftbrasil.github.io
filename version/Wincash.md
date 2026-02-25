@@ -1,40 +1,17 @@
 # Wincash 3010
 [Download](https://servidor.gsoft.com.br/wincash/3010/Wincash.exe)
 
-### 3010.15 Latest
-Wincash 3010.15
-gil/wincash/cargoFuncionario by @gsoftdobrasil in #545
-gil/wincash/feat/campoCodLoja_Recorrencia by @gsoftdobrasil in #547
-gil/wincash/cargo funcionario by @gsoftdobrasil in #546
-gil/wincash/fix/codLoja_Recorrencia by @gsoftdobrasil in #550
-fabia/wincash/feat/10472/forma_pagto_nota_entrada by @fabiaalv3s in #560
-fabia/wincash/fix/reimpressao_cupom by @fabiaalv3s in #549
-Fabia/wincash/feat/dashboard_orcamento by @fabiaalv3s in #548
-fabia/wincash/fix/10470/sobreposicao_descricao_item_os by @fabiaalv3s in #544
-gil/wincash/fix/erro_filtro_regras_tributacao by @gsoftdobrasil in #567
-patrick/wc/build/3010.15 by @patrick9as in #568
-Mobile (playstore e appstore)
-patrick/mobile/fix/https by @patrick9as in #561
-patrick/mobile/fix/build-android by @patrick9as in #562
-patrick/mobile/refact/config-api by @patrick9as in #565
-GsoftAPI
-Patrick/gsoft-api/websocket by @patrick9as in #542
-gil/wincash/pdv offline by @gsoftdobrasil in #558
-gil/pdvoff/fix/gitignore by @gsoftdobrasil in #566
-Web
-caleb/wincash web/feat/searchinputanduser by @gsoftdobrasil in #552
-caleb/WincashWeb/feat/searchinputanduser by @calebalvescarneiro in #553
-gil/wincashweb/feat/shortcuts criticalsection by @gsoftdobrasil in #554
-caleb/web/feat/h2geralparaapps by @calebalvescarneiro in #555
-caleb/wincash web/feat/dashboardtsx by @gsoftdobrasil in #556
-caleb/WincashWeb/feat/formgridpadrao by @calebalvescarneiro in #557
-WsServer
-patrick/websocket/feat/get-url by @patrick9as in #563
-patrick/websocket/fix/dotenv by @patrick9as in #564
-Etiqueta
-gil/etiqueta/criacao log guion by @gsoftdobrasil in #551
-patrick/etiqueta/fix/10-caracteres by @patrick9as in #569
-Full Changelog: 3010.13...3010.15
+### 3010.15
+- `PR 545`: Adição do campo Cargo do funcionário (diferente do campo função que é totalmente controlada pelo sistema).
+- gil/wincash/feat/campoCodLoja_Recorrencia by @gsoftdobrasil in #547
+- gil/wincash/cargo funcionario by @gsoftdobrasil in #546
+- gil/wincash/fix/codLoja_Recorrencia by @gsoftdobrasil in #550
+- fabia/wincash/feat/10472/forma_pagto_nota_entrada by @fabiaalv3s in #560
+- fabia/wincash/fix/reimpressao_cupom by @fabiaalv3s in #549
+- Fabia/wincash/feat/dashboard_orcamento by @fabiaalv3s in #548
+- fabia/wincash/fix/10470/sobreposicao_descricao_item_os by @fabiaalv3s in #544
+- gil/wincash/fix/erro_filtro_regras_tributacao by @gsoftdobrasil in #567
+- patrick/wc/build/3010.15 by @patrick9as in #568
 
 ### 3010.13
 Wincash 3010.13
