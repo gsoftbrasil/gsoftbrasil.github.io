@@ -1,3 +1,35 @@
+# NFeTop 306
+[Download](https://servidor.gsoft.com.br/NFeTop/306/NFeTop.exe)
+
+### 306.8 (06/02/2026)
+* ``PR 506``: Verificação para produtor rural: o sistema identifica se o cliente é produtor rural antes de preencher o Registro Estadual (IE), garantindo o tratamento correto na NF-e.
+* ``PR 509``: Correção de frete duplicado na NF-e.
+
+### 306.7 (29/01/2026)
+* ``PR 486``: Correção na importação de venda com referência.
+* ``PR 490``: Ajuste de configuração.
+* ``PR 494``: Suporte ao indicador de consumidor final (código 202) na NF-e.
+
+### 306.4 (23/01/2026)
+* ``PR 461``: Correção no script de importação de documentos referenciados (empenho) na NF-e.
+* ``PR 469``: Quando o produto não possui PIS ou COFINS informados, o sistema exibe tela para preenchimento antes da transmissão da NF-e.
+* ``PR 481``: Correção na importação de venda.
+
+### 306.3 (16/01/2026)
+* ``PR 461``: Correção na importação de documentos referenciados (empenho) na NF-e.
+
+___
+
+# NFeTop 305
+[Download](https://servidor.gsoft.com.br/NFeTop/305/NFeTop.exe)
+
+A numeração do NFeTop passou da **301.17** diretamente para a linha **305** (não existem versões 302, 303 ou 304).
+
+### 305.2 (11/12/2025)
+* ``PR 398``: Reforma tributária — finalização da geração da NF-e validada no site do Governo.
+
+___
+
 # NFeTop 301
 [Download](https://servidor.gsoft.com.br/NFeTop/301/NFeTop.exe)
 
