@@ -2,173 +2,62 @@
 [Download](https://servidor.gsoft.com.br/wincash/3010/Wincash.exe)
 
 ### 3010.15
-- `PR 545`: Adição do campo Cargo do funcionário (diferente do campo função que é totalmente controlada pelo sistema).
-- gil/wincash/feat/campoCodLoja_Recorrencia by @gsoftdobrasil in #547
-- gil/wincash/cargo funcionario by @gsoftdobrasil in #546
-- gil/wincash/fix/codLoja_Recorrencia by @gsoftdobrasil in #550
-- fabia/wincash/feat/10472/forma_pagto_nota_entrada by @fabiaalv3s in #560
-- fabia/wincash/fix/reimpressao_cupom by @fabiaalv3s in #549
-- Fabia/wincash/feat/dashboard_orcamento by @fabiaalv3s in #548
-- fabia/wincash/fix/10470/sobreposicao_descricao_item_os by @fabiaalv3s in #544
-- gil/wincash/fix/erro_filtro_regras_tributacao by @gsoftdobrasil in #567
-- patrick/wc/build/3010.15 by @patrick9as in #568
+* ``PR 545`` / ``PR 546``: Adição do campo **Cargo** do funcionário (diferente do campo Função, que é controlado pelo sistema).
+* ``PR 547``: Contas recorrentes passam a exibir e considerar **CodLoja** e **NomeLoja** (suporte multiloja).
+* ``PR 550``: Ajuste nas contas a pagar no modo multiempresa.
+* ``PR 560``: Inclusão dos campos de forma de pagamento **PIX, TRF, DBT e OUT** na nota fiscal de entrada (Contas a pagar).
+* ``PR 549``: Correção do erro ao reimprimir cupom fiscal.
+* ``PR 548``: Na **Dashboard > Orçamento/Requisição**, adicionada a coluna Código e possibilidade de exportar para Excel.
+* ``PR 544``: Corrigida a sobreposição da descrição do item na OS: ao salvar pelo disquete, a descrição passa a aparecer corretamente no PDF.
+* ``PR 567``: Correção no filtro de regras de tributação.
 
 ### 3010.13
-Wincash 3010.13
-Patrick/wc/fix/boleto-whatsapp by @patrick9as in #522
-Implementação das vendas multiloja by @gsoftdobrasil in #537
-patrick/wincash/build/3010.13 by @patrick9as in #539
-NFCeTop 305.7
-Patrick/nfcetop/fix/placa-de-rede by @patrick9as in #523
-GSPED 26.2
-Implementação do registro H020 no GSPED by @gsoftdobrasil in #527
-Correção do registro H020 by @gsoftdobrasil in #533
-patrick/gsped/build/26.2 by @patrick9as in #541
-Wincash Web Mobile
-Gil/wincashwebmobile/feat/FDVOffline by @gsoftdobrasil in #524
-Gil/wincashmobile/feat/inventario_offline by @gsoftdobrasil in #525
-feat: Adicionando configs para deploy iOS by @gabrielbiga in #526
-Organizacao das features do backend by @gsoftdobrasil in #528
-feat: configuração NaoBloquearTerminal para facilitar a validação do … by @gsoftdobrasil in #529
-Gil/wincashmobile/feat/nao bloquear terminal mobile by @gsoftdobrasil in #530
-Controle de versão do backend by @gsoftdobrasil in #531
-Removida a leitura de certificado digital HTTPS SSL by @gsoftdobrasil in #532
-patrick/gsoftapi/rm-projeto-antigo by @patrick9as in #534
-Inclusão do inventário mobile para importar a lista de inventário r… by @gsoftdobrasil in #536
-Personalização dos botões já programados (coloridos) e dos não programados (preto e branco) by @gsoftdobrasil in #538
-Atualização de dependências e aprimoramento do estilo do cabeçalho em várias telas by @gsoftdobrasil in #540
-Atualização de dependências e aprimoramento do estilo do cabeçalho em várias telas by @gsoftdobrasil in #540
+* ``PR 522``: Correção no envio de boleto via WhatsApp.
+* ``PR 537``: Implementação das **vendas multiloja** (contas a pagar multiloja e DRE mensal multiloja).
 
-### 3010.12-a
-What's Changed
-Patrick/wc/fix/boleto-whatsapp by @patrick9as in #522
-Patrick/nfcetop/fix/placa-de-rede by @patrick9as in #523
-Gil/wincashwebmobile/feat/FDVOffline by @gsoftdobrasil in #524
-Gil/wincashmobile/feat/inventario_offline by @gsoftdobrasil in #525
-feat: Adicionando configs para deploy iOS by @gabrielbiga in #526
-Implementação do registro H020 no GSPED by @gsoftdobrasil in #527
-Organizacao das features do backend by @gsoftdobrasil in #528
-feat: configuração NaoBloquearTerminal para facilitar a validação do … by @gsoftdobrasil in #529
-Gil/wincashmobile/feat/nao bloquear terminal mobile by @gsoftdobrasil in #530
-Controle de versão do backend by @gsoftdobrasil in #531
-Removida a leitura de certificado digital HTTPS SSL by @gsoftdobrasil in #532
-Correção do registro H020 by @gsoftdobrasil in #533
-patrick/gsoftapi/rm-projeto-antigo by @patrick9as in #534
 
 ### 3010.12
-What's Changed
-Alteração do campo observação do kit de 120 caracteres para 1500 caracteres by @gsoftdobrasil in #520
-patrick/wincash/build/3010.12 by @patrick9as in #521
+* ``PR 520``: O campo **Observação do kit** foi ampliado de 120 para **1500 caracteres**.
 
 ### 3010.11
-3010.11
-Wincash
-fabia/wincash/feat/10463/nome_responsavel_atual by @fabiaalv3s in #504
-fabia/wincash/fix/desconto_impressao by @fabiaalv3s in #508
-Eivold/wincash/feat/Descricao_Completa_Consulta_NCMeCEST by @EivoldSantos in #518
-patrick/wincash/build/3010.11 by @patrick9as in #519
-NFCeTop
-Patrick/nfcetop/fix/305.6/senha-do-dia by @patrick9as in #517
-Wincash Web
-Caleb/wincasweb/feat/shadcn UI by @gsoftdobrasil in #514
-Gil/wincashweb/feat/busca cep by @gsoftdobrasil in #515
-Caleb/wincasweb/feat/shadcn-ui by @calebalvescarneiro in #516
-Cursor
-patrick/cursor/feat/skills by @patrick9as in #513
+* ``PR 504``: Na Ordem de Serviço, é possível definir um **funcionário responsável** por etapa.
+* ``PR 508``: Quando "Exibir desconto da tabela de preço" está ativo, a impressão de requisição, orçamento e venda deixa de exibir acréscimo negativo; em caso de acréscimo no item, o valor cheio é exibido.
+* ``PR 518``: Consulta **NCM e CEST** passa a exibir a descrição completa (melhoria visual para descrições longas).
 
 ### 3010.10
-3010.10
-Wincash
-patrick/wincash/hotfix/3010.10/produtos-com-fotos by @patrick9as in #512
-NFeTop
-eivold/nfetop/BuscarIEProdutorRural by @EivoldSantos in #506
-patrick/nfetop/fix/frete_duplicado by @patrick9as in #509
-patrick/nfetop/build/306.8 by @patrick9as in #510
-Gestor de franquias
-eivold/gestordefranquias/feat/BuscaSomenteAtivos by @EivoldSantos in #507
-Mobile
-gil/feat/wincashwebmobile/dashboard-jwt by @gsoftdobrasil in #511
-Launcher
-patrick/gsoftlauncher by @patrick9as in #505
+* ``PR 512``: Correção relacionada a produtos com fotos (hotfix 3010.10).
 
 ### 3010.9
-Wincash 3010.9
-patrick/wc/build/3010.9 by @patrick9as in #501
-Correções de encoding da tela de fechamento do balcão express
-NFCeMonitor
-patrick/nfcetop/monitor/fix/ini-tray-processar by @patrick9as in #503
+* Correções de **encoding** na tela de fechamento do balcão express.
 
 ### 3010.8
-Wincash 3010.8
-patrick/wincash/build/3010.6 by @patrick9as in #488
-fabia/wincash/feat/10455/abrir_NFCeTop_venda by @fabiaalv3s in #464
-Eivold/wincash/fix/NumCOOHist.Compras by @EivoldSantos in #497
-patrick/wc/build/3010.7 by @patrick9as in #498
-patrick/wc/feat/ean-13-e-ean-8 by @patrick9as in #499
-Patrick/wc/build/3010.8 by @patrick9as in #500
-NFCeMonitor 305.6
-patrick/nfcetop/fix/file_encoding by @patrick9as in #495
-Patrick/nfcetop/nfcemonitor/fix/contingencia e rejeitados by @patrick9as in #496
-NFeTop 306.7
-patrick/nfetop/fix/importar_venda_referencia by @patrick9as in #486
-Patrick/nfetop/fix/config by @patrick9as in #490
-Patrick/nfetop/feat/consumidor_final_202 by @patrick9as in #494
-GApexSync 2026
-patrick/gapexsync/fix/cst_pis_cofins by @patrick9as in #484
-WincashWebMobile
-fabia/wincashMobile/feat/status_bar_color by @fabiaalv3s in #477
-patrick/wincashwebmobile/refact/login_config by @patrick9as in #485
-patrick/wincashwebmobile/fix/package-lock by @patrick9as in #487
-patrick/wincashwebmobile/feat/refresh-token by @patrick9as in #489
-patrick/wincashwebmobile/fix/https by @patrick9as in #491
-patrick/wincashwebmobile/fix_http_https by @patrick9as in #492
-patrick/wincashwebmobile/fix/dlls_ssl by @patrick9as in #493
+* ``PR 464``: Antes de emitir o cupom fiscal, o sistema verifica se o NFCeTop está em execução e, se não estiver, inicia o executável automaticamente.
+* ``PR 497``: No cadastro de clientes, a aba **Histórico de Compras** passou a usar o número do cupom fiscal (NumCOO) correto, em vez de NumCF.
+* ``PR 499``: O sistema passa a respeitar o parâmetro que define o limite de caracteres do código do produto (EAN-13 ou EAN-8) lido no PDV.
 
 ### 3010.5
-Wincash 3010.5
-fabia/fix_observacao by @fabiaalv3s in #458
-feat/Status_Prod_Relat_ListGeral by @EivoldSantos in #460
-fabia/feat/9453/arrastar_form form by @fabiaalv3s in #441
-fabia/feat/9454/centro_custo_dem_vendas by @fabiaalv3s in #436
-patrick/fix/menu by @patrick9as in #459
-fabia/feat/9447/relatorio_contas_pagar_receber_dashboard by @fabiaalv3s in #422
-patrick/fix/acrescimo fechamento by @patrick9as in #467
-fabia/feat/data_de_validade by @fabiaalv3s in #471
-fabia/fix/campo_ExibirPlanoContasDescricaoMovimentacaoBancaria by @fabiaalv3s in #466
-fabia/wincash/feat/10460/impressao_requisicao by @fabiaalv3s in #473
-eivold/fix/correcaologicaselecaoloja by @EivoldSantos in #465
-build/3010.4 by @patrick9as in #462
-NFeTop 306.4
-patrick/nfetop/fix/empenho by @patrick9as in #461
-fabia/nfetop/feat/10458/Validacao_pis_cofins by @fabiaalv3s in #469
-patrick/nfetop/fix/importacao_venda by @patrick9as in #481
-GsoftApi 4.1 e WincashWebMobile Beta
-gil/wincash_web_mobile by @patrick9as in #468
-gabrielbiga/chore/eas-prod-playstore by @gabrielbiga in #472
-gil/wincashwebmobile/feat/eas-credentials by @patrick9as in #474
-patrick/wincashwebmobile/fix/package-lock by @patrick9as in #475
-gil/wincashwebmobile/fix/mutex by @gsoftdobrasil in #476
-gil/wincashwebmobile/feat/jwt back by @patrick9as in #478
-gil/wincashwebmobile/certificadoBackend by @gsoftdobrasil in #479
-patrick/wincashwebmobile/fix/jwt_mobile by @patrick9as in #480
-build/gsoft api wincash web mobile by @patrick9as in #470
+* ``PR 458``: Correção no campo observação (observação 2).
+* ``PR 460``: No relatório Lista Geral de Produtos, é possível filtrar por produtos **Ativos**, **Inativos** ou **Todos**; o rótulo do checkbox foi ajustado para "Exibir Forn. Inativos".
+* ``PR 441``: No balcão express, é possível **arrastar a janela** para outro monitor e **expandir com duplo clique**.
+* ``PR 436``: Filtro por **centro de custo** no relatório Demonstrativo de Vendas > Vendas detalhado.
+* ``PR 459``: Ajuste de altura dos componentes do menu.
+* ``PR 422``: Dashboard de **Contas a Pagar e Contas a Receber** com filtro por período e emissão de relatórios; nova configuração no Financeiro para uso de Centro de Custo (obrigatório na finalização da venda quando ativo).
+* ``PR 467``: Correção no acréscimo no fechamento da venda.
+* ``PR 471``: Controle de **data de validade** do produto.
+* ``PR 466``: Correção de tipo do campo (exibição do plano de contas na descrição da movimentação bancária).
+* ``PR 473``: Ajuste na impressão da requisição (validação do tamanho do texto no band, evitando quebra indevida).
+* ``PR 465``: Correção da lógica de seleção de loja no relatório (retorno ao comportamento correto).
 
 ### 3010.4
-Merge pull request #456 from gsoftbrasil/develop by @patrick9as in #457
-[PR] Fix - campo observacao 2 by @fabiaalv3s in #458
-[PR] feat/Status_Prod_Relat_ListGeral by @EivoldSantos in #460
-[PR] patrick/nfetop/fix/empenho by @patrick9as in #461
-[PR] 9453 - Feat/arrastar form by @fabiaalv3s in #441
-[PR] Feat: filtro por centro de custo no demonstrativo de vendas by @fabiaalv3s in #436
-[PR] patrick/fix/menu by @patrick9as in #459
-[PR] 9447 - Feat/relatorio contas pagar e receber dashboard by @fabiaalv3s in #422
-Build/3010.4 by @patrick9as in #462
-Wincash 3010.4 e NFeTop 306.3 by @patrick9as in #463
+* ``PR 458``: Correção no campo observação 2.
+* ``PR 460``: Relatório Lista Geral — filtro por produtos Ativos/Inativos/Todos e rótulo "Exibir Forn. Inativos".
+* ``PR 441``: Balcão express — arrastar janela para outro monitor e expandir com duplo clique.
+* ``PR 436``: Filtro por centro de custo no Demonstrativo de Vendas > Vendas detalhado.
+* ``PR 459``: Ajuste de altura dos componentes do menu.
+* ``PR 422``: Dashboard Contas a Pagar/Receber com filtro por período, relatórios e opção de Centro de Custo no Financeiro.
 
 ### 3010.3 (14/01/2026)
-* Main by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/454
-* Patrick/fix/relatorio caixa by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/455
-* 3010.3 by @patrick9as in https://github.com/gsoftbrasil/ERP-GSOFT/pull/456
+* ``PR 455``: Correção no **relatório de caixa**.
 
 ### 3010.2 (13/01/2026)
 * ``PR 449`` : Observação do kit agora sai na impressão : formulario inteiro (segunda opção). 
