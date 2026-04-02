@@ -1,3 +1,8 @@
+# NFeTop 321
+[Download](https://servidor.gsoft.com.br/NFeTop/321/NFeTop.exe)
+### 321.1 (02/04/2026)
+* Implementa a informação adicional ao Fisco referente à LC 214/2025 quando qualquer item da nota possui o CST de PIS e COFINS 06.
+
 # NFeTop 306
 [Download](https://servidor.gsoft.com.br/NFeTop/306/NFeTop.exe)
 
