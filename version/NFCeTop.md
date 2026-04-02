@@ -1,9 +1,12 @@
-# NFCeTop 305 / NFCeMonitor
-[Download NFCeTop](https://servidor.gsoft.com.br/NFCeTop/305/NFCeTop.exe) · NFCeTop e NFCeMonitor são documentados juntos nesta linha de versão.
+# NFCeTop 321 / NFCeMonitor
+[Download NFCeTop](https://servidor.gsoft.com.br/NFCeTop/321/NFCeTop.exe) · NFCeTop e NFCeMonitor são documentados juntos nesta linha de versão.
 
 ### 321.4 (02/04/2026)
 **NFCeTop**
 * Implementa a informação adicional ao Fisco referente à LC 214/2025 quando qualquer item da nota possui o CST de PIS e COFINS 06.
+
+# NFCeTop 305 / NFCeMonitor
+[Download NFCeTop](https://servidor.gsoft.com.br/NFCeTop/305/NFCeTop.exe) · NFCeTop e NFCeMonitor são documentados juntos nesta linha de versão.
 
 ### 305.7 (17/02/2026)
 **NFCeTop**
