@@ -1,5 +1,92 @@
+# Wincash 3023
+[Download](https://servidor.gsoft.com.br/wincash/3023/Wincash.exe)
+
+### (15/05/2026)
+* ``PR 777``: Correção no **DRE anual** (lógica SQL com data de emissão em CaixaPagamento e filtro por data de atualização; melhor tratamento multiloja).
+* ``PR 783``: Integração de emissão de **NFC-e via Gsoft API**.
+
+### 3023.2 (06/05/2026)
+* Revertida a melhoria na busca de requisição (``PR 772``).
+
+### 3023.1 (05/05/2026)
+* ``PR 759``: Correção na importação de inventário mobile.
+* ``PR 762``: Correção de encoding no inventário.
+* ``PR 763``: Login integrado com a Gsoft API.
+* ``PR 771``: Impressão na bobina do **resumo detalhado do fechamento de caixa** (vendas, recebimentos e ajustes por operação).
+* ``PR 773``: Correção no relatório Lista Geral de Produtos.
+
+___
+
+# Wincash 3022
+[Download](https://servidor.gsoft.com.br/wincash/3022/Wincash.exe)
+
+### 3022.8 (27/04/2026)
+* ``PR 718``: Correção no relatório de produtos vendidos por classificação.
+* ``PR 730`` / ``PR 731``: **Resumo de caixa** com detalhamento (fechamento de caixa).
+* ``PR 745``: Cadastro de emitente ativo para NFC-e.
+* ``PR 743``: Correção na devolução de consumidor final na saída.
+
+### (28/04/2026)
+* ``PR 751`` / ``PR 752``: Correções no cliente da Gsoft API (estabilidade e Access Violation).
+* ``PR 753`` / ``PR 754``: Correções de **encoding** em Busca de Vendas e Reimpressão.
+
+### (14/04/2026)
+* ``PR 686``: Correção na impressão em bobina (nome da impressora).
+* ``PR 690``: Correção na exportação MGV6.
+
+### 3022.6 (10/04/2026)
+* ``PR 677``: Correção de UF e município.
+* ``PR 684``: Correção em migrations.
+
+### 3022.4 (08/04/2026)
+* ``PR 671``: Suporte a transações no banco.
+* ``PR 673``: Correção quando grupo não está cadastrado.
+* ``PR 675``: Correção na nota promissória.
+* ``PR 676``: Correção na data de entrada.
+
+### 3022.1 (06/04/2026)
+* ``PR 661``: Correção na tela de senha (erro ao criar form / recurso DFM).
+* ``PR 662``: Correção em migrations e ExecutaScripts.
+* ``PR 663``: Correção na consulta e atualização de NCM.
+* ``PR 423``: Permissão para **peso manual no PDV** (configuração por usuário).
+
+___
+
+# Wincash 3020
+[Download](https://servidor.gsoft.com.br/wincash/3020/Wincash.exe)
+
+### 3020.2 (25/03/2026)
+* ``PR 616`` / ``PR 635``: Ajustes em ExecutaScripts.
+* ``PR 632``: Impressão de carta com NCM e CST.
+* ``PR 614``: Relatório de vendas detalhado por item passa a exibir número da NF-e da NFe_Cab quando não houver na venda.
+* ``PR 574``: Destaque visual de **produtos vencidos** em requisição, orçamento e balcão express (Configurações > Produtos > Geral > Destacar produtos vencidos na busca de Req/Orc).
+* ``PR 636``: Ajuste de layout na tela de encomenda.
+* ``PR 633``: Ao alterar data de vencimento do lote, a cor do item volta ao padrão.
+
+### 3020.1 (16/03/2026)
+* ``PR 596``: Com "Não usar o gerenciador de impressão do Windows" ativo, promissória protestável **restante** imprime direto na bobina.
+* ``PR 599``: Correção no relatório de histórico de estoque.
+* ``PR 600``: Lançamento de operação de estoque pelo PDV.
+* ``PR 586``: Permissão para **negociar condição** de pagamento.
+* ``PR 581``: Parâmetro **açúcar adicionado** (PDV).
+* ``PR 598``: Tratamento quando campo celular não é encontrado.
+* ``PR 604``: Correção em migrations.
+* ``PR 605``: Correção na consulta de produtos por código de barras.
+* ``PR 601``: Correção no transmissor de NFSe.
+* ``PR 589``: Relatório de nota de entrada com coluna de data de entrada e exportação para Excel.
+
+___
+
 # Wincash 3010
 [Download](https://servidor.gsoft.com.br/wincash/3010/Wincash.exe)
+
+### 3010.18 (05/03/2026)
+* ``PR 587``: Correção de erro na abertura do cadastro de funcionários.
+* ``PR 588``: Correção na impressão de saídas em bobina.
+
+### 3010.16 (27/02/2026)
+* ``PR 575``: Correção na consulta de **CEST** (tabela atualizada).
+* ``PR 579``: Atualização do **ACBr** (compatibilidade com novos valores de CST e reforma tributária).
 
 ### 3010.15 (25/02/2026)
 * ``PR 545`` / ``PR 546``: Adição do campo **Cargo** do funcionário (diferente do campo Função, que é controlado pelo sistema).
