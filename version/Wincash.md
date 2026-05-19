@@ -1,7 +1,7 @@
 # Wincash 3023
 [Download](https://servidor.gsoft.com.br/wincash/3023/Wincash.exe)
 
-### (15/05/2026)
+### 3023.3 (15/05/2026)
 * ``PR 777``: Correção no **DRE anual** (lógica SQL com data de emissão em CaixaPagamento e filtro por data de atualização; melhor tratamento multiloja).
 * ``PR 783``: Integração de emissão de **NFC-e via Gsoft API**.
 
