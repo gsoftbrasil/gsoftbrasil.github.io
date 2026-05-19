@@ -1,7 +1,54 @@
+# NFeTop 323
+[Download](https://servidor.gsoft.com.br/NFeTop/323/NFeTop.exe)
+
+### 323.2 (19/05/2026)
+* ``PR 803``: Melhoria no salvamento da chave.
+
+### (19/05/2026)
+* ``PR 785``: Refatoração da chave referenciada de cupom (ECF/CF-e), simplificando validação e consulta SQL.
+
+### 323.1 (15/05/2026)
+* ``PR 766``: Validação do campo **Inscrição Estadual** conforme tipo de contribuinte do ICMS (ex.: não permite "ISENTO" para contribuinte de ICMS).
+* ``PR 767``: Mensagem de erro mais clara quando a seleção de **CST** é inválida.
+* ``PR 797``: Validação de CST usando a tabela virtual VtbValidaCST.
+* ``PR 798``: Validação de **multitributação por NCM**.
+
+### (05/05/2026)
+* ``PR 768``: Correção na chave da NFe_Cab (evita problema na DANFE).
+
+___
+
+# NFeTop 322
+[Download](https://servidor.gsoft.com.br/NFeTop/322/NFeTop.exe)
+
+### 322.1 (06/04/2026)
+* Release conjunta com Wincash 3022.1 (build fiscal 322.1).
+
+___
+
 # NFeTop 321
 [Download](https://servidor.gsoft.com.br/NFeTop/321/NFeTop.exe)
+
 ### 321.1 (02/04/2026)
-* Implementa a informação adicional ao Fisco referente à LC 214/2025 quando qualquer item da nota possui o CST de PIS e COFINS 06.
+* ``PR 658``: Implementação da **informação adicional ao Fisco** referente à LC 214/2025, quando qualquer item da nota possui CST de PIS e COFINS **06**.
+
+___
+
+# NFeTop 320
+[Download](https://servidor.gsoft.com.br/NFeTop/320/NFeTop.exe)
+
+A numeração do NFeTop passou da linha **306** diretamente para a **320** (não há versões 307 a 319 publicadas nas releases).
+
+### (31/03/2026)
+* ``PR 640``: Correção da base de cálculo do **IBS e CBS**, utilizando o campo RTC_vBC em vez de Valor_Total_Liquido.
+
+### 320.2 (25/03/2026)
+* ``PR 637``: Reforma tributária (RTC) — opção para **subtrair impostos da base de cálculo**.
+
+### 320.1 (16/03/2026)
+* Lançamento da linha **320** do NFeTop, em conjunto com Wincash 3020.1, NFCeTop 320 e MDFeTop 320 (``PR 610``).
+
+___
 
 # NFeTop 306
 [Download](https://servidor.gsoft.com.br/NFeTop/306/NFeTop.exe)
