@@ -1,9 +1,46 @@
 # Wincash 3023
 [Download](https://servidor.gsoft.com.br/wincash/3023/Wincash.exe)
 
+### 3023.13 (24/06/2026)
+* ``PR 910``: Impressão do **DANFSe** (Documento Auxiliar da NFSe).
+* ``PR 914``: Envio de **NFSe por e-mail e WhatsApp**.
+* ``PR 916``: Integração do botão WhatsApp com a Gsoft API (remoção do fallback de impressão).
+* ``PR 902``: Correção na geração de boleto em **Buscar Vendas** (lista vazia; referência do campo celular).
+
+### 3023.12 (19/06/2026)
+* ``PR 841``: Integração com **NFSe Nacional** — envio do payload para emissão via Gsoft API.
+* ``PR 864``: Visualização e salvamento em PDF da **NFSe Nacional**.
+* ``PR 873``: Cadastro de **terminal fiscal** (CodEmitente, série CF-e, função TOTEM).
+* ``PR 874``: Correção do rótulo do **número de série** do terminal.
+* ``PR 886``: Correção no **inventário mobile** (consulta ativa e tipo do parâmetro de itens).
+
+### 3023.11 (12/06/2026)
+* ``PR 858``: Correção na **carga MGV6** — atualização para o padrão oficial do ACBr (removida cópia desatualizada).
+
+### 3023.10 (11/06/2026)
+* ``PR 855``: Correção de **privilégio de tesouraria** no menu de suprimento.
+
+### 3023.9 (10/06/2026)
+* ``PR 846``: Correções em **saídas de caixa e contas a pagar** — remove integração do suprimento com contas a pagar; melhora impressão e auditoria.
+
+### 3023.8 (10/06/2026)
+* ``PR 831``: Melhorias no **relatório de ordem de serviço** — formatação de datas opcionais e exportação para Excel (por produtos/serviços e por etapa).
+* ``PR 830``: Correção no **relatório de venda com itens** — evita duplicidade quando a venda possui mais de um registro na NFe_Cab.
+
+### 3023.7 (03/06/2026)
+* ``PR 833``: Correção no **inventário mobile** — estado da memória no FormCreate e fechamento da tela com ESC.
+
+### 3023.6 (25/05/2026)
+* ``PR 808``: Campo **Usuário de cadastro** no cadastro de clientes (CodUsuarioCadastro), exibindo quem cadastrou o cliente.
+* ``PR 809``: Correção no **relatório de histórico de estoque** quando o código do produto é negativo.
+
+### 3023.4 (22/05/2026)
+* ``PR 805``: Atualização do **NumNF nos títulos** ao transmitir, cancelar ou excluir NF-e; mantém NumNF na baixa parcial; melhoria de performance no auditor.
+
 ### 3023.3 (15/05/2026)
 * ``PR 777``: Correção no **DRE anual** (lógica SQL com data de emissão em CaixaPagamento e filtro por data de atualização; melhor tratamento multiloja).
 * ``PR 783``: Integração de emissão de **NFC-e via Gsoft API**.
+* ``PR 800``: Correção no **relatório de ordem de serviço** — conversão de data no filtro (evita erro "valor fora do intervalo" quando o dia é 13 ou superior).
 
 ### 3023.2 (06/05/2026)
 * Revertida a melhoria na busca de requisição (``PR 772``).
@@ -25,12 +62,8 @@ ___
 * ``PR 730`` / ``PR 731``: **Resumo de caixa** com detalhamento (fechamento de caixa).
 * ``PR 745``: Cadastro de emitente ativo para NFC-e.
 * ``PR 743``: Correção na devolução de consumidor final na saída.
-
-### (28/04/2026)
 * ``PR 751`` / ``PR 752``: Correções no cliente da Gsoft API (estabilidade e Access Violation).
 * ``PR 753`` / ``PR 754``: Correções de **encoding** em Busca de Vendas e Reimpressão.
-
-### (14/04/2026)
 * ``PR 686``: Correção na impressão em bobina (nome da impressora).
 * ``PR 690``: Correção na exportação MGV6.
 
