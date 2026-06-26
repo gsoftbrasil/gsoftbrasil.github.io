@@ -4,6 +4,8 @@
 ### 3023.14 (26/06/2026)
 * ``PR 920``: **NFSe multi-emitente** — seleção do emitente ao emitir NFSe quando há mais de um cadastro; configuração **NFSe_Config** por emitente; DANFSe, e-mail e WhatsApp usam o emitente do título.
 * ``PR 922``: Atualização da **cor do produto por validade** — opção em configurações, faixas de prazo (**DiasPrazo**) nas cores do produto e processamento automático de produtos vencidos.
+<img height="600" alt="Produto vencimento" src="https://github.com/user-attachments/assets/e1a2bb8a-17b1-476b-8557-70e5196a8f36" />
+
 * ``PR 923``: Correção na atualização de cor por validade quando a **cor manual** do produto está nula.
 
 ### 3023.13 (24/06/2026)
