@@ -1,6 +1,19 @@
 # Wincash 3023
 [Download](https://servidor.gsoft.com.br/wincash/3023/Wincash.exe)
 
+### 3023.19 (10/07/2026)
+* ``PR 996``: Correção no **DRE** no modo caixa por pagamento — filtros e agrupamentos passam a usar **DataPagamento** em vez de data de emissão.
+
+### 3023.18 (08/07/2026)
+* ``PR 991``: Correção no **processamento de inventário** — leitura correta da quantidade atual com grade, fallback para estoque do cadastro e cálculo do ajuste.
+* ``PR 969``: Correções no **Atualizador WC** — sincronização apenas quando ativo; tratamento de erros sem encerrar o sistema; corrige Access Violation e comparação de versão quando o atualizador está desativado.
+
+### 3023.16 (02/07/2026)
+* ``PR 968``: Correção na **atualização do banco** — o sistema não encerra mais automaticamente quando a migration falha (permite verificar o log e tentar novamente).
+
+### 3023.15 (30/06/2026)
+* ``PR 952``: Melhorias no **processamento de inventário** — barra de progresso com status, bloqueio ao fechar durante processamento, carregamento otimizado de lançamentos e recálculo de estoque por produto.
+
 ### 3023.14 (26/06/2026)
 * ``PR 920``: **NFSe multi-emitente** — seleção do emitente ao emitir NFSe quando há mais de um cadastro; configuração **NFSe_Config** por emitente; DANFSe, e-mail e WhatsApp usam o emitente do título.
 * ``PR 922``: Atualização da **cor do produto por validade** — opção em configurações, faixas de prazo (**DiasPrazo**) nas cores do produto e processamento automático de produtos vencidos.
