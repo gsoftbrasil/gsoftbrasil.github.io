@@ -3,6 +3,7 @@
 Documentação das versões dos sistemas da Gsoft
 
 - [Wincash](./version/Wincash.md)
+- [Wincash Web](./version/WincashWeb.md)
 - [NFeTop](./version/NFeTop.md)
 - [NFCeTop](./version/NFCeTop.md)
 

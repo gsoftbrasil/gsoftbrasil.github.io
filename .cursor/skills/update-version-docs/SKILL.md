@@ -1,10 +1,10 @@
 ---
 name: update-version-docs
 description: >-
-  Atualiza version/Wincash.md, NFeTop.md e NFCeTop.md com base em releases
-  e PRs do gsoftbrasil/ERP-GSOFT. Use quando o usuário pedir para documentar
-  versões, atualizar changelog, releases, PRs ou completar subversões
-  (ex.: Wincash 3023.13, NFeTop 323).
+  Atualiza version/Wincash.md, NFeTop.md, NFCeTop.md e WincashWeb.md com base
+  em releases e PRs do gsoftbrasil/ERP-GSOFT. Use quando o usuário pedir para
+  documentar versões, atualizar changelog, releases, PRs ou completar subversões
+  (ex.: Wincash 3023.13, NFeTop 323, Wincash Web por data).
 ---
 
 # Atualizar documentação de versões
@@ -22,7 +22,7 @@ Consulte [examples.md](examples.md) para exemplos de redação.
 
 ## Fluxo
 
-1. **Ler** o arquivo alvo (`version/Wincash.md`, `NFeTop.md` ou `NFCeTop.md`) e identificar a última subversão documentada.
+1. **Ler** o arquivo alvo (`version/Wincash.md`, `NFeTop.md`, `NFCeTop.md` ou `WincashWeb.md`) e identificar a última entrada documentada (subversão ou data).
 2. **Listar releases** desde essa data: `gh release list --repo gsoftbrasil/ERP-GSOFT --limit 80`
 3. **Ver corpo** de cada release relevante: `gh release view <tag> --repo gsoftbrasil/ERP-GSOFT`
 4. **Filtrar PRs** do produto alvo (ver reference.md); ignorar build-only e outros produtos.
@@ -78,8 +78,44 @@ Implicações:
 | `version/Wincash.md` | Wincash desktop | Excluir web, mobile, launcher, totem, pdvoff |
 | `version/NFeTop.md` | NFeTop | Excluir wincash, nfcetop, mdfetop |
 | `version/NFCeTop.md` | NFCeTop + NFCeMonitor | Subseções **NFCeTop** / **NFCeMonitor** quando a release traz os dois |
+| `version/WincashWeb.md` | Wincash Web + Gsoft API | Por **data de release** (sem subversão); sem URL de download |
 
 Detalhes de filtros em [reference.md](reference.md).
+
+## WincashWeb.md — exceção por data
+
+Este arquivo **não usa subversão numerada**. A data de release é o identificador principal.
+
+Fluxo:
+
+1. **Ler** `version/WincashWeb.md` e identificar a data mais recente já documentada (`### DD/MM/YYYY`).
+2. **Listar releases** posteriores a essa data.
+3. **Filtrar PRs** de Wincash Web e Gsoft API (ver reference.md); ignorar build-only, mobile e integrações desktop.
+4. **Classificar** cada PR em **Wincash Web** ou **Gsoft API** conforme branch/título.
+5. **Agrupar** por `publishedAt` da release (formato `DD/MM/YYYY`); mesclar tags do mesmo dia (ex.: `v2026-05-19` e `v2026-05-19-a`).
+6. Releases WIP (`## Gsoft API WIP`, `## Wincash Web WIP`): PRs vão na **data dessa release** (não enfileirar para próximo build).
+7. **Inserir** blocos `### DD/MM/YYYY` (data mais recente primeiro), com subseções **Wincash Web** e **Gsoft API** quando aplicável.
+8. Cada PR documentado **uma única vez** (primeira release em que aparece).
+
+Formato:
+
+```markdown
+# Wincash Web
+
+Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
+A atualização é automática — não há download manual.
+
+### 10/07/2026
+**Wincash Web**
+* ``PR 867``: ...
+
+**Gsoft API**
+* ``PR 919``: ...
+```
+
+Regra global “nunca só data” aplica-se a Wincash, NFeTop e NFCeTop — **não** a WincashWeb.md.
+
+Para backfill ou regeneração em lote, use `.cursor/scripts/build_wincashweb_md.py` (requer clone bare do ERP-GSOFT).
 
 ## Redação
 
@@ -95,9 +131,21 @@ Detalhes de filtros em [reference.md](reference.md).
 
 ## Checklist final
 
+**Wincash / NFeTop / NFCeTop:**
+
 - [ ] Só PRs do produto correto
 - [ ] Sem entradas só com data
 - [ ] Datas conferidas com `publishedAt`
 - [ ] Sequência de subversões coerente
 - [ ] Nenhum PR de build listado como item
+- [ ] Texto entendível para usuário final (não desenvolvedor)
+
+**WincashWeb.md:**
+
+- [ ] Só PRs de Wincash Web e Gsoft API (não mobile, não desktop puro)
+- [ ] Cabeçalhos apenas `### DD/MM/YYYY` (sem numeração de versão)
+- [ ] Datas conferidas com `publishedAt`
+- [ ] Nenhum PR de build listado como item
+- [ ] PRs de integração desktop não duplicados (permanecem no Wincash.md)
+- [ ] Intro explica que Gsoft API está incluída; sem URL de download
 - [ ] Texto entendível para usuário final (não desenvolvedor)

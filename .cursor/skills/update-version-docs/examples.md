@@ -99,13 +99,53 @@ Entrada (release/PR bruto) → bullet documentado. Tom: manual de usuário, port
 
 ---
 
+## 6. Wincash Web por data (PR 919 / Gsoft API)
+
+**Release:** `v2026-06-24-a` — `## Gsoft API`
+
+**PR bruto:**
+- Título: `patrick/gsoftapi/build/...` → **ignorar** (build)
+- Título: `erique/gsoftapi/feat/nfse-endpoint`
+- Body: `Endpoint para emissão de NFSe Nacional via API.`
+
+**Seção final** (data = `publishedAt` da release):
+
+```markdown
+### 24/06/2026
+**Gsoft API**
+* ``PR 919``: Endpoint de emissão de **NFSe Nacional** via API.
+```
+
+---
+
+## 7. Wincash Web + Gsoft API na mesma release
+
+**Release:** `v2026-06-19`
+
+**PRs brutos:**
+- `867`: `erique/wincash-web/feat/cardapio-digital`
+- `841`: `erique/gsoftapi/feat/nfse-nacional` → classificar como API (não desktop)
+
+**Seção final:**
+
+```markdown
+### 19/06/2026
+**Wincash Web**
+* ``PR 867``: **Cardápio digital** — tela de gestão de cardápio.
+
+**Gsoft API**
+* ``PR 841``: Suporte à emissão de **NFSe Nacional**.
+```
+
+---
+
 ## Anti-padrões (não publicar)
 
 ```markdown
 <!-- Ruim: changelog de dev -->
 * gil/wincash/feat/impressao-danfse by @gsoftdobrasil in #910
 
-<!-- Ruim: entrada só com data -->
+<!-- Ruim: entrada só com data (Wincash/NFeTop/NFCeTop — OK em WincashWeb.md) -->
 ### (28/04/2026)
 * ``PR 751``: ...
 

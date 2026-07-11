@@ -8,6 +8,9 @@
 | Destino Wincash | `version/Wincash.md` |
 | Destino NFeTop | `version/NFeTop.md` |
 | Destino NFCeTop | `version/NFCeTop.md` |
+| Destino Wincash Web | `version/WincashWeb.md` |
+
+WincashWeb.md: documenta **Wincash Web** e **Gsoft API** juntos, por data de release, sem URL de download.
 
 ## URLs de download
 
@@ -38,6 +41,8 @@ Regex úteis (case insensitive):
 - NFeTop: `NFeTop\s+(\d+\.\d+(?:\.\d+)?)`
 - NFCeTop: `NFCeTop\s+(\d+\.\d+(?:\.\d+)?)`
 - Builds agrupados: `3020\.1-320\.1` (Wincash + NFeTop na mesma release)
+- Wincash Web: `Wincash\s+Web`
+- Gsoft API: `Gsoft\s+API`
 
 Extrair números de PR dos links: `pull/(\d+)`
 
@@ -68,6 +73,39 @@ Extrair números de PR dos links: `pull/(\d+)`
 
 **Excluir:** `wincash`, `nfetop`, `mdfetop`, `build/`
 
+### WincashWeb.md (Wincash Web + Gsoft API)
+
+**Incluir Wincash Web:** `wincash-web`, `wincashweb`, `wincash-web/`
+
+**Incluir Gsoft API:** `gsoftapi`, `gsoft-api`, `gsoft api`, `GsoftApi`
+
+**Excluir:**
+
+- `wincash-web-mobile`, `mobile`, `launcher`, `totem`, `pdvoff`, `pdv-off`
+- PRs desktop `wincash/` (sem `-web`) — ficam no Wincash.md mesmo que mencionem a API
+- `build/`, `Build Gsoft API`, `Build Wincash Web`
+- `wincash`, `nfetop`, `nfcetop`, `mdfetop`, `multicash`
+- `doc/`, `docs/`, `cursor/`
+
+Quando a release trouxer os dois produtos, usar subseções:
+
+```markdown
+### 24/06/2026
+**Wincash Web**
+* ``PR 867``: ...
+
+**Gsoft API**
+* ``PR 919``: ...
+```
+
+**Atribuição por data** (sem subversão):
+
+1. Percorrer releases da mais antiga à mais recente (backfill) ou posteriores à última data documentada (incremental).
+2. Data do cabeçalho = `publishedAt` da release, formato `DD/MM/YYYY`.
+3. Mesclar tags do mesmo dia sob um único cabeçalho.
+4. Releases WIP: PRs na data da release WIP (não enfileirar).
+5. Cada PR documentado uma vez (primeira release em que aparece).
+
 Quando a release separar NFCeTop e NFCeMonitor, usar:
 
 ```markdown
@@ -81,7 +119,7 @@ Quando a release separar NFCeTop e NFCeMonitor, usar:
 
 ## PRs a ignorar sempre
 
-- Título contém `build/` ou começa com `Build Wincash`, `Build NFeTop`, etc.
+- Título contém `build/` ou começa com `Build Wincash`, `Build NFeTop`, `Build Gsoft API`, `Build Wincash Web`, etc.
 - Título contém `cursor/`, `skill`
 - Título contém `doc/` ou `docs/` (documentação interna, não release note)
 - PRs de merge/chore sem impacto ao usuário (`chore/`, `merge-`)
