@@ -8,6 +8,7 @@ __pycache__/
 # Secrets locais (nunca commitar)
 .env
 .env.*
+!.env.example
 *.pem
 api_key.txt
 .cursor/api_key*

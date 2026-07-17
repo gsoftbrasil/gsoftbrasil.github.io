@@ -27,14 +27,33 @@ Atualiza diariamente `version/Wincash.md`, `NFeTop.md`, `NFCeTop.md` e `WincashW
 & "C:\Program Files\GitHub CLI\gh.exe" repo view gsoftbrasil/ERP-GSOFT
 ```
 
-### Definir CURSOR_API_KEY (usuário Windows)
+### Definir CURSOR_API_KEY
+
+**Recomendado:** arquivo `.env` na raiz do repo (não versionado).
+
+```powershell
+Copy-Item .env.example .env
+# Edite .env e coloque sua chave em CURSOR_API_KEY=...
+notepad .env
+```
+
+Exemplo (`.env.example`):
+
+```env
+CURSOR_API_KEY=cursor_sua_chave_aqui
+# CURSOR_MODEL=composer-2.5
+```
+
+O script carrega `.env` automaticamente. Variáveis de ambiente já definidas no sistema têm **prioridade** sobre o arquivo.
+
+**Alternativa:** variável de ambiente do usuário Windows:
 
 ```powershell
 [System.Environment]::SetEnvironmentVariable("CURSOR_API_KEY", "cursor_...", "User")
 # Reabra o terminal / faça logoff-login para tarefas agendadas herdarem
 ```
 
-**Nunca** coloque a key no repositório, no `.ps1` ou na definição da tarefa.
+**Nunca** coloque a key no repositório, no `.ps1` ou na definição da tarefa. O `.env` real está no `.gitignore`.
 
 ## Instalação
 
@@ -46,6 +65,8 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+Copy-Item .env.example .env
+# Edite .env com sua CURSOR_API_KEY
 ```
 
 ## Execução manual
@@ -128,7 +149,7 @@ Gerados em `.cursor/automation-logs/` (ignorado pelo Git).
 
 | Sintoma | Ação |
 |---------|------|
-| `CURSOR_API_KEY não definida` | Definir variável de usuário e reabrir sessão |
+| `CURSOR_API_KEY não definida` | Crie `.env` a partir de `.env.example` ou defina variável de usuário |
 | `gh não autenticado` / 404 em ERP-GSOFT | `gh auth login` com conta que tem acesso ao repo privado |
 | `Worktree sujo` | Commit/stash local antes de rodar |
 | `Já existe PR aberto` | Merge ou fechar o PR `automation/version-docs-*` |

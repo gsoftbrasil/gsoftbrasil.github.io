@@ -94,11 +94,33 @@ def require_clean_main() -> None:
         )
 
 
+def load_dotenv(path: Path | None = None) -> None:
+    """Carrega .env da raiz do repo. Env vars já definidas têm prioridade."""
+    env_path = path or (REPO_ROOT / ".env")
+    if not env_path.is_file():
+        return
+    for raw in env_path.read_text(encoding="utf-8").splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, val = line.partition("=")
+        key = key.strip()
+        if not key:
+            continue
+        val = val.strip()
+        if (val.startswith('"') and val.endswith('"')) or (
+            val.startswith("'") and val.endswith("'")
+        ):
+            val = val[1:-1]
+        os.environ.setdefault(key, val)
+
+
 def require_cursor_key() -> str:
     key = (os.environ.get("CURSOR_API_KEY") or "").strip()
     if not key:
         raise PreflightError(
-            "CURSOR_API_KEY não definida. Configure variável de ambiente do usuário Windows."
+            "CURSOR_API_KEY não definida. Crie `.env` na raiz (veja `.env.example`) "
+            "ou defina a variável de ambiente do usuário Windows."
         )
     return key
 
@@ -326,9 +348,12 @@ def main() -> int:
         except Exception:
             pass
 
-    args = parse_args()
     os.chdir(REPO_ROOT)
+    load_dotenv()
+    args = parse_args()
     log(f"Repo: {REPO_ROOT}")
+    if (REPO_ROOT / ".env").is_file():
+        log("Credenciais: .env carregado (env vars existentes têm prioridade)")
 
     try:
         gh = find_gh()
