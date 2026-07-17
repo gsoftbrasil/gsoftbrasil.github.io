@@ -1,6 +1,10 @@
 # Wincash 3023
 [Download](https://servidor.gsoft.com.br/wincash/3023/Wincash.exe)
 
+### 3023.20 (16/07/2026)
+* ``PR 997``: Nova aba **Atendimento** no cadastro de produtos, com classificação para o cardápio digital e inclusão, alteração ou remoção da foto do produto.
+* ``PR 1003``: Validação na geração de **remessas bancárias** — bloqueia boletos que já tiveram remessa gerada e registra gerações, bloqueios e erros para auditoria.
+
 ### 3023.19 (10/07/2026)
 * ``PR 996``: Correção no **DRE** no modo caixa por pagamento — filtros e agrupamentos passam a usar **DataPagamento** em vez de data de emissão.
 
