@@ -12,3 +12,4 @@ __pycache__/
 *.pem
 api_key.txt
 .cursor/api_key*
+.venv312/
