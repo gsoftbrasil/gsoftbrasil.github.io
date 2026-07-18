@@ -1,7 +1,7 @@
 #Requires -Version 5.1
 <#
 .SYNOPSIS
-  Wrapper local da automação version-docs (Cursor SDK + gh).
+  Wrapper local da automação version-docs (Cursor SDK Node + gh).
 #>
 [CmdletBinding()]
 param(
@@ -27,20 +27,19 @@ function Write-Log([string]$Message) {
 Write-Log "Repo: $RepoRoot"
 Write-Log "Log: $LogFile"
 
-# Prefer venv python
-$VenvPython = Join-Path $RepoRoot ".venv\Scripts\python.exe"
-if (Test-Path $VenvPython) {
-    $Python = $VenvPython
-} else {
-    $PythonCmd = Get-Command python -ErrorAction SilentlyContinue
-    if (-not $PythonCmd) {
-        Write-Log "ERRO: python não encontrado. Crie .venv e instale requirements.txt"
-        exit 1
-    }
-    $Python = $PythonCmd.Source
+$NodeCmd = Get-Command node -ErrorAction SilentlyContinue
+if (-not $NodeCmd) {
+    Write-Log "ERRO: node não encontrado no PATH. Instale Node.js 20+."
+    exit 1
 }
+$Node = $NodeCmd.Source
+Write-Log "Node: $Node ($(& $Node -v))"
 
-Write-Log "Python: $Python"
+$SdkPkg = Join-Path $RepoRoot "node_modules\@cursor\sdk"
+if (-not (Test-Path $SdkPkg)) {
+    Write-Log "ERRO: @cursor/sdk não instalado. Rode: npm install"
+    exit 1
+}
 
 # Ensure gh is findable for scheduled tasks
 $GhDir = "C:\Program Files\GitHub CLI"
@@ -51,7 +50,7 @@ if (Test-Path (Join-Path $GhDir "gh.exe")) {
     }
 }
 
-$Script = Join-Path $PSScriptRoot "update_version_docs.py"
+$Script = Join-Path $PSScriptRoot "update_version_docs.mjs"
 $Args = @($Script)
 if ($PreflightOnly) {
     $Args += "--preflight-only"
@@ -60,9 +59,9 @@ if ($Model) {
     $Args += @("--model", $Model)
 }
 
-Write-Log ("Executando: {0} {1}" -f $Python, ($Args -join " "))
+Write-Log ("Executando: {0} {1}" -f $Node, ($Args -join " "))
 
-$proc = Start-Process -FilePath $Python `
+$proc = Start-Process -FilePath $Node `
     -ArgumentList $Args `
     -WorkingDirectory $RepoRoot `
     -NoNewWindow `

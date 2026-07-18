@@ -1,0 +1,16 @@
+{
+  "name": "gsoftbrasil-github-io",
+  "private": true,
+  "type": "module",
+  "description": "Documentação de versões Gsoft + automação local version-docs",
+  "scripts": {
+    "version-docs": "node scripts/update_version_docs.mjs",
+    "version-docs:preflight": "node scripts/update_version_docs.mjs --preflight-only"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@cursor/sdk": "^1.0.23"
+  }
+}

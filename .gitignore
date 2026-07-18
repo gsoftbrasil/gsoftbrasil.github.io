@@ -1,5 +1,6 @@
-# Python / automação local
-.venv/
+# Node / automação local
+node_modules/
+.venv*/
 __pycache__/
 *.py[cod]
 .cursor/automation-logs/
@@ -12,4 +13,3 @@ __pycache__/
 *.pem
 api_key.txt
 .cursor/api_key*
-.venv312/
