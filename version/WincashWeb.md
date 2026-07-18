@@ -3,6 +3,19 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 16/07/2026
+**Wincash Web**
+* ``PR 1007``: Melhorias no processamento de **notas fiscais e manifesto** — associação de produtos, validação de eventos e atualização de cache.
+* ``PR 1009``: Persistência do rascunho de **formação de preços** na nota fiscal de entrada.
+* ``PR 1011``: Formação de preços com **iFood** na nota fiscal de entrada.
+
+### 15/07/2026
+**Wincash Web**
+* ``PR 1000``: Melhorias no **cadastro de produtos** — formação de preço, ajuste de estoque, código de barras e histórico de estoque.
+* ``PR 999``: Normalização de campos do cadastro de clientes para **caixa alta**; correção no input de CNPJ.
+* ``PR 1002``: Cadastro de produtos no fluxo de **nota fiscal de entrada**, com validação de código de barras e categorias.
+* ``PR 1005``: Melhorias na listagem de **notas do manifesto** (performance, busca e filtro por data).
+
 ### 10/07/2026
 **Gsoft API**
 * ``PR 995``: Nova rota de **fotos de produtos** na API.

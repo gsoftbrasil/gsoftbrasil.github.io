@@ -1,3 +1,15 @@
+# NFeTop 324
+[Download](https://servidor.gsoft.com.br/NFeTop/324/NFeTop.exe)
+
+A numeração do NFeTop passou da linha **323** para a **324** (publicação **324.2**; não há 324.1 nas releases).
+
+### 324.2 (17/07/2026)
+* ``PR 1013``: Correção do cálculo de **DIFAL** para consumidor final não contribuinte no **Espírito Santo** (cálculo por fora); melhorias no cadastro de alíquotas de ICMS.
+* ``PR 958``: Correção na leitura do **certificado digital** — path e série passam a funcionar de forma independente.
+* ``PR 863``: Painel de configuração da **NFSe Nacional** no NFeTop.
+
+___
+
 # NFeTop 323
 [Download](https://servidor.gsoft.com.br/NFeTop/323/NFeTop.exe)
 
