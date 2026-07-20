@@ -1,3 +1,11 @@
+# Wincash 3024
+[Download](https://servidor.gsoft.com.br/wincash/3024/Wincash.exe)
+
+### 3024.1 (20/07/2026)
+* ``PR 1016``: Correção do campo **Complemento do cardápio**, que estava marcado como obrigatório indevidamente.
+
+___
+
 # Wincash 3023
 [Download](https://servidor.gsoft.com.br/wincash/3023/Wincash.exe)
 
