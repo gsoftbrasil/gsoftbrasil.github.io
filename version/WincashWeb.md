@@ -3,6 +3,14 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 20/07/2026
+**Wincash Web**
+* ``PR 1010``: Ampliação do **cadastro de produtos** — opções de tipo, tabelas de preço, estoque mínimo/máximo, exibição no PDV e formação de preços.
+* ``PR 1018``: Melhorias visuais na tela de **nota fiscal de entrada** e manifesto (layout e responsividade).
+* ``PR 1019``: Tela **Sobre** com versão do aplicativo e status da API.
+* ``PR 1020``: Ajustes visuais na **listagem de produtos** (busca e layout).
+* ``PR 1021``: Melhorias nas **listagens** de clientes e produtos — filtros de status, busca e layout dos filtros.
+
 ### 16/07/2026
 **Wincash Web**
 * ``PR 1007``: Melhorias no processamento de **notas fiscais e manifesto** — associação de produtos, validação de eventos e atualização de cache.
