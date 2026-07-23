@@ -17,7 +17,10 @@ Antes de qualquer outra coisa:
 
 1. Leia `.cursor/skills/update-version-docs/SKILL.md`
 2. Consulte `reference.md` e `examples.md` na mesma pasta conforme necessário
-3. **Não improvise regras** — siga a skill integralmente
+3. Consulte `.cursor/docs/version-docs-decisions.md` para contexto de produto/automação
+4. **Não improvise regras** — siga a skill integralmente
+
+**Pedido de automação / Agendador / CURSOR_API_KEY / WinError 10038:** use a skill `.cursor/skills/run-version-docs-automation/SKILL.md` e `scripts/README.md` (não misturar com o fluxo manual abaixo).
 
 ## Escopo
 
@@ -28,7 +31,7 @@ Antes de qualquer outra coisa:
 | `version/NFCeTop.md` | NFCeTop + NFCeMonitor (sempre juntos) |
 | `version/WincashWeb.md` | Wincash Web + Gsoft API (por data de release) |
 
-- **Fonte:** repositório `gsoftbrasil/ERP-GSOFT` via `gh`
+- **Fonte:** repositório `gsoftbrasil/ERP-GSOFT` via `gh` (fallback git se sem auth — ver reference.md)
 - **Destino:** arquivos em `version/` deste repositório
 
 ## Regra crítica de versionamento
@@ -48,17 +51,20 @@ Antes de qualquer outra coisa:
 - Subseções **Wincash Web** e **Gsoft API** quando aplicável
 - Releases WIP: PRs na data da release WIP
 
+**Deduplicação:** PRs `wincash/` (desktop) → só Wincash.md; `wincash-web` / `gsoftapi` → só WincashWeb.md. Nunca o mesmo PR nos dois.
+
 ## Fluxo ao ser invocado
 
 1. Confirmar qual produto/arquivo e até qual subversão ou data (ou "última release publicada")
-2. Verificar `gh` autenticado (`gh auth login` ou `GH_TOKEN`); no Windows sem PATH: `C:\Program Files\GitHub CLI\gh.exe`
-3. Executar o fluxo da skill: ler `.md` atual → releases → filtrar PRs → detalhar via API → redigir bullets → editar arquivo
+2. Verificar `gh` autenticado (`gh auth login` ou `GH_TOKEN`); no Windows sem PATH: `C:\Program Files\GitHub CLI\gh.exe`; se falhar, fallback git (reference.md)
+3. Executar o fluxo da skill: ler `.md` atual → releases → filtrar PRs → detalhar → redigir bullets → editar arquivo
 4. Rodar o **checklist final** da skill antes de encerrar
-5. Entregar resumo: versões/datas adicionadas, PRs documentados, saltos de numeração observados
+5. Entregar resumo: versões/datas adicionadas, PRs documentados, saltos de numeração, WIP pendente
 
 ## Restrições
 
 - Não editar arquivos fora de `version/` sem pedido explícito
-- Não fazer commit nem push sem pedido do usuário
+- No **chat manual**: não fazer commit nem push sem pedido do usuário
+- Automação **agendada** (Node): commit/PR feitos pelo script `scripts/update_version_docs.mjs` — não reimplementar em Python
 - Perguntar antes de criar nova linha major (ex.: Wincash 3024) se a URL do servidor for incerta
 - Ignorar PRs de build, cursor/skills, doc/docs e produtos fora do escopo do arquivo em edição

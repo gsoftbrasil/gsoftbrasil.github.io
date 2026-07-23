@@ -17,23 +17,37 @@ Consulte [examples.md](examples.md) para exemplos de redação.
 ## Pré-requisitos
 
 - Repositório fonte: `gsoftbrasil/ERP-GSOFT`
-- `gh` autenticado (`gh auth login` ou variável `GH_TOKEN`)
-- Windows sem `gh` no PATH: usar `C:\Program Files\GitHub CLI\gh.exe`
+- Preferir `gh` autenticado (`gh auth login` ou `GH_TOKEN`)
+- Windows sem `gh` no PATH: `C:\Program Files\GitHub CLI\gh.exe`
+- Se `gh` falhar (401/404): usar **fallback git** (ver reference.md)
+
+## Prompt padrão (`/version-docs`)
+
+Ao ser invocado (produto omitido ou “atualize tudo”):
+
+1. Confirmar produto(s) ou assumir os quatro arquivos em `version/`
+2. Atualizar desde a última entrada documentada até a **última release publicada**
+3. Entregar resumo: versões/datas adicionadas, PRs documentados, saltos observados, WIP pendente (se houver)
 
 ## Fluxo
 
 1. **Ler** o arquivo alvo (`version/Wincash.md`, `NFeTop.md`, `NFCeTop.md` ou `WincashWeb.md`) e identificar a última entrada documentada (subversão ou data).
-2. **Listar releases** desde essa data: `gh release list --repo gsoftbrasil/ERP-GSOFT --limit 80`
-3. **Ver corpo** de cada release relevante: `gh release view <tag> --repo gsoftbrasil/ERP-GSOFT`
+2. **Listar releases** desde essa data — preferir `gh`; se falhar, fallback git (reference.md).
+3. **Ver corpo** de cada release relevante.
 4. **Filtrar PRs** do produto alvo (ver reference.md); ignorar build-only e outros produtos.
-5. **Atribuir subversão** conforme regra de versionamento (abaixo).
-6. **Detalhar PRs** via API REST (body vazio é comum — usar commits):
-   ```powershell
-   gh api repos/gsoftbrasil/ERP-GSOFT/pulls/<N> --jq '{title:.title,body:.body}'
-   gh api repos/gsoftbrasil/ERP-GSOFT/pulls/<N>/commits --jq '.[].commit.message'
-   ```
+5. **Atribuir subversão** (ou data, no WincashWeb) conforme regra de versionamento.
+6. **Detalhar PRs** via API REST (body vazio é comum — usar commits) ou via mensagens de commit no fallback git.
 7. **Redigir bullets** em linguagem de usuário (ver examples.md).
-8. **Inserir** no `.md` (subversão mais recente primeiro) e **revisar** checklist final.
+8. **Inserir** no `.md` (mais recente primeiro) e **revisar** checklist final.
+
+## Deduplicação Wincash ↔ WincashWeb
+
+| Branch / título | Arquivo |
+|-----------------|---------|
+| `wincash/` (desktop, mesmo citando Gsoft API) | só `version/Wincash.md` |
+| `wincash-web` / `wincashweb` / `gsoftapi` / `gsoft-api` | só `version/WincashWeb.md` |
+
+**Nunca** listar o mesmo número de PR nos dois arquivos.
 
 ## Regra de versionamento
 
@@ -125,9 +139,13 @@ Para backfill ou regeneração em lote, use `.cursor/scripts/build_wincashweb_md
 
 ## Casos especiais
 
-- **Saltos de numeração** (301.17→305, 306→320, 3023.5 ausente): manter nota explicativa se já existir; não inventar subversões
+- **Saltos de numeração** conhecidos (não inventar intermediárias; manter nota se já existir):
+  - Wincash: 3010.16→3010.18; 3010→3020; 3023.4→3023.6 (sem 3023.5); **3023.17 ausente** (PR interno embarcado em 3023.18)
+  - NFeTop: 301.17→305; 306→320
 - **Nova linha major** (ex.: Wincash 3024): adicionar `# Wincash 3024` + link de download no topo; confirmar URL do servidor se incerto
 - **Release conjunta** (`3020.1-320.1`): documentar só o produto do arquivo em edição
+- Decisões de produto/automação: [`.cursor/docs/version-docs-decisions.md`](../../docs/version-docs-decisions.md)
+- Automação agendada (Node): skill `run-version-docs-automation` e [`scripts/README.md`](../../../scripts/README.md)
 
 ## Checklist final
 

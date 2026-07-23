@@ -139,6 +139,19 @@ Entrada (release/PR bruto) → bullet documentado. Tom: manual de usuário, port
 
 ---
 
+## 8. Deduplicação desktop vs API (mesmo tema, arquivos diferentes)
+
+**Situação:** release com PR desktop que consome a API e PR da própria API.
+
+| PR | Branch | Arquivo |
+|----|--------|---------|
+| 841 | `Erique/wincash/feat/nfse nacional` | `Wincash.md` |
+| 862 | `Erique/gsoftapi/feat/nfse nacional ibscbs` | `WincashWeb.md` (**Gsoft API**) |
+
+Não copiar 841 para WincashWeb nem 862 para Wincash.
+
+---
+
 ## Anti-padrões (não publicar)
 
 ```markdown

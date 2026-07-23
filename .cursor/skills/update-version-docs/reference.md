@@ -73,6 +73,17 @@ Extrair números de PR dos links: `pull/(\d+)`
 
 **Excluir:** `wincash`, `nfetop`, `mdfetop`, `build/`
 
+Quando a release separar NFCeTop e NFCeMonitor, usar:
+
+```markdown
+### 305.7 (17/02/2026)
+**NFCeTop**
+* ``PR 523``: ...
+
+### NFCeMonitor (01/02/2026)
+* ``PR 503``: ...
+```
+
 ### WincashWeb.md (Wincash Web + Gsoft API)
 
 **Incluir Wincash Web:** `wincash-web`, `wincashweb`, `wincash-web/`
@@ -106,17 +117,6 @@ Quando a release trouxer os dois produtos, usar subseções:
 4. Releases WIP: PRs na data da release WIP (não enfileirar).
 5. Cada PR documentado uma vez (primeira release em que aparece).
 
-Quando a release separar NFCeTop e NFCeMonitor, usar:
-
-```markdown
-### 305.7 (17/02/2026)
-**NFCeTop**
-* ``PR 523``: ...
-
-### NFCeMonitor (01/02/2026)
-* ``PR 503``: ...
-```
-
 ## PRs a ignorar sempre
 
 - Título contém `build/` ou começa com `Build Wincash`, `Build NFeTop`, `Build Gsoft API`, `Build Wincash Web`, etc.
@@ -124,7 +124,7 @@ Quando a release separar NFCeTop e NFCeMonitor, usar:
 - Título contém `doc/` ou `docs/` (documentação interna, não release note)
 - PRs de merge/chore sem impacto ao usuário (`chore/`, `merge-`)
 
-## Comandos gh
+## Comandos gh (preferidos)
 
 Listar releases (mais recentes primeiro):
 
@@ -151,6 +151,8 @@ Data de publicação (ISO → DD/MM/YYYY):
 gh release view v2026-06-24 --repo gsoftbrasil/ERP-GSOFT --json publishedAt
 ```
 
+Windows sem PATH: `"C:\Program Files\GitHub CLI\gh.exe"`.
+
 ## Atribuição de versão (WIP → próxima)
 
 Algoritmo:
@@ -173,8 +175,30 @@ Exemplos validados:
 
 Documentar nota quando aplicável (não inventar versões intermediárias):
 
-- Wincash: 3010.16 → 3010.18 (sem 3010.17); 3010 → 3020; 3023.4 → 3023.6 (sem 3023.5)
+- Wincash: 3010.16 → 3010.18 (sem 3010.17); 3010 → 3020; 3023.4 → 3023.6 (sem 3023.5); **3023.17 ausente** (build interno; documentar PRs relevantes em 3023.18)
 - NFeTop: 301.17 → 305; 306 → 320
+
+## Deduplicação Wincash.md ↔ WincashWeb.md
+
+| Critério | Destino |
+|----------|---------|
+| Branch/título `wincash/` **sem** `-web` (ex.: integração NFC-e/NFSe via API no desktop) | `version/Wincash.md` |
+| `wincash-web`, `wincashweb`, `gsoftapi`, `gsoft-api`, `GsoftApi` | `version/WincashWeb.md` |
+
+- Um PR = um arquivo. Antes de inserir, buscar o número do PR nos dois `.md`.
+- Exemplo: PR 841 desktop NFSe → Wincash; PR 862/913 gsoftapi → WincashWeb.
+
+## Fallback sem `gh` autenticado
+
+Ordem:
+
+1. Tentar `gh release list` / `gh release view` / `gh api` (com `GH_TOKEN` ou `gh auth login`).
+2. Se 401, 404 (“Could not resolve to a Repository”) ou “not logged in”:
+   - `git ls-remote --tags https://github.com/gsoftbrasil/ERP-GSOFT.git`
+   - Clone bare parcial (ex.: `git clone --bare --filter=blob:none`) e ler mensagens de tag / histórico `develop` com `git log --format` e `git tag --contains`
+   - Data do cabeçalho: `creatordate` da tag ou `publishedAt` equivalente; formato `DD/MM/YYYY`
+3. Detalhar PRs pelo título do merge `(#N)` + body do commit quando a API REST não estiver disponível.
+4. No resumo final, informar que usou fallback git.
 
 ## Nova linha major
 
