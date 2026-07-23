@@ -32,3 +32,9 @@ Registro estável do “porquê”. Regras operacionais: skills `update-version-
 
 - Releases/PRs: `gsoftbrasil/ERP-GSOFT`
 - Preferir `gh`; sem auth, fallback `git ls-remote` / tags (ver `update-version-docs/reference.md`)
+
+## Mapa do monorepo (contexto interno)
+
+- Pastas e destinos de produto: `ERP-GSOFT/README.md` (repo privado `gsoftbrasil/ERP-GSOFT`) — Wincash, WincashWebMobile, NFeTop, NFCeTop, PDVOff, etc.
+- **Ainda fora** de `version/` neste site (não documentar na automação até decisão explícita): PDVOff, mobile, MDFeTop, Cardápio Digital, GFood, GAF, GSPED, Launcher, Multicash.
+- Automação atual continua **somente** nos quatro arquivos da tabela acima.

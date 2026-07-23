@@ -1,13 +1,8 @@
 # Gsoft do Brasil Sistemas
 
-Documentação das versões dos sistemas da Gsoft
+Documentação das versões dos sistemas da Gsoft para o cliente final.
 
-- [Wincash](./version/Wincash.md)
-- [Wincash Web](./version/WincashWeb.md)
-- [NFeTop](./version/NFeTop.md)
-- [NFCeTop](./version/NFCeTop.md)
-
-<!-- - [3002](./version/3002.md)
-- [3001](./version/3001.md)
-- [3000](./version/3000.md)
--->
+- [Wincash](./version/Wincash.md) — ERP desktop (versão numerada + download).
+- [Wincash Web](./version/WincashWeb.md) — back-office web e Gsoft API (atualização automática).
+- [NFeTop](./version/NFeTop.md) — emissão de NF-e (modelo 55).
+- [NFCeTop](./version/NFCeTop.md) — emissão de NFC-e (modelo 65) e NFCeMonitor.
