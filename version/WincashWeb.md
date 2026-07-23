@@ -66,7 +66,7 @@ A atualização é automática — não há download manual.
 
 ### 19/06/2026
 **Gsoft API**
-* ``PR 879``: Add LimparTempReserva method and enhance Emitir logic for NFe processing
+* ``PR 879``: Melhoria na emissão de **NF-e** — limpeza de reservas temporárias e melhor tratamento de erros e respostas da SEFAZ.
 * ``PR 870``: Remoção de classe quadruplicada
 * ``PR 862``: Implementa a estrutura inicial para emissão de NFS-e, incluindo contratos, serviços e repositórios. Adiciona rotas e handlers para a API, além de documentaçã...
 * ``PR 840``: Implementa a estrutura inicial para emissão de NFS-e, incluindo contratos, serviços e repositórios. Adiciona rotas e handlers para a API, além de documentaçã...
@@ -93,13 +93,13 @@ A atualização é automática — não há download manual.
 * ``PR 845``: Melhorias em **Organizacao pasta dlls**.
 * ``PR 843``: Implementa warmup para SEFAZ NFC-e no startup e refatora lógica de emissão com tentativas de conexão. Adiciona tratamento de erros específicos para falhas de...
 * ``PR 839``: Implementa a exibição da mensagem de erro
-* ``PR 838``: Refactor NFe service to enhance idempotency check for existing notes. Updated logging and validation to ensure CodVenda is greater than 0 before checking for...
+* ``PR 838``: Correção de **idempotência** na emissão de NF-e — evita reprocessar nota já existente (valida código de venda).
 * ``PR 836``: Corrige o send do error handler que sempre enviava mensagens genéricas
 * ``PR 835``: Altera o log de vários memos para um único memo com rolagem
 
 ### 02/06/2026
 **Gsoft API**
-* ``PR 828``: Update WebSocket client for improved liveness and reconnection handling
+* ``PR 828``: Melhoria na conexão em tempo real (**WebSocket**): estabilidade e reconexão automática.
 * ``PR 823``: Foi adicionado o Runner e o WsHandler para deixar a rota valida e funcionando para o cliente.
 
 ### 29/05/2026
@@ -112,9 +112,9 @@ A atualização é automática — não há download manual.
 
 ### 15/05/2026
 **Wincash Web**
-* ``PR 795``: Refactor: reorder menu items in menuData.ts
-* ``PR 794``: Refactor: aprimorar a função de verificação de autorização para suportar valores booleanos e strings
-* ``PR 793``: PageHeader Shortcut contrastado com foreground, em vez de borda
+* ``PR 795``: Reorganização da ordem dos itens do **menu** (incluindo Fluxo de Orçamentos em Vendas e Relatórios).
+* ``PR 794``: Melhoria na verificação de **autorização** de acesso.
+* ``PR 793``: Melhor contraste dos atalhos no **cabeçalho** das páginas.
 * ``PR 792``: Redução da quantidade de informação no histórico de movimentação
 * ``PR 781``: Implementa validação de token e melhorias no gerenciamento de autenticação
 * ``PR 778``: Implementa lógica de refresh token e aprimora o carregamento de empresas no contexto de autenticação. Adiciona suporte para redirecionamento após login com t...
@@ -128,9 +128,9 @@ A atualização é automática — não há download manual.
 
 ### 05/05/2026
 **Wincash Web**
-* ``PR 765``: Remove o webview da pasta
-* ``PR 764``: Remove o webview da pasta
-* ``PR 760``: Histórico de estoque v1
+* ``PR 765``: Remoção do **webview** legado do Wincash Web.
+* ``PR 764``: Fluxo de **orçamentos** no Wincash Web.
+* ``PR 760``: Histórico de **estoque**.
 
 ### 28/04/2026
 **Wincash Web**
@@ -143,14 +143,14 @@ A atualização é automática — não há download manual.
 **Wincash Web**
 * ``PR 742``: Transferência de produtos + componentizações para escalabilidade
 * ``PR 740``: Placeholder title intuitivo e ícone do VisibilityColumn filter trocado de ListFilter para Columns3
-* ``PR 738``: Pedido de compras UI fix
+* ``PR 738``: Correções de interface no **pedido de compras** (layout e campos).
 * ``PR 734``: Estava locais no highlight do cadastro de produtos, sendo que era pra ser quantidade para entender melhor a intenção da mini tabela de estoque
 * ``PR 729``: Pedidos de compra novo layout interno do pedido + DataInput com Popover com Calendar + Lookup Search Input (com variantes) + Fases no pedido de compra
 * ``PR 728``: Pedidos de Compra Layout
 * ``PR 726``: Botão Nova conta a receber
 * ``PR 725``: Contas a receber layout novo
 * ``PR 724``: Contas a Pagar, por enquanto tem apenas filtros
-* ``PR 713``: Remove espaços em branco e classname desnecessário
+* ``PR 713``: Melhorias no cabeçalho e botões do **cadastro de produtos**.
 * ``PR 712``: Correção de compontização
 * ``PR 711``: Menu reorganizado e mais intuitivo, descentralizando o cadastro
 * ``PR 710``: - Correção abertura do Wincash web
@@ -198,7 +198,7 @@ A atualização é automática — não há download manual.
 * ``PR 650``: Nova skill para serializar json
 * ``PR 649``: Remoção do .env do repositório
 * ``PR 648``: Atualiza as dependências com vunerabilidade
-* ``PR 647``: Remove o antigo frontend
+* ``PR 647``: Remoção do frontend legado e organização do projeto **Wincash Web**.
 
 ### 30/03/2026
 **Wincash Web**
@@ -228,9 +228,9 @@ A atualização é automática — não há download manual.
 ### 25/02/2026
 **Wincash Web**
 * ``PR 556``: Alteração no sistema.
-* ``PR 554``: Add UsuarioShortcuts feature integration
-* ``PR 553``: Search and User HorizontalMenu
-* ``PR 552``: Search and User HorizontalMenu
+* ``PR 554``: Atalhos de usuário no **painel** (favoritos e atalhos personalizados).
+* ``PR 553``: Busca e menu horizontal do **usuário** (ícones de favoritos).
+* ``PR 552``: Busca e menu horizontal do **usuário**.
 
 **Gsoft API**
 * ``PR 542``: Implementa a api websocket + documentação
@@ -245,4 +245,4 @@ A atualização é automática — não há download manual.
 
 ### 29/01/2026
 **Gsoft API**
-* ``PR 493``: Improve SSL certificate and library validation in GsoftApiGUI.dpr
+* ``PR 493``: Melhoria na validação de **certificado SSL** e bibliotecas da Gsoft API.
