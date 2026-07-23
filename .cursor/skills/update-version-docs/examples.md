@@ -152,6 +152,26 @@ Não copiar 841 para WincashWeb nem 862 para Wincash.
 
 ---
 
+## 9. Inglês / título técnico → PT-BR de usuário
+
+**PR bruto:** `Update WebSocket client for improved liveness and reconnection handling`
+
+**Bullet final:**
+
+```markdown
+* ``PR 828``: Melhoria na conexão em tempo real (**WebSocket**): estabilidade e reconexão automática.
+```
+
+**PR bruto:** `Refactor: reorder menu items in menuData.ts`
+
+**Bullet final:**
+
+```markdown
+* ``PR 795``: Reorganização da ordem dos itens do **menu**.
+```
+
+---
+
 ## Anti-padrões (não publicar)
 
 ```markdown
@@ -164,4 +184,9 @@ Não copiar 841 para WincashWeb nem 862 para Wincash.
 
 <!-- Ruim: PR de build -->
 * ``PR 918``: patrick/wincash/build/3023.13
+
+<!-- Ruim: inglês colado / arquivo / truncado -->
+* ``PR 838``: Refactor NFe service to enhance idempotency...
+* ``PR 795``: Refactor: reorder menu items in menuData.ts
+* ``PR 493``: Improve SSL certificate and library validation in GsoftApiGUI.dpr
 ```

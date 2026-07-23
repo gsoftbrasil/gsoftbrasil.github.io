@@ -3,8 +3,9 @@ name: update-version-docs
 description: >-
   Atualiza version/Wincash.md, NFeTop.md, NFCeTop.md e WincashWeb.md com base
   em releases e PRs do gsoftbrasil/ERP-GSOFT. Use quando o usuário pedir para
-  documentar versões, atualizar changelog, releases, PRs ou completar subversões
-  (ex.: Wincash 3023.13, NFeTop 323, Wincash Web por data).
+  documentar versões, atualizar changelog, releases, PRs, completar subversões
+  (ex.: Wincash 3023.13, NFeTop 323, Wincash Web por data) ou reescrever bullets
+  em inglês/jargão de dev para português de usuário final.
 ---
 
 # Atualizar documentação de versões
@@ -134,8 +135,21 @@ Para backfill ou regeneração em lote, use `.cursor/scripts/build_wincashweb_md
 ## Redação
 
 - Prioridade: body do PR → mensagens de commit → título da branch
-- Tom: manual de usuário, **não** changelog de dev (sem nomes de branch, sem "What's Changed")
+- Tom: manual de usuário, **português brasileiro** — **não** changelog de dev
 - Antes de editar: buscar PRs já listados no `.md` para não duplicar
+
+**Nunca publicar:**
+
+| Proibido | Motivo |
+|----------|--------|
+| Título/body colado em inglês (`Add`/`Fix`/`Update`/`Remove`/`Refactor`/`Improve`/`UI fix`/`What's Changed`) | Usuário final lê PT |
+| Texto truncado com `...` | Bullet incompleto; reescrever frase fechada |
+| Nomes de arquivo/código (`.ts`, `.dpr`, `menuData`, `GsoftApiGUI`) | Jargão de dev |
+| Nome de branch (`patrick/wincash/...`) ou `@autor` | Changelog interno |
+| Limpeza interna sem impacto (espaços, classname, import não usado) | Omitir o PR |
+
+Se a fonte estiver em inglês ou for título técnico: **reescrever** o benefício para o usuário (consultar commits/`gh` se o body estiver vazio ou truncado).
+Pedido explícito (“limpa inglês”, “reescreve jargão”): varrer o `.md` alvo, corrigir só bullets ruins, manter datas/`PR N`/estrutura.
 
 ## Casos especiais
 
@@ -156,7 +170,7 @@ Para backfill ou regeneração em lote, use `.cursor/scripts/build_wincashweb_md
 - [ ] Datas conferidas com `publishedAt`
 - [ ] Sequência de subversões coerente
 - [ ] Nenhum PR de build listado como item
-- [ ] Texto entendível para usuário final (não desenvolvedor)
+- [ ] Texto em PT-BR de usuário final (sem inglês colado, sem `...`, sem `.ts`/`.dpr`)
 
 **WincashWeb.md:**
 
@@ -166,4 +180,4 @@ Para backfill ou regeneração em lote, use `.cursor/scripts/build_wincashweb_md
 - [ ] Nenhum PR de build listado como item
 - [ ] PRs de integração desktop não duplicados (permanecem no Wincash.md)
 - [ ] Intro explica que Gsoft API está incluída; sem URL de download
-- [ ] Texto entendível para usuário final (não desenvolvedor)
+- [ ] Texto em PT-BR de usuário final (sem inglês colado, sem `...`, sem `.ts`/`.dpr`)
