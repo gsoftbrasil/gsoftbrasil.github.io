@@ -1,6 +1,14 @@
 # Wincash 3024
 [Download](https://servidor.gsoft.com.br/wincash/3024/Wincash.exe)
 
+### 3024.4 (24/07/2026)
+* ``PR 1026``: Melhorias no **manifesto e nota fiscal de entrada** — exige seleção da nota antes de baixar o XML; evita reimportar notas já inseridas; avisos para XML inválido ou incompleto.
+* ``PR 967``: **Central de Pedidos iFood** — gestão de pedidos (confirmar, cancelar, despachar) pelo Wincash (**Ctrl+I**) ou portal web, com integração à Gsoft API.
+* ``PR 1032``: Correção na **configuração de boletos por cedente** — impede configurações duplicadas e ajusta o tratamento de protesto/negativação.
+
+### 3024.2 (20/07/2026)
+* ``PR 1025``: Correção da **impressão duplicada** da promissória em bobina.
+
 ### 3024.1 (20/07/2026)
 * ``PR 1016``: Correção do campo **Complemento do cardápio**, que estava marcado como obrigatório indevidamente.
 
