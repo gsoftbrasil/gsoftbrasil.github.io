@@ -3,6 +3,18 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 25/07/2026
+**Wincash Web**
+* ``PR 1028``: Listagem de produtos com **cor do produto** na linha; ordenação das tabelas de preço por descrição.
+* ``PR 1033``: Ajustes visuais e de navegação — atalhos, campos de data, cadastro de clientes (**Grupos**/regiões); remoção de itens de menu não utilizados.
+
+### 24/07/2026
+**Wincash Web**
+* ``PR 1029``: **Contas a pagar recorrentes** — cadastro e gestão de recorrências na tela de Contas a Pagar.
+
+**Gsoft API**
+* ``PR 1031``: Cancelamento e consulta de **NFSe** no Portal Nacional.
+
 ### 20/07/2026
 **Wincash Web**
 * ``PR 1010``: Ampliação do **cadastro de produtos** — opções de tipo, tabelas de preço, estoque mínimo/máximo, exibição no PDV e formação de preços.
