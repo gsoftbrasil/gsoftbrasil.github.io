@@ -3,6 +3,9 @@
 
 A numeração do NFeTop passou da linha **323** para a **324** (publicação **324.2**; não há 324.1 nas releases).
 
+### 324.4 (27/07/2026)
+* ``PR 1040``: Correção do cálculo de **DIFAL** para destino **Goiás** (cálculo por fora), alinhado ao padrão já usado no Espírito Santo.
+
 ### 324.3 (27/07/2026)
 * ``PR 1035``: Correção do **cBenef** (código de benefício fiscal) em operações **interestaduais** — ajuste de alíquota de ICMS nos itens da NF-e.
 

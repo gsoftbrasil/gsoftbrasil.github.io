@@ -3,6 +3,21 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 28/07/2026
+**Wincash Web**
+* ``PR 1042``: Relatório **Curva ABC de Compras**, com gráficos e exportação para Excel/PDF.
+* ``PR 1048``: Relatório de **Prazo Médio de Compras**, com gráficos e exportação para Excel/PDF.
+* ``PR 1044``: Melhoria na sincronização de **tabelas de preço** — inclusão de margem e margem de lucro.
+* ``PR 1045``: Melhorias no **cadastro de produtos** — natureza do produto, classificação mercadológica e ajustes de layout e campos.
+
+### 27/07/2026
+**Wincash Web**
+* ``PR 1038``: Módulo de **NFSe** (padrão nacional) em Vendas — listagem, detalhe, emissão, cancelamento e DANFSe/PDF.
+* ``PR 1041``: Correção na sincronização de **tabelas de preço** no cadastro de produtos (custo e margem).
+
+**Gsoft API**
+* ``PR 1039``: Acesso remoto via **túnel Gsoft**, substituindo o cliente WebSocket embutido.
+
 ### 25/07/2026
 **Wincash Web**
 * ``PR 1028``: Listagem de produtos com **cor do produto** na linha; ordenação das tabelas de preço por descrição.
