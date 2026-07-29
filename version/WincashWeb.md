@@ -3,6 +3,10 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 29/07/2026
+**Wincash Web**
+* ``PR 1054``: Melhoria na **pesquisa do menu** do Wincash Web.
+
 ### 28/07/2026
 **Wincash Web**
 * ``PR 1042``: Relatório **Curva ABC de Compras**, com gráficos e exportação para Excel/PDF.
