@@ -3,6 +3,14 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 31/07/2026
+**Wincash Web**
+* ``PR 1057``: Relatório de **Saídas por Conta**, com resumo e detalhamento.
+* ``PR 1062``: Melhorias no módulo de **NFSe** — seleção de itens de serviço, ações de SEFIN/configuração, registro de chave e exclusão de registros locais.
+
+**Gsoft API**
+* ``PR 1059`` / ``PR 1063``: Upload e correção de **fotos do cardápio digital** na API.
+
 ### 29/07/2026
 **Wincash Web**
 * ``PR 1054``: Melhoria na **pesquisa do menu** do Wincash Web.
