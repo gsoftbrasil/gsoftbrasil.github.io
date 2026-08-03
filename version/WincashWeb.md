@@ -3,6 +3,14 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 03/08/2026
+**Wincash Web**
+* ``PR 1066``: Melhorias visuais e de filtros em **Contas a Receber** — período por intervalo de datas, filtros situacionais e seleção de cliente.
+* ``PR 1067``: **Segmentação e privilégios** de usuário — controle de acesso por módulo e configurações.
+* ``PR 1069``: Cadastro de **Plano de Contas**, com hierarquia em cascata.
+* ``PR 1070``: Reestruturação do **menu principal** — acesso por módulos (Financeiro, Produtos, Clientes, Vendas, Fiscal e Dashboard) e favoritos.
+* ``PR 1075``: Novo módulo **Dashboard** com indicadores e analytics.
+
 ### 31/07/2026
 **Wincash Web**
 * ``PR 1057``: Relatório de **Saídas por Conta**, com resumo e detalhamento.
