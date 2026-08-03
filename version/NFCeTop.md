@@ -1,9 +1,29 @@
+# NFCeTop 322 / NFCeMonitor
+[Download NFCeTop](https://servidor.gsoft.com.br/NFCeTop/322/NFCeTop.exe) · NFCeTop e NFCeMonitor são documentados juntos nesta linha de versão.
+
+### 322.2 (27/04/2026)
+**NFCeTop**
+* ``PR 741``: Correção do **NCM** — só zera o NCM quando ele já estiver vazio ou zerado (evita limpar NCM válido).
+
+### 322.1 (06/04/2026)
+**NFCeTop**
+* ``PR 658``: Informação adicional ao Fisco (LC 214/2025) quando algum item possui CST de PIS/COFINS **06**.
+
+___
+
 # NFCeTop 321 / NFCeMonitor
 [Download NFCeTop](https://servidor.gsoft.com.br/NFCeTop/321/NFCeTop.exe) · NFCeTop e NFCeMonitor são documentados juntos nesta linha de versão.
 
-### 321.4 (02/04/2026)
+### 321.3 (02/04/2026)
 **NFCeTop**
-* Implementa a informação adicional ao Fisco referente à LC 214/2025 quando qualquer item da nota possui o CST de PIS e COFINS 06.
+* ``PR 655``: Correção na totalização de **IBS e CBS** quando o valor do produto é menor que 1 centavo.
+
+### 321.2 (02/04/2026)
+**NFCeTop**
+* ``PR 653``: Correção ao salvar totais da **reforma tributária (RTC)**.
+* ``PR 654``: Correção na geração das **tags da reforma tributária** (posição correta do dataset antes de emitir a NFC-e).
+
+___
 
 # NFCeTop 305 / NFCeMonitor
 [Download NFCeTop](https://servidor.gsoft.com.br/NFCeTop/305/NFCeTop.exe) · NFCeTop e NFCeMonitor são documentados juntos nesta linha de versão.
