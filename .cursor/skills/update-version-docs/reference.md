@@ -28,8 +28,11 @@ NFCeTop.md: incluir nota de que NFCeTop e NFCeMonitor são documentados juntos n
 
 | Período | Formato | Exemplo |
 |---------|---------|---------|
-| Recente | `v2026-MM-DD` (sufixo `-a` ocasional) | `v2026-06-24`, `v2026-05-22-a` |
+| Atual (a partir de ago/2026) | `AAAA-MM-DD-HHmm` — **sem** prefixo `v` | `2026-08-05-1824` |
+| Intermediário (legado) | `vAAAA-MM-DD` (sufixo `-a` ocasional) | `v2026-06-24`, `v2026-05-22-a` |
 | Antigo | número de build | `3010.15`, `3005.1` |
+
+Tags antigas **não são renomeadas** — só releases novas usam `AAAA-MM-DD-HHmm`. O `HHmm` distingue várias releases no mesmo dia (substitui o sufixo `-a`).
 
 Corpo da release usa seções `## Wincash 3023.13`, `## NFeTop 323.2`, `## Wincash WIP`, etc.
 
@@ -113,7 +116,7 @@ Quando a release trouxer os dois produtos, usar subseções:
 
 1. Percorrer releases da mais antiga à mais recente (backfill) ou posteriores à última data documentada (incremental).
 2. Data do cabeçalho = `publishedAt` da release, formato `DD/MM/YYYY`.
-3. Mesclar tags do mesmo dia sob um único cabeçalho.
+3. Mesclar tags do mesmo dia sob um único cabeçalho (várias `…-HHmm` ou legado `-a`).
 4. Releases WIP: PRs na data da release WIP (não enfileirar).
 5. Cada PR documentado uma vez (primeira release em que aparece).
 
@@ -132,9 +135,10 @@ Listar releases (mais recentes primeiro):
 gh release list --repo gsoftbrasil/ERP-GSOFT --limit 80
 ```
 
-Ver release (corpo com PRs):
+Ver release (corpo com PRs) — usar o nome exato da tag (`gh release list`):
 
 ```powershell
+gh release view 2026-08-05-1824 --repo gsoftbrasil/ERP-GSOFT
 gh release view v2026-06-24 --repo gsoftbrasil/ERP-GSOFT
 ```
 
@@ -148,7 +152,7 @@ gh api repos/gsoftbrasil/ERP-GSOFT/pulls/841/commits --jq '.[].commit.message'
 Data de publicação (ISO → DD/MM/YYYY):
 
 ```powershell
-gh release view v2026-06-24 --repo gsoftbrasil/ERP-GSOFT --json publishedAt
+gh release view 2026-08-05-1824 --repo gsoftbrasil/ERP-GSOFT --json publishedAt
 ```
 
 Windows sem PATH: `"C:\Program Files\GitHub CLI\gh.exe"`.

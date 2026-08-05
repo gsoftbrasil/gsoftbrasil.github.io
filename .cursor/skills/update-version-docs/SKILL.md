@@ -107,7 +107,7 @@ Fluxo:
 2. **Listar releases** posteriores a essa data.
 3. **Filtrar PRs** de Wincash Web e Gsoft API (ver reference.md); ignorar build-only, mobile e integrações desktop.
 4. **Classificar** cada PR em **Wincash Web** ou **Gsoft API** conforme branch/título.
-5. **Agrupar** por `publishedAt` da release (formato `DD/MM/YYYY`); mesclar tags do mesmo dia (ex.: `v2026-05-19` e `v2026-05-19-a`).
+5. **Agrupar** por `publishedAt` da release (formato `DD/MM/YYYY`); mesclar tags do mesmo dia sob um único cabeçalho (legado: `v2026-05-19` + `v2026-05-19-a`; atual: `2026-08-05-1400` + `2026-08-05-1824`).
 6. Releases WIP (`## Gsoft API WIP`, `## Wincash Web WIP`): PRs vão na **data dessa release** (não enfileirar para próximo build).
 7. **Inserir** blocos `### DD/MM/YYYY` (data mais recente primeiro), com subseções **Wincash Web** e **Gsoft API** quando aplicável.
 8. Cada PR documentado **uma única vez** (primeira release em que aparece).

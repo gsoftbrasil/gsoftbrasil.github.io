@@ -2,6 +2,8 @@
 
 Entrada (release/PR bruto) → bullet documentado. Tom: manual de usuário, português brasileiro.
 
+**Tags:** exemplos históricos abaixo usam `vAAAA-MM-DD` (legado). Releases novas: `AAAA-MM-DD-HHmm` sem `v` (ex.: `2026-08-05-1824`). Ver `reference.md`.
+
 ---
 
 ## 1. Feature (3023.12 / PR 841)
