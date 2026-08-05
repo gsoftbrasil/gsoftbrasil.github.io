@@ -3,6 +3,18 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 05/08/2026
+**Wincash Web**
+* ``PR 1080``: Ampliação dos filtros avançados em **Contas a Receber** (região, categoria, forma de pagamento, cedente e período de recebimento); melhorias na listagem de clientes.
+* ``PR 1090``: Módulo de **Cobrança** — consulta e geração de boletos, remessa e retorno CNAB, envio por e-mail e WhatsApp.
+* ``PR 1091``: Melhorias no módulo **NFSe** — filtro por período, alíquota de ISS do emitente, correção do status cancelada indevido; remoção da exclusão local de registros.
+* ``PR 1093``: Correção no tratamento de **datas** na emissão de NFSe.
+* ``PR 1094``: Padronização dos filtros de **data** em Contas a Receber e Contas a Pagar; novos filtros em Contas a Pagar; busca por observação, valor e documento.
+* ``PR 1097``: **Calendário** de vencimentos em Contas a Receber.
+
+**Gsoft API**
+* ``PR 1084``: Registro da **versão da Gsoft API** na inicialização, para acompanhamento de atualizações.
+
 ### 03/08/2026
 **Wincash Web**
 * ``PR 1066``: Melhorias visuais e de filtros em **Contas a Receber** — período por intervalo de datas, filtros situacionais e seleção de cliente.
