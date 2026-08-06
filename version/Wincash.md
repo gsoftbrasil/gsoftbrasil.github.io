@@ -1,3 +1,12 @@
+# Wincash 3025
+[Download](https://servidor.gsoft.com.br/wincash/3025/Wincash.exe)
+
+### 3025.1 (05/08/2026)
+* ``PR 1099``: Correção na **comunicação com a Gsoft API** (porta, URL pública e encoding); campos **cTribNac** e **NCM/NBS** no formulário de NFSe.
+* ``PR 1051``: Suporte a **CNPJ alfanumérico** no cadastro e na validação de documentos.
+
+___
+
 # Wincash 3024
 [Download](https://servidor.gsoft.com.br/wincash/3024/Wincash.exe)
 
