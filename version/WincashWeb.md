@@ -3,6 +3,11 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 06/08/2026
+**Wincash Web**
+* ``PR 1096``: Melhorias no **lançamento de Contas a Pagar** — formulário com tipo/número da NF, usuário, data e centro de custo; descrição alinhada ao plano de contas; coluna Plano de contas com tooltip.
+* ``PR 1106``: Acesso local ao **Wincash Web** via **túnel Gsoft** — a interface passa a ser servida pelo próprio túnel.
+
 ### 05/08/2026
 **Wincash Web**
 * ``PR 1080``: Ampliação dos filtros avançados em **Contas a Receber** (região, categoria, forma de pagamento, cedente e período de recebimento); melhorias na listagem de clientes.
