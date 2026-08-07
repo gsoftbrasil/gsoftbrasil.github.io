@@ -11,6 +11,7 @@ description: >-
 # Automação local version-docs
 
 Fonte operacional completa: [`scripts/README.md`](../../../scripts/README.md).
+Self-hosted Actions: [`docs/github-actions-self-hosted.md`](../../../docs/github-actions-self-hosted.md).
 Decisões de produto: [`.cursor/docs/version-docs-decisions.md`](../../docs/version-docs-decisions.md).
 Regras de changelog: skill [`update-version-docs`](../update-version-docs/SKILL.md).
 
@@ -46,11 +47,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install_scheduled_
 
 Pré-requisitos da pré-validação: `main`, worktree limpo, `gh` com acesso a ERP-GSOFT e a este repo, sem PR aberto `automation/version-docs-*`.
 
-## Cloud Automation vs local
+## Cloud Automation vs local vs Actions
 
 | Caminho | Quando |
 |---------|--------|
-| **Local (padrão)** | Máquina com `gh` + `.env` + Node; Agendador Windows |
+| **Actions self-hosted** | Release no ERP (`repository_dispatch`) + backup `schedule` / `workflow_dispatch` — ver `docs/github-actions-self-hosted.md` |
+| **Local (Agendador)** | Máquina com `gh` + `.env` + Node; opcional se o runner Actions estiver estável |
 | Cloud Automation | Só se o ambiente multi-repo / GitHub App incluir **ERP-GSOFT** e este repo |
 
 Cloud Agent só com `gsoftbrasil.github.io` **não** consegue listar releases do ERP-GSOFT privado.
