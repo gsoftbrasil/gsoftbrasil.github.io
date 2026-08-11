@@ -3,10 +3,29 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 11/08/2026
+**Wincash Web**
+* ``PR 1128``: Melhorias no módulo **Patrimônio** — cadastro de departamentos, código sequencial único e ajustes em transferências e movimentações.
+* ``PR 1129``: Melhorias em **Contas a Pagar** — consulta de contas/fornecedor, confirmações por diálogo e data de pagamento somente leitura.
+* ``PR 1130``: Correção do **saldo anterior** na movimentação bancária.
+* ``PR 1160``: Correção na **data de pagamento** em Contas a Pagar (grava somente a data, sem hora).
+* ``PR 1161``: Tipos de documento em **Contas a Pagar** alinhados ao desktop (DNH, BOL, CRT, DBT, NOT e OUT).
+* ``PR 1162``: Filtros de data com **mês corrente** por padrão e memória do período escolhido (Contas a Receber/Pagar, movimentação bancária e pedido de compras).
+* ``PR 1163``: Padronização do **Pedido de Compras** — alinhado ao desktop (tempo de entrega, sugestão, peso e consulta de produtos).
+
+### 07/08/2026
+**Wincash Web**
+* ``PR 1121``: Novo módulo **Patrimônio** — cadastro de bens com foto, movimentações e histórico (comodato, empréstimo, transferência, manutenção, ajuste e baixa).
+
 ### 06/08/2026
 **Wincash Web**
 * ``PR 1096``: Melhorias no **lançamento de Contas a Pagar** — formulário com tipo/número da NF, usuário, data e centro de custo; descrição alinhada ao plano de contas; coluna Plano de contas com tooltip.
+* ``PR 1103``: Correção na **barra de seleção** das listagens.
 * ``PR 1106``: Acesso local ao **Wincash Web** via **túnel Gsoft** — a interface passa a ser servida pelo próprio túnel.
+* ``PR 1107``: Padronização de **datas**; correções de saldo bancário, competência e centro de custos em Contas a Pagar.
+
+**Gsoft API**
+* ``PR 1104``: Correção de **referência repetida** na API.
 
 ### 05/08/2026
 **Wincash Web**
