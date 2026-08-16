@@ -3,6 +3,15 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 14/08/2026
+**Wincash Web**
+* ``PR 1177``: **Auditoria** das alterações no Wincash Web (cadastros e financeiro) e **senha do dia** para acessar as configurações.
+
+### 13/08/2026
+**Wincash Web**
+* ``PR 1166``: Integração **FGF Tributária** — módulo contratável com base de produtos, saneamento por lotes e sincronização com o parceiro.
+* ``PR 1170``: Processamento automático da **FGF Tributária** — sincronização periódica e registro do último envio e da última aplicação.
+
 ### 11/08/2026
 **Wincash Web**
 * ``PR 1128``: Melhorias no módulo **Patrimônio** — cadastro de departamentos, código sequencial único e ajustes em transferências e movimentações.
