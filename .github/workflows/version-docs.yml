@@ -1,0 +1,111 @@
+name: version-docs
+
+on:
+  workflow_dispatch:
+    inputs:
+      preflight_only:
+        description: "Só pré-validação (não chama o agente Cursor)"
+        type: boolean
+        default: false
+      model:
+        description: "Modelo Cursor SDK (vazio = auto / padrão do script)"
+        type: string
+        required: false
+        default: ""
+  repository_dispatch:
+    types: [version-docs]
+  schedule:
+    # Backup diário ~18:00 America/Sao_Paulo (21:00 UTC)
+    - cron: "0 21 * * *"
+
+concurrency:
+  group: version-docs
+  cancel-in-progress: false
+
+jobs:
+  version-docs:
+    runs-on: [self-hosted, Windows, gsoft-docs]
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Ensure GitHub CLI on PATH
+        shell: pwsh
+        run: |
+          $ghDir = "C:\Program Files\GitHub CLI"
+          if (Test-Path (Join-Path $ghDir "gh.exe")) {
+            Add-Content -Path $env:GITHUB_PATH -Value $ghDir -Encoding utf8
+          }
+          Get-Command gh -ErrorAction Stop | Out-Null
+          gh --version
+
+      - name: Configure git identity
+        shell: pwsh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run version-docs
+        shell: pwsh
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_MODEL: ${{ github.event.inputs.model || '' }}
+          VERSION_DOCS_GH_TOKEN: ${{ secrets.VERSION_DOCS_GH_TOKEN }}
+          PREFLIGHT_ONLY: ${{ github.event.inputs.preflight_only == 'true' }}
+          DISPATCH_TAG: ${{ github.event.client_payload.tag || '' }}
+          DISPATCH_RELEASE_URL: ${{ github.event.client_payload.release_url || '' }}
+        run: |
+          $ErrorActionPreference = "Stop"
+
+          if (-not $env:CURSOR_API_KEY) {
+            throw "Secret CURSOR_API_KEY ausente neste repositório (Settings → Secrets → Actions)."
+          }
+
+          # PAT com acesso a ERP-GSOFT + este repo; senão usa gh da máquina (self-hosted).
+          if ($env:VERSION_DOCS_GH_TOKEN) {
+            $env:GH_TOKEN = $env:VERSION_DOCS_GH_TOKEN
+            $env:GITHUB_TOKEN = $env:VERSION_DOCS_GH_TOKEN
+            Write-Host "Auth gh: secret VERSION_DOCS_GH_TOKEN"
+          } else {
+            Remove-Item Env:\GH_TOKEN -ErrorAction SilentlyContinue
+            Remove-Item Env:\GITHUB_TOKEN -ErrorAction SilentlyContinue
+            Write-Host "Auth gh: credenciais da máquina do runner (gh auth login)"
+          }
+
+          if ($env:DISPATCH_TAG) {
+            Write-Host "Disparado por release: $($env:DISPATCH_TAG) $($env:DISPATCH_RELEASE_URL)"
+          }
+
+          git fetch origin main
+          git checkout --force main
+          git reset --hard origin/main
+          git clean -fd
+
+          $nodeArgs = @("scripts/update_version_docs.mjs")
+          if ($env:PREFLIGHT_ONLY -eq "true") {
+            $nodeArgs += "--preflight-only"
+          }
+          if ($env:CURSOR_MODEL) {
+            $nodeArgs += @("--model", $env:CURSOR_MODEL)
+          }
+
+          Write-Host ("Executando: node {0}" -f ($nodeArgs -join " "))
+          & node @nodeArgs
+          if ($LASTEXITCODE -ne 0) {
+            exit $LASTEXITCODE
+          }

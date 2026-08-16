@@ -140,3 +140,13 @@ Unregister-ScheduledTask -TaskName Gsoft-VersionDocs-Daily -Confirm:$false
 | `../package.json` | Dependência `@cursor/sdk` |
 
 O antigo `update_version_docs.py` / `requirements.txt` foram descontinuados (bug Windows no SDK Python).
+
+## GitHub Actions (self-hosted)
+
+Preferido para atualizar docs após release do ERP-GSOFT.
+
+- Workflow: `.github/workflows/version-docs.yml`
+- Guia do runner nesta máquina: [docs/github-actions-self-hosted.md](../docs/github-actions-self-hosted.md)
+- Secrets no GitHub (repo github.io): `CURSOR_API_KEY`, opcional `VERSION_DOCS_GH_TOKEN`
+- No ERP-GSOFT: secret `DOCS_DISPATCH_TOKEN` + workflow `version-docs-dispatch`
+

@@ -24,9 +24,10 @@ Registro estável do “porquê”. Regras operacionais: skills `update-version-
 ## Automação
 
 - Caminho padrão: **Node** (`@cursor/sdk`) + `gh` local + Agendador Windows (`scripts/`).
-- Secrets em `.env` (`CURSOR_API_KEY`); nunca no repo.
+- **GitHub Actions (preferido para release):** self-hosted Windows neste repo (`.github/workflows/version-docs.yml`) — triggers `repository_dispatch` / `workflow_dispatch` / `schedule`. Doc: `docs/github-actions-self-hosted.md`. O ERP dispara via `version-docs-dispatch` + secret `DOCS_DISPATCH_TOKEN`.
+- Secrets: `.env` local (`CURSOR_API_KEY`) para Agendador; secret Actions `CURSOR_API_KEY` (+ opcional `VERSION_DOCS_GH_TOKEN`) para o runner. Nunca no repo.
 - **Python SDK** (`cursor-sdk`) descontinuado neste repositório no Windows (`WinError 10038`).
-- **Cursor Cloud Automation** sozinha no repo `gsoftbrasil.github.io` falha sem acesso ao `ERP-GSOFT` privado; exige multi-repo / GitHub App com os dois repos, ou permanece no fluxo local.
+- **Cursor Cloud Automation** sozinha no repo `gsoftbrasil.github.io` falha sem acesso ao `ERP-GSOFT` privado; exige multi-repo / GitHub App com os dois repos, ou permanece no fluxo local / self-hosted.
 
 ## Fonte de verdade
 
