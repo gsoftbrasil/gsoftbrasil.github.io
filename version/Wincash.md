@@ -1,6 +1,14 @@
 # Wincash 3025
 [Download](https://servidor.gsoft.com.br/wincash/3025/Wincash.exe)
 
+### 3025.4 (14/08/2026)
+* ``PR 1175``: Cadastro de **categorias de patrimônio** e ampliação da foto do bem ao clicar.
+* ``PR 1173``: Correção na **impressão de departamentos** no Delivery — evita falha na impressão formatada; marca como impresso somente após sucesso.
+
+### 3025.3 (13/08/2026)
+* ``PR 1168``: Correção na aba de **configuração de boletos** no cadastro de cedente — grava ou atualiza conforme já existir configuração; seleção de pastas de remessa e retorno.
+* ``PR 1155``: Correção na **Curva ABC de vendas** quando há custo ou totais zerados (evita erro de divisão por zero).
+
 ### 3025.1 (05/08/2026)
 * ``PR 1099``: Correção na **comunicação com a Gsoft API** (porta, URL pública e encoding); campos **cTribNac** e **NCM/NBS** no formulário de NFSe.
 * ``PR 1051``: Suporte a **CNPJ alfanumérico** no cadastro e na validação de documentos.
