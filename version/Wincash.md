@@ -1,3 +1,12 @@
+# Wincash 3026
+[Download](https://servidor.gsoft.com.br/wincash/3026/Wincash.exe)
+
+### 3026.1 (20/08/2026)
+* ``PR 1341``: Correção na emissão de **NFSe** — envia a loja correta (primeira loja cadastrada) quando o terminal está sem loja.
+* ``PR 1261``: Aviso no **Balcão** quando a consulta por código de barras não encontra o produto.
+
+___
+
 # Wincash 3025
 [Download](https://servidor.gsoft.com.br/wincash/3025/Wincash.exe)
 
