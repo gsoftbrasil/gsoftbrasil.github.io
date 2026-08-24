@@ -3,6 +3,65 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 24/08/2026
+**Wincash Web**
+* ``PR 1379`` / ``PR 1380``: Novo **Balcão Web** — lançamento de itens, fechamento (F9), formas e condições de pagamento, lookup de cliente e comprovante.
+* ``PR 1371``: Filtros por **categoria** e **departamento** na listagem de bens do Patrimônio.
+* ``PR 1363``: Melhoria de desempenho nas fotos do **Patrimônio** — miniatura na lista e imagem completa só no zoom.
+* ``PR 1365``: Fotos do **Patrimônio** gravadas em disco, com melhor desempenho.
+
+**Gsoft API**
+* ``PR 1375``: Cálculo de **IBS e CBS** na emissão de NF-e e NFC-e pela API.
+
+### 21/08/2026
+**Wincash Web**
+* ``PR 1356``: Destino **PDV/Banco** em Contas a Pagar alinhado ao desktop; correção no lookup sem código órfão.
+* ``PR 1354``: **Recorrência** em Contas a Pagar — geração e reposição do título ao pagar.
+* ``PR 1358``: Módulos **Patrimônio** e **iFood** passam a ser opcionais (contratáveis); ajustes em Contas a Pagar e menu Fiscal.
+* ``PR 1360``: Relatório de **Prazo Médio de Pagamento** — valor a vencer, filtro por tipo de data e detalhe dos títulos da nota.
+
+### 20/08/2026
+**Wincash Web**
+* ``PR 1326``: Cadastro de **lojas** nas configurações do Wincash Web.
+* ``PR 1329``: Melhorias em **Consultar Vendas** — período na barra e listagem somente após buscar; reorganização dos cards de relatórios.
+* ``PR 1345``: Cadastro de **emitentes de NF-e** e certificado no Wincash Web (evita pedir o arquivo a cada nota).
+* ``PR 1347``: Correção na pré-visualização do **XML de NF de entrada** via túnel.
+
+**Gsoft API**
+* ``PR 1335``: Impede uma segunda instância da **Gsoft API** na mesma pasta.
+* ``PR 1330``: Impede duas instâncias do **túnel Gsoft** na mesma origem.
+
+### 19/08/2026
+**Wincash Web**
+* ``PR 1319``: Correção de **datas** e lookup de **vendedor** no Demonstrativo de Vendas.
+* ``PR 1320``: Ações de produto (**Definir cor**, **Alterar preço**, **Inserir código de barras**) ocultas sem privilégio de edição.
+* ``PR 1324``: Correção na configuração financeira com envio correto da **loja**.
+* ``PR 1325``: Correção do **crédito de devolução** no Demonstrativo de Vendas; lista só vendedores ativos.
+
+**Gsoft API**
+* ``PR 1323``: Correção na listagem de **NF de entrada** quando a loja está nula ou zerada.
+* ``PR 1322``: Encerramento controlado da API com identificação da origem.
+
+### 18/08/2026
+**Wincash Web**
+* ``PR 1302``: Autenticação do **túnel Gsoft** por CNPJ e MAC.
+
+### 17/08/2026
+**Wincash Web**
+* ``PR 1274``: Relatório **Demonstrativo de Vendas** no Wincash Web (valores, CMV, markup, lucro e crédito).
+* ``PR 1282``: Correção na atualização de privilégios do **Demonstrativo de Vendas**.
+* ``PR 1285``: Correção no lançamento de **movimentação bancária** (privilégios e loja).
+* ``PR 1290``: Correção de mensagem truncada e rolagem no **lançamento bancário** (plano de contas).
+* ``PR 1291``: Correções na **movimentação bancária**.
+* ``PR 1292`` / ``PR 1294``: Total do filtro no **rodapé** de Contas a Receber e Contas a Pagar (todos os títulos, não só a página).
+
+**Gsoft API**
+* ``PR 1293``: Inclusão da chave de **Prazo Médio de Pagamento** no catálogo de recursos da API.
+
+### 16/08/2026
+**Wincash Web**
+* ``PR 1271``: **Privilégios por loja** — controle de acesso separado por unidade.
+
 ### 14/08/2026
 **Wincash Web**
 * ``PR 1177``: **Auditoria** das alterações no Wincash Web (cadastros e financeiro) e **senha do dia** para acessar as configurações.
