@@ -6,4 +6,4 @@ Documentação das versões dos sistemas da Gsoft para o cliente final.
 - [Wincash Web](./version/WincashWeb.md) — back-office web e Gsoft API (atualização automática).
 - [NFeTop](./version/NFeTop.md) — emissão de NF-e (modelo 55).
 - [NFCeTop](./version/NFCeTop.md) — emissão de NFC-e (modelo 65) e NFCeMonitor.
-- [Cronograma](./version/previsao-entrega-web.md) -  Migração do Wincash desktop para o Wincash Web.
+- [Cronograma](./version/previsao-entrega-web.md) —  Migração do Wincash desktop para o Wincash Web.
