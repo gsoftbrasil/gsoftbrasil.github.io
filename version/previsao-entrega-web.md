@@ -117,7 +117,7 @@
 | 3.9 Vale-compras                                       |01/03/2027|||
 | 3.10 Permuta                                           |01/03/2027|||
 | 3.11 Ocorrência                                        |31/03/2027|||
-| 3.12 Locação                                           |31/01/2026|||
+| 3.12 Locação                                           |31/03/2027|||
 | 3.13 Relatórios de Requisições                         |30/10/2026|||
 | 3.14 Histórico de Exclusões                            |-|-|Não será desenvolvido|
 | 3.15 Buscar Vendas Ctrl+V                              |30/06/2026|30/06/2026||/vendas/consultavenda|
@@ -151,7 +151,7 @@
 | 6. Relatórios                                          |-|-|-|
 | 6.1 Compras                                            |-|-|-|
 | 6.1.1 Faturas                                          |-|-|Não será desenvolvido|
-| 6.1.2 Previsão de Compras                              |30/11/2026|||
+| 6.1.2 Previsão de Compras                              |04/09/2026|||
 | 6.1.3 Compras por Produto                              |30/11/2026|||
 | 6.2 Produtos                                           |-|-|-|
 | 6.2.1 Lista Geral                                      |30/09/2026|||
@@ -193,10 +193,10 @@
 | 6.2.15 Relatório de Classificação de Produtos          |-|-|Não será desenvolvido|
 | 6.2.16 Ajustes de produtos                             |-|-|Não será desenvolvido|
 | 6.2.17 Controle de Lotes                               |-|-|-|
-| 6.2.17.1 Clientes por Lote                             |31/02/2027|||
-| 6.2.17.2 Lotes por Cliente                             |31/02/2027|||
-| 6.2.17.3 Lotes por Produto                             |31/02/2027|||
-| 6.2.17.4 Lotes por Vencimento                          |31/02/2027|||
+| 6.2.17.1 Clientes por Lote                             |25/02/2027|||
+| 6.2.17.2 Lotes por Cliente                             |25/02/2027|||
+| 6.2.17.3 Lotes por Produto                             |25/02/2027|||
+| 6.2.17.4 Lotes por Vencimento                          |25/02/2027|||
 | 6.2.18 Por Grade                                       |-|-|Não será desenvolvido|
 | 6.2.19 Por Data de Validade                            |30/09/2026|||
 | 6.2.20 Vendidos por Classificação Mercadológica        |-|-|Não será desenvolvido|
@@ -230,7 +230,7 @@
 | 6.6 Operações de Estoque                               |30/09/2026|||
 | 6.7 Dem. de Vendas                                     |-|-|-|
 | 6.7.1 Vendas Detalhado                                 |17/08/2026|17/08/2026||/vendas/relatorios/demonstrativo-vendas|
-| 6.7.2 Vendas Detalhado Com Itens                       |30/11/2026|||
+| 6.7.2 Vendas Detalhado Com Itens                       |04/09/2026|||
 | 6.7.3 Vendas Detalhado Por Forma de Pagto e NFe        |-|-|Não será desenvolvido|
 | 6.7.4 Análise Diária de Vendas por Produto             |30/11/2026|||
 | 6.7.5 Por Categoria Resumido                           |-|-|Não será desenvolvido|
