@@ -3,6 +3,55 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 02/09/2026
+**Wincash Web**
+* ``PR 1430``: Relatório **Curva ABC de Vendas**.
+* ``PR 1431``: Relatório **Curva ABC de Clientes** (grupo/rota e inadimplência).
+* ``PR 1432``: Relatório **Curva ABC de Vendedores**.
+* ``PR 1433``: Relatório **Curva ABC de Perdas**.
+* ``PR 1457``: Cadastro de **fornecedores** (incluindo CNPJ alfanumérico).
+* ``PR 1504``: Relatório **Previsão de Compras**.
+* ``PR 1476`` / ``PR 1477`` / ``PR 1478`` / ``PR 1479`` / ``PR 1480`` / ``PR 1481`` / ``PR 1482`` / ``PR 1483`` / ``PR 1484`` / ``PR 1485``: **Multiempresa** — escopo por loja/empresa em Contas a Pagar/Receber, movimentação bancária, cobrança, consulta consolidada, dashboard e grupos de empresas.
+* ``PR 1489`` / ``PR 1490`` / ``PR 1492`` / ``PR 1501`` / ``PR 1502``: Ajustes de **escopo multiempresa**, privilégios na interface e gate liga/desliga.
+* ``PR 1506``: Correção do filtro por **loja** em Contas a Pagar e Contas a Receber.
+* ``PR 1509``: Melhorias em Contas a Pagar/Receber — filtros que persistem ao voltar; situação e totais de recebimento.
+* ``PR 1461`` / ``PR 1466`` / ``PR 1469``: Continuação da **NF de entrada** — atualização de produtos, lançamento/exclusão de item manual e exclusão de nota em conferência.
+* ``PR 1468``: **Consulta de produtos** paginada (busca e ordenação no servidor).
+* ``PR 1470`` / ``PR 1486`` / ``PR 1503``: Continuação do **Balcão Web** — navegação por teclado no fechamento, busca de pedidos/requisições e estoque da loja no resumo.
+
+**Gsoft API**
+* ``PR 1513``: Preenchimento automático de **loja** em registros sem loja na inicialização da API.
+
+### 28/08/2026
+**Wincash Web**
+* ``PR 1446``: Relatório **Balanço de estoque** — filtros, totais, Excel e impressão.
+* ``PR 1429`` / ``PR 1441`` / ``PR 1453``: Continuação da **NF de entrada** — abas, formação de preço/custo e desfazer entrada com progresso.
+* ``PR 1439``: Consulta de **plano de contas** em Contas a Pagar — inclui contas pai e botão Buscar (paridade com o desktop).
+* ``PR 1440``: Correção no **estorno** de Contas a Pagar e na exclusão na movimentação bancária (vínculos corretos).
+* ``PR 1442``: Indicador **Top produtos comprados** alinhado às notas lançadas no desktop.
+
+**Gsoft API**
+* ``PR 1436``: Sincronização automática do **manifesto DF-e** (a cada 3 horas, fora da madrugada).
+* ``PR 1444``: Correção no **parcelamento** de Contas a Pagar gerado a partir da NF de entrada.
+
+### 27/08/2026
+**Wincash Web**
+* ``PR 1405``: Total de **crédito de devolução** no Demonstrativo de Vendas alinhado ao desktop.
+* ``PR 1415``: Continuação do **Balcão Web** (fase P2) — baixa de estoque, desconto/acréscimo no F9 e finalização do pagamento.
+* ``PR 1420``: Campo **tipo de ambiente** (produção/homologação) no cadastro de emitente de NF-e.
+* ``PR 1421``: Reformulação da **NF de entrada** — preview, filtros, manifesto e formação de preço.
+
+### 25/08/2026
+**Wincash Web**
+* ``PR 1385`` / ``PR 1387`` / ``PR 1389``: Continuação do **Balcão Web** (fase P1) — crédito/cashback, acréscimo, entrega, tabela de preço, cadastro rápido de cliente e fechamento em etapas.
+* ``PR 1386``: Correção de lentidão e travamentos em formulários.
+* ``PR 1383``: **Home** com launchpad de indicadores e comunicados.
+* ``PR 1394``: Intervalo do carrossel de comunicados ajustado para 12 segundos.
+* ``PR 1395``: Imagem do comunicado sem corte na home.
+
+**Gsoft API**
+* ``PR 1398``: Ordem manual de **produtos e complementos** no cardápio digital.
+
 ### 24/08/2026
 **Wincash Web**
 * ``PR 1379`` / ``PR 1380``: Novo **Balcão Web** — lançamento de itens, fechamento (F9), formas e condições de pagamento, lookup de cliente e comprovante.

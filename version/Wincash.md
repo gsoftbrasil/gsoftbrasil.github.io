@@ -1,5 +1,27 @@
+# Wincash 3030
+[Download](https://servidor.gsoft.com.br/wincash/3030/Wincash.exe)
+
+A numeração do Wincash passou da linha **3026** para a **3030** (não há versões 3027 a 3029 publicadas nas releases).
+
+### 3030.1 (02/09/2026)
+* ``PR 1458``: Correção na exibição da **classificação mercadológica** (setor/grupo/subgrupo) ao navegar entre produtos no cadastro.
+
+___
+
 # Wincash 3026
 [Download](https://servidor.gsoft.com.br/wincash/3026/Wincash.exe)
+
+### 3026.15 (28/08/2026)
+Não há builds **3026.5** a **3026.14** nas releases (salto **3026.4 → 3026.15**).
+
+* ``PR 1435``: Na impressão A4 personalizada (venda, orçamento, foto e requisição), oculta a coluna e o box de **desconto** quando a opção **Não exibir desconto** está ativa.
+
+### 3026.4 (25/08/2026)
+Não há builds **3026.2** e **3026.3** nas releases (salto **3026.1 → 3026.4**).
+
+* ``PR 1388``: Na **NF de entrada**, ao replicar a formação de preço para itens da mesma linha, atualiza também as **tabelas de preço** (A–E) de todos os itens.
+* ``PR 1359``: Correção ao gravar **informação nutricional** e informações extras no cadastro de produtos (aba Balança).
+* ``PR 1343``: Mensagem clara ao faltar permissão para **emitir NFS-e** (deixa de parecer recusa de relatório).
 
 ### 3026.1 (20/08/2026)
 * ``PR 1341``: Correção na emissão de **NFSe** — envia a loja correta (primeira loja cadastrada) quando o terminal está sem loja.
