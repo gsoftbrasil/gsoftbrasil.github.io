@@ -1,3 +1,13 @@
+# NFeTop 330
+[Download](https://servidor.gsoft.com.br/NFeTop/330/NFeTop.exe)
+
+A numeração do NFeTop passou da linha **324** para a **330** (não há versões 325 a 329 publicadas nas releases).
+
+### 330.1 (02/09/2026)
+* Publicação da linha **330** do NFeTop (release conjunta com Wincash 3030.1, NFCeTop 330.1 e MDFeTop 330.1).
+
+___
+
 # NFeTop 324
 [Download](https://servidor.gsoft.com.br/NFeTop/324/NFeTop.exe)
 

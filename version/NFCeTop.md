@@ -1,3 +1,14 @@
+# NFCeTop 330 / NFCeMonitor
+[Download NFCeTop](https://servidor.gsoft.com.br/NFCeTop/330/NFCeTop.exe) · NFCeTop e NFCeMonitor são documentados juntos nesta linha de versão.
+
+A numeração do NFCeTop passou da linha **322** para a **330** (não há versões 323 a 329 publicadas nas releases).
+
+### 330.1 (02/09/2026)
+**NFCeTop**
+* ``PR 1308``: Correção no **somatório da base de cálculo do ICMS** (CST 20) — arredondamento em 2 casas, evitando rejeição do cupom na Sefaz.
+
+___
+
 # NFCeTop 322 / NFCeMonitor
 [Download NFCeTop](https://servidor.gsoft.com.br/NFCeTop/322/NFCeTop.exe) · NFCeTop e NFCeMonitor são documentados juntos nesta linha de versão.
 
