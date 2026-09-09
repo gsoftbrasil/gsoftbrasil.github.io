@@ -1,5 +1,22 @@
 #!/usr/bin/env python3
-"""Gera version/WincashWeb.md a partir do histórico do ERP-GSOFT (develop + tags)."""
+"""
+DESCONTINUADO — não usar para backfill.
+
+Desde 2026-09, version/WincashWeb.md segue versões numeradas das releases
+(igual Wincash/NFeTop), via skill update-version-docs e automação Node.
+
+Script legado: gerava blocos só por data (develop + tags).
+"""
+import sys
+
+print(
+    "build_wincashweb_md.py está descontinuado. "
+    "Use a skill update-version-docs / scripts/update_version_docs.mjs.",
+    file=sys.stderr,
+)
+sys.exit(1)
+
+# --- código legado abaixo (não executado) ---
 import re
 import subprocess
 from collections import defaultdict

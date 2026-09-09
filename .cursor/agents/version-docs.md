@@ -30,7 +30,7 @@ Antes de qualquer outra coisa:
 | `version/Wincash.md` | Wincash desktop (sem web, mobile, launcher, totem, pdvoff) |
 | `version/NFeTop.md` | NFeTop |
 | `version/NFCeTop.md` | NFCeTop + NFCeMonitor (sempre juntos) |
-| `version/WincashWeb.md` | Wincash Web + Gsoft API (por data de release) |
+| `version/WincashWeb.md` | Wincash Web + Gsoft API (versão numerada da release) |
 
 - **Fonte:** repositório `gsoftbrasil/ERP-GSOFT` via `gh` (fallback git se sem auth — ver reference.md)
 - **Destino:** arquivos em `version/` deste repositório
@@ -45,22 +45,23 @@ Antes de qualquer outra coisa:
 - Release `## Wincash WIP` (sem build) → PRs vão para a **próxima subversão numerada**
 - Ao atualizar NFeTop/NFCeTop com entradas legadas só com data, **migrar** para a subversão numerada seguinte
 
-**WincashWeb.md (exceção):**
+**WincashWeb.md:**
 
-- Usar **apenas** cabeçalhos `### DD/MM/YYYY` (sem subversão numerada)
+- Cabeçalhos com versão numerada (`### 1.0.70 / 100.1 (DD/MM/YYYY)` ou `### Gsoft API 50.5 (...)`); nunca só data
 - Sem URL de download (atualização automática)
 - Subseções **Wincash Web** e **Gsoft API** quando aplicável
-- Releases WIP: PRs na data da release WIP
+- Releases WIP: enfileirar por produto → próxima versão numerada daquele produto
+- Bullets em linguagem de usuário final (sem tabelas, libs, falhas internas)
 
-**Deduplicação:** PRs `wincash/` (desktop) → só Wincash.md; `wincash-web` / `gsoftapi` → só WincashWeb.md. Nunca o mesmo PR nos dois.
+**Deduplicação:** PRs `wincash/` em seção desktop → só Wincash.md; web/api e `wincash/` em seção Web na release → WincashWeb.md. Nunca o mesmo PR nos dois.
 
 ## Fluxo ao ser invocado
 
-1. Confirmar qual produto/arquivo e até qual subversão ou data (ou "última release publicada")
+1. Confirmar qual produto/arquivo e até qual subversão (ou "última release publicada")
 2. Verificar `gh` autenticado (`gh auth login` ou `GH_TOKEN`); no Windows sem PATH: `C:\Program Files\GitHub CLI\gh.exe`; se falhar, fallback git (reference.md)
 3. Executar o fluxo da skill: ler `.md` atual → releases → filtrar PRs → detalhar → redigir bullets → editar arquivo
 4. Rodar o **checklist final** da skill antes de encerrar
-5. Entregar resumo: versões/datas adicionadas, PRs documentados, saltos de numeração, WIP pendente
+5. Entregar resumo: versões adicionadas, PRs documentados, saltos de numeração, WIP pendente
 
 ## Restrições
 

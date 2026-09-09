@@ -189,7 +189,8 @@ Tarefa (automação diária local):
 - Edite **somente** arquivos em \`version/\`
 - **NÃO** faça commit, push, merge nem abra PR (o script externo cuida disso)
 - Se não houver release/PR novo para documentar: não altere nada
-- Ao final, responda em português com resumo: arquivos alterados, versões/datas adicionadas, PRs documentados, saltos observados; ou diga que não houve mudanças
+- Em \`version/WincashWeb.md\`: use **versões numeradas das releases** (não cabeçalhos só com data); WIP → próxima versão do produto; bullets em linguagem de usuário final (sem tabelas, libs, falhas internas)
+- Ao final, responda em português com resumo: arquivos alterados, versões adicionadas, PRs documentados, saltos observados; ou diga que não houve mudanças
 `;
 }
 

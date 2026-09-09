@@ -9,7 +9,7 @@ Registro estável do “porquê”. Regras operacionais: skills `update-version-
 | `version/Wincash.md` | Wincash desktop | Subversão (`3023.20`) + data de publicação |
 | `version/NFeTop.md` | NFeTop | Subversão |
 | `version/NFCeTop.md` | NFCeTop + NFCeMonitor | Subversão / subseções |
-| `version/WincashWeb.md` | Wincash Web + **Gsoft API** | **Só data** (`### DD/MM/YYYY`); sem URL de download |
+| `version/WincashWeb.md` | Wincash Web + **Gsoft API** | Versão numerada da release (`### 1.0.70 / 100.1 (DD/MM/YYYY)`); sem URL de download |
 
 - Nome da página Web prioriza “Wincash Web” para o leitor; intro do arquivo deixa claro que a Gsoft API entra no mesmo changelog.
 - Integração **desktop** que consome a API permanece no `Wincash.md`; mudanças na API/front web vão no `WincashWeb.md` (sem duplicar PR).
@@ -18,8 +18,7 @@ Registro estável do “porquê”. Regras operacionais: skills `update-version-
 
 > Se o recurso não saiu em uma versão específica, é porque ele vai sair na próxima.
 
-- Wincash / NFeTop / NFCeTop: nunca cabeçalho só com data; WIP → próxima subversão numerada.
-- WincashWeb: WIP fica na **data da release WIP** (não há build numerado).
+- Todos os produtos em `version/`: nunca cabeçalho só com data; WIP → próxima subversão numerada (Web e API com filas independentes no WincashWeb.md).
 
 ## Automação
 

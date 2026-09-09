@@ -101,42 +101,32 @@ Entrada (release/PR bruto) → bullet documentado. Tom: manual de usuário, port
 
 ---
 
-## 6. Wincash Web por data (PR 919 / Gsoft API)
+## 6. Wincash Web WIP → próxima versão (PR 1536 / histórico de preços)
 
-**Release:** `v2026-06-24-a` — `## Gsoft API`
+**Release WIP:** `v2026-09-05-2145` — `## Wincash Web WIP` (sem número)
 
-**PR bruto:**
-- Título: `patrick/gsoftapi/build/...` → **ignorar** (build)
-- Título: `erique/gsoftapi/feat/nfse-endpoint`
-- Body: `Endpoint para emissão de NFSe Nacional via API.`
+**Release com build:** `v2026-09-09-0129` — `## Wincash Web 1.0.70, GsoftApi 100.1`
 
-**Seção final** (data = `publishedAt` da release):
+**Seção final** (versão + data da release do build):
 
 ```markdown
-### 24/06/2026
-**Gsoft API**
-* ``PR 919``: Endpoint de emissão de **NFSe Nacional** via API.
+### 1.0.70 / 100.1 (09/09/2026)
+**Wincash Web**
+* ``PR 1536``: Consulta de **histórico de preços** no cadastro de produtos.
 ```
 
 ---
 
 ## 7. Wincash Web + Gsoft API na mesma release
 
-**Release:** `v2026-06-19`
-
-**PRs brutos:**
-- `867`: `erique/wincash-web/feat/cardapio-digital`
-- `841`: `erique/gsoftapi/feat/nfse-nacional` → classificar como API (não desktop)
+**Release:** `v2026-09-02-0030` — `## GsoftAPI 50.3, Wincash Web 1.0.63`
 
 **Seção final:**
 
 ```markdown
-### 19/06/2026
+### 1.0.63 / 50.3 (02/09/2026)
 **Wincash Web**
-* ``PR 867``: **Cardápio digital** — tela de gestão de cardápio.
-
-**Gsoft API**
-* ``PR 841``: Suporte à emissão de **NFSe Nacional**.
+* ``PR 1506``: Correção do filtro por **loja** em Contas a Pagar e Contas a Receber.
 ```
 
 ---
@@ -161,7 +151,7 @@ Não copiar 841 para WincashWeb nem 862 para Wincash.
 **Bullet final:**
 
 ```markdown
-* ``PR 828``: Melhoria na conexão em tempo real (**WebSocket**): estabilidade e reconexão automática.
+* ``PR 828``: Melhoria na conexão em tempo real com o Wincash Web — maior estabilidade e reconexão automática.
 ```
 
 **PR bruto:** `Refactor: reorder menu items in menuData.ts`
@@ -180,7 +170,7 @@ Não copiar 841 para WincashWeb nem 862 para Wincash.
 <!-- Ruim: changelog de dev -->
 * gil/wincash/feat/impressao-danfse by @gsoftdobrasil in #910
 
-<!-- Ruim: entrada só com data (Wincash/NFeTop/NFCeTop — OK em WincashWeb.md) -->
+<!-- Ruim: entrada só com data (todos os produtos, inclusive WincashWeb.md) -->
 ### (28/04/2026)
 * ``PR 751``: ...
 

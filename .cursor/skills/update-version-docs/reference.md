@@ -10,7 +10,7 @@
 | Destino NFCeTop | `version/NFCeTop.md` |
 | Destino Wincash Web | `version/WincashWeb.md` |
 
-WincashWeb.md: documenta **Wincash Web** e **Gsoft API** juntos, por data de release, sem URL de download.
+WincashWeb.md: documenta **Wincash Web** e **Gsoft API** juntos, por **versão numerada da release**, sem URL de download.
 
 ## URLs de download
 
@@ -44,8 +44,10 @@ Regex úteis (case insensitive):
 - NFeTop: `NFeTop\s+(\d+\.\d+(?:\.\d+)?)`
 - NFCeTop: `NFCeTop\s+(\d+\.\d+(?:\.\d+)?)`
 - Builds agrupados: `3020\.1-320\.1` (Wincash + NFeTop na mesma release)
-- Wincash Web: `Wincash\s+Web`
-- Gsoft API: `Gsoft\s+API`
+- Wincash Web: `Wincash\s+Web\s+(\d+\.\d+(?:\.\d+)?)`
+- Gsoft API: `Gsoft\s*Api(?:GUI)?\s+(\d+(?:\.\d+)?(?:\.\d+)?)` (ignorar seção `GsoftApiGUI` — produto distinto)
+- WIP: `Wincash\s+Web.*WIP`, `Gsoft\s*Api.*WIP`, ou seção sem número
+- Mislabel: `## Wincash 1.0.64` com PRs web → tratar como **Wincash Web 1.0.64**
 
 Extrair números de PR dos links: `pull/(\d+)`
 
@@ -89,36 +91,41 @@ Quando a release separar NFCeTop e NFCeMonitor, usar:
 
 ### WincashWeb.md (Wincash Web + Gsoft API)
 
-**Incluir Wincash Web:** `wincash-web`, `wincashweb`, `wincash-web/`
+**Incluir Wincash Web:** `wincash-web`, `wincashweb`, `wincash-web/`, `patrick/web`
 
 **Incluir Gsoft API:** `gsoftapi`, `gsoft-api`, `gsoft api`, `GsoftApi`
 
+**Na seção `## Wincash Web` / `## WincashWeb` da release:** incluir também PRs `wincash/` (ex.: Balcão Web, multiempresa) — não são desktop puro.
+
 **Excluir:**
 
-- `wincash-web-mobile`, `mobile`, `launcher`, `totem`, `pdvoff`, `pdv-off`
-- PRs desktop `wincash/` (sem `-web`) — ficam no Wincash.md mesmo que mencionem a API
+- `wincash-web-mobile`, `mobile`, `launcher`, `totem`, `pdvoff`, `pdv-off`, `gsoftapigui`
+- PRs desktop `wincash/` **fora** de seção Web na release — ficam no Wincash.md
 - `build/`, `Build Gsoft API`, `Build Wincash Web`
 - `wincash`, `nfetop`, `nfcetop`, `mdfetop`, `multicash`
 - `doc/`, `docs/`, `cursor/`
 
-Quando a release trouxer os dois produtos, usar subseções:
+Cabeçalho por publicação numerada (junto por release):
 
 ```markdown
-### 24/06/2026
+### 1.0.70 / 100.1 (09/09/2026)
 **Wincash Web**
-* ``PR 867``: ...
+* ``PR 1584``: ...
 
 **Gsoft API**
-* ``PR 919``: ...
+* ``PR 1564``: ...
 ```
 
-**Atribuição por data** (sem subversão):
+**Atribuição por versão** (mesma regra WIP dos demais produtos):
 
-1. Percorrer releases da mais antiga à mais recente (backfill) ou posteriores à última data documentada (incremental).
-2. Data do cabeçalho = `publishedAt` da release, formato `DD/MM/YYYY`.
-3. Mesclar tags do mesmo dia sob um único cabeçalho (várias `…-HHmm` ou legado `-a`).
-4. Releases WIP: PRs na data da release WIP (não enfileirar).
-5. Cada PR documentado uma vez (primeira release em que aparece).
+1. Percorrer releases da mais antiga à mais recente (backfill) ou posteriores à última versão documentada (incremental).
+2. Filas **independentes** para Web e API; WIP → próxima versão numerada **daquele produto**.
+3. Um `###` por build numerado; mesma tag com Web + API: `### {web} / {api} (DD/MM/YYYY)`.
+4. Só API na tag: `### Gsoft API {versão} (DD/MM/YYYY)`.
+5. Data = `publishedAt` da release em que o número foi publicado.
+6. Várias tags no mesmo dia **não** se mesclam.
+7. Cada PR documentado uma vez.
+8. Saltos conhecidos (ex.: Web `1.0.64` → `1.0.70`, API `50.5` → `100.1`) — só na skill, **não** no `.md` público.
 
 ## PRs a ignorar sempre
 

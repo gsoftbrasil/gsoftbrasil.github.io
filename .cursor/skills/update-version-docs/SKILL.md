@@ -4,7 +4,7 @@ description: >-
   Atualiza version/Wincash.md, NFeTop.md, NFCeTop.md e WincashWeb.md com base
   em releases e PRs do gsoftbrasil/ERP-GSOFT. Use quando o usuário pedir para
   documentar versões, atualizar changelog, releases, PRs, completar subversões
-  (ex.: Wincash 3023.13, NFeTop 323, Wincash Web por data) ou reescrever bullets
+  (ex.: Wincash 3023.13, NFeTop 323, Wincash Web 1.0.70 / Gsoft API 100.1) ou reescrever bullets
   em inglês/jargão de dev para português de usuário final.
 ---
 
@@ -28,15 +28,15 @@ Ao ser invocado (produto omitido ou “atualize tudo”):
 
 1. Confirmar produto(s) ou assumir os quatro arquivos em `version/`
 2. Atualizar desde a última entrada documentada até a **última release publicada**
-3. Entregar resumo: versões/datas adicionadas, PRs documentados, saltos observados, WIP pendente (se houver)
+3. Entregar resumo: versões adicionadas, PRs documentados, saltos observados, WIP pendente (se houver)
 
 ## Fluxo
 
-1. **Ler** o arquivo alvo (`version/Wincash.md`, `NFeTop.md`, `NFCeTop.md` ou `WincashWeb.md`) e identificar a última entrada documentada (subversão ou data).
-2. **Listar releases** desde essa data — preferir `gh`; se falhar, fallback git (reference.md).
+1. **Ler** o arquivo alvo (`version/Wincash.md`, `NFeTop.md`, `NFCeTop.md` ou `WincashWeb.md`) e identificar a última versão documentada.
+2. **Listar releases** desde essa versão — preferir `gh`; se falhar, fallback git (reference.md).
 3. **Ver corpo** de cada release relevante.
 4. **Filtrar PRs** do produto alvo (ver reference.md); ignorar build-only e outros produtos.
-5. **Atribuir subversão** (ou data, no WincashWeb) conforme regra de versionamento.
+5. **Atribuir subversão** conforme regra de versionamento (WincashWeb: versão numerada por produto — ver abaixo).
 6. **Detalhar PRs** via API REST (body vazio é comum — usar commits) ou via mensagens de commit no fallback git.
 7. **Redigir bullets** em linguagem de usuário (ver examples.md).
 8. **Inserir** no `.md` (mais recente primeiro) e **revisar** checklist final.
@@ -93,26 +93,24 @@ Implicações:
 | `version/Wincash.md` | Wincash desktop | Excluir web, mobile, launcher, totem, pdvoff |
 | `version/NFeTop.md` | NFeTop | Excluir wincash, nfcetop, mdfetop |
 | `version/NFCeTop.md` | NFCeTop + NFCeMonitor | Subseções **NFCeTop** / **NFCeMonitor** quando a release traz os dois |
-| `version/WincashWeb.md` | Wincash Web + Gsoft API | Por **data de release** (sem subversão); sem URL de download |
+| `version/WincashWeb.md` | Wincash Web + Gsoft API | Versão numerada da release (`1.0.70`, `100.1`); sem URL de download |
 
 Detalhes de filtros em [reference.md](reference.md).
 
-## WincashWeb.md — exceção por data
+## WincashWeb.md — versões de release
 
-Este arquivo **não usa subversão numerada**. A data de release é o identificador principal.
+Mesma regra dos demais produtos: **só documentar o que saiu em build numerado** nas releases do ERP-GSOFT.
 
 Fluxo:
 
-1. **Ler** `version/WincashWeb.md` e identificar a data mais recente já documentada (`### DD/MM/YYYY`).
-2. **Listar releases** posteriores a essa data.
-3. **Filtrar PRs** de Wincash Web e Gsoft API (ver reference.md); ignorar build-only, mobile e integrações desktop.
-4. **Classificar** cada PR em **Wincash Web** ou **Gsoft API** conforme branch/título.
-5. **Agrupar** por `publishedAt` da release (formato `DD/MM/YYYY`); mesclar tags do mesmo dia sob um único cabeçalho (legado: `v2026-05-19` + `v2026-05-19-a`; atual: `2026-08-05-1400` + `2026-08-05-1824`).
-6. Releases WIP (`## Gsoft API WIP`, `## Wincash Web WIP`): PRs vão na **data dessa release** (não enfileirar para próximo build).
-7. **Inserir** blocos `### DD/MM/YYYY` (data mais recente primeiro), com subseções **Wincash Web** e **Gsoft API** quando aplicável.
-8. Cada PR documentado **uma única vez** (primeira release em que aparece).
+1. **Ler** `version/WincashWeb.md` e identificar a última versão documentada de **Wincash Web** e/ou **Gsoft API**.
+2. **Listar releases** posteriores e filtrar PRs (ver reference.md).
+3. **Classificar** cada PR em **Wincash Web** ou **Gsoft API** (seções `## Wincash Web` / `## WincashWeb` / `## Gsoft API` na release também contam; PRs em `wincash/` dentro de seção Web entram no Web).
+4. Releases **WIP** ou sem número (`## Wincash Web WIP`, `## Gsoft API` sem versão): enfileirar por produto; na **próxima** release com versão numerada daquele produto, documentar a fila + PRs da release.
+5. **Inserir** um bloco por publicação numerada (mais recente primeiro), com subseções **Wincash Web** e **Gsoft API** quando a mesma tag trouxer os dois.
+6. Cada PR documentado **uma única vez**.
 
-Formato:
+Formato do cabeçalho (junto por release):
 
 ```markdown
 # Wincash Web
@@ -120,17 +118,28 @@ Formato:
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
-### 10/07/2026
+### 1.0.70 / 100.1 (09/09/2026)
 **Wincash Web**
-* ``PR 867``: ...
+* ``PR 1584``: ...
 
 **Gsoft API**
-* ``PR 919``: ...
+* ``PR 1564``: ...
+
+### 1.0.63 (02/09/2026)
+**Wincash Web**
+* ``PR 1506``: ...
+
+### Gsoft API 50.5 (02/09/2026)
+**Gsoft API**
+* ``PR 1513``: ...
 ```
 
-Regra global “nunca só data” aplica-se a Wincash, NFeTop e NFCeTop — **não** a WincashWeb.md.
-
-Para backfill ou regeneração em lote, use `.cursor/scripts/build_wincashweb_md.py` (requer clone bare do ERP-GSOFT).
+- Os dois na mesma tag: `### {web} / {api} (DD/MM/YYYY)` — Web à esquerda.
+- Só Web: `### 1.0.63 (DD/MM/YYYY)`.
+- Só API: `### Gsoft API 50.5 (DD/MM/YYYY)` (prefixo evita confundir com Web).
+- Várias tags no mesmo dia **não** se mesclam — um `###` por build numerado.
+- Data = `publishedAt` da release em que o número foi publicado.
+- **Não** publicar notas de salto de numeração nem processo interno no `.md` público.
 
 ## Redação
 
@@ -175,9 +184,10 @@ Pedido explícito (“limpa inglês”, “reescreve jargão”): varrer o `.md`
 **WincashWeb.md:**
 
 - [ ] Só PRs de Wincash Web e Gsoft API (não mobile, não desktop puro)
-- [ ] Cabeçalhos apenas `### DD/MM/YYYY` (sem numeração de versão)
+- [ ] Cabeçalhos com versão numerada (`### 1.0.70 / 100.1 (DD/MM/YYYY)` ou `### Gsoft API 50.5 (...)`); nunca só data
+- [ ] WIP enfileirado → próxima versão numerada do produto (filas Web e API independentes)
 - [ ] Datas conferidas com `publishedAt`
 - [ ] Nenhum PR de build listado como item
 - [ ] PRs de integração desktop não duplicados (permanecem no Wincash.md)
 - [ ] Intro explica que Gsoft API está incluída; sem URL de download
-- [ ] Texto em PT-BR de usuário final (sem inglês colado, sem `...`, sem `.ts`/`.dpr`)
+- [ ] Texto em PT-BR de usuário final — sem tabelas/colunas, libs, falhas internas, processo de engenharia
