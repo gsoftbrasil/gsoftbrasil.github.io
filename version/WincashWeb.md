@@ -3,6 +3,18 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.72 / 102.1 (10/09/2026)
+**Wincash Web**
+* ``PR 1599``: Exibição da **cor do produto** no relatório de Previsão de Compras.
+* ``PR 1601``: Seleção de **centro de custo** nas contas a pagar geradas pela NF de entrada.
+* ``PR 1602``: Possibilidade de **inativar produtos** diretamente na lista de produtos.
+* ``PR 1606``: Correção do **XML da NFS-e** que era gravado incompleto; suporte à geração do **DANFSe**.
+* ``PR 1607``: Correção do **código do cliente** na emissão de NFS-e — usa o cliente do título quando necessário.
+* ``PR 1610``: Textos longos truncados passam a exibir o conteúdo completo ao passar o mouse.
+**Gsoft API**
+* ``PR 1603``: Correção na baixa de Contas a Pagar de **recorrência** (loja do título).
+* ``PR 1604``: Correção na **consulta de produtos** do Pedido de Compras com filtro por fornecedor.
+
 ### 1.0.71 / 101.2 (10/09/2026)
 **Wincash Web**
 * ``PR 1580``: Relatório de **produtos ajustados**.
