@@ -3,8 +3,21 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.71 / 101.2 (10/09/2026)
+**Wincash Web**
+* ``PR 1580``: Relatório de **produtos ajustados**.
+* ``PR 1581``: Relatório **Lista Geral de clientes**.
+**Gsoft API**
+* ``PR 1593``: Correção na emissão fiscal e nos erros do **manifesto** DF-e.
+
 ### 1.0.70 / 100.1 (09/09/2026)
 **Wincash Web**
+* ``PR 1519`` / ``PR 1520``: **Inventário** no Wincash Web — lançamento e consulta com paridade ao desktop.
+* ``PR 1522``: Gestão de **boletos** na Cobrança — abas, remessa em lote e alteração de títulos.
+* ``PR 1523``: Atualização visual do **design system** das telas.
+* ``PR 1524``: Correção da tela em branco na **Cobrança**.
+* ``PR 1528``: Ajuste na organização dos **indicadores** e comunicados na página inicial.
+* ``PR 1533``: Organização dos **custos de compra e de venda** na formação de preço da NF de entrada.
 * ``PR 1536``: Consulta de **histórico de preços** no cadastro de produtos.
 * ``PR 1537``: Transferência de produtos **entre departamentos da mesma loja**.
 * ``PR 1543``: Relatório **Lista Geral** de produtos.
@@ -15,6 +28,7 @@ A atualização é automática — não há download manual.
 * ``PR 1550``: Integração com **balança** no cadastro de produtos.
 * ``PR 1552``: Foto do produto no **Balcão Web** (grade e impressão).
 * ``PR 1554``: Novo módulo **GAF** no Wincash Web.
+* ``PR 1561``: Relatório **DRE** (Demonstrativo de Resultado) no Wincash Web.
 * ``PR 1565``: Coluna de **recebimento** em Contas a Receber.
 * ``PR 1566``: Correção da **recorrência** em Contas a Pagar por loja.
 * ``PR 1568``: Relatório de produtos **por cor**.
