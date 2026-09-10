@@ -3,6 +3,15 @@
 
 A numeração do Wincash passou da linha **3026** para a **3030** (não há versões 3027 a 3029 publicadas nas releases).
 
+### 3030.4 (08/09/2026)
+* ``PR 1578``: Correção no filtro por **marcas** na consulta de produtos.
+* ``PR 1529``: Correção na exportação **Excel resumida** de Contas a Pagar com filtro por loja.
+
+### 3030.3 (04/09/2026)
+Não há build **3030.2** nas releases (salto **3030.1 → 3030.3**).
+
+* ``PR 1515``: Correção no **DRE** — evita formas de pagamento duplicadas (TEF) quando a mesma forma existe com códigos distintos.
+
 ### 3030.1 (02/09/2026)
 * ``PR 1458``: Correção na exibição da **classificação mercadológica** (setor/grupo/subgrupo) ao navegar entre produtos no cadastro.
 
