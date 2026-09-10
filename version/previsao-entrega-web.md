@@ -154,8 +154,8 @@
 | 6.1.2 Previsão de Compras                              |04/09/2026|02/09/2026||/produtos/relatorios/previsao-compras|12844|
 | 6.1.3 Compras por Produto                              |30/11/2026||||12845|
 | 6.2 Produtos                                           |-|-|-|
-| 6.2.1 Lista Geral                                      |30/09/2026|||/produtos/relatorios/geral|12846|
-| 6.2.2 Produtos Vendidos                                |30/09/2026|||/produtos/relatorios/produtos-vendidos|12847|
+| 6.2.1 Lista Geral                                      |30/09/2026|08/09/2026||/produtos/relatorios/geral|12846|
+| 6.2.2 Produtos Vendidos                                |30/09/2026|08/09/2026||/produtos/relatorios/produtos-vendidos|12847|
 | 6.2.3 Histórico do Estoque                             |-|-|Não será desenvolvido|
 | 6.2.4 Giro de Estoque                                  |30/09/2026||||12848|
 | 6.2.5 Sem Giro                                         |30/09/2026||||12849|
@@ -191,7 +191,7 @@
 | 6.2.14.3.1 Varejo                                      |-|-|Não será desenvolvido|
 | 6.2.14.3.2 Promocional                                 |-|-|Não será desenvolvido|
 | 6.2.15 Relatório de Classificação de Produtos          |-|-|Não será desenvolvido|
-| 6.2.16 Ajustes de produtos                             |01/10/2026||||12978|
+| 6.2.16 Ajustes de produtos                             |01/10/2026|08/09/2026||/produtos/relatorios/ajustes-produtos|12978|
 | 6.2.17 Controle de Lotes                               |-|-|-|
 | 6.2.17.1 Clientes por Lote                             |25/02/2027||||12855|
 | 6.2.17.2 Lotes por Cliente                             |25/02/2027||||12856|
@@ -209,7 +209,7 @@
 | 6.2.27 Produtos - Classificação Fiscal                 |-|-|Não será desenvolvido|
 | 6.3 Fornecedores                                       |-|-|Não será desenvolvido|
 | 6.4 Clientes                                           |-|-|-|
-| 6.4.1 Lista Geral                                      |31/03/2027||||12863|
+| 6.4.1 Lista Geral                                      |31/03/2027|08/09/2026||/clientes/relatorios/lista-geral|12863|
 | 6.4.2 Aniversariantes                                  |-|-|Não será desenvolvido|
 | 6.4.3 Acima do Limite                                  |31/03/2027||||12864|
 | 6.4.4 Volume de Vendas por Produto                     |-|-|Não será desenvolvido|
