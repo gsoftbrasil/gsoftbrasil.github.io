@@ -3,6 +3,20 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.73 / 103.1 (14/09/2026)
+**Wincash Web**
+* ``PR 1594``: Relatório de **orçamentos perdidos**.
+* ``PR 1595``: Relatório **anual de vendas por classificação**.
+* ``PR 1605``: Relatório de **compras por produto**.
+* ``PR 1609``: Relatório de clientes que **não compraram no período**.
+* ``PR 1612``: Relatório de **vendas por cliente e fornecedor**.
+* ``PR 1555``: Relatório de produtos **abaixo do estoque mínimo**.
+* ``PR 1553``: Relatório de **vendas detalhado com itens**.
+* ``PR 1616``: Cards e relatórios no menu passam a respeitar corretamente os **privilégios** do usuário.
+* ``PR 1559``: **Painel de Metas** no módulo de Vendas.
+* ``PR 1575``: Consulta do **Auditor do Sistema** nas configurações.
+* ``PR 1619``: Correção do **logo do banco** na emissão de boletos.
+
 ### 1.0.72 / 102.1 (10/09/2026)
 **Wincash Web**
 * ``PR 1599``: Exibição da **cor do produto** no relatório de Previsão de Compras.

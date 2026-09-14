@@ -3,6 +3,9 @@
 
 A numeração do Wincash passou da linha **3026** para a **3030** (não há versões 3027 a 3029 publicadas nas releases).
 
+### 3030.5 (14/09/2026)
+* ``PR 1625``: Na impressão A4 personalizada com **Não exibir desconto**, os totais ficam alinhados à direita sem o box de desconto; opção de ordenar os itens por descrição em ordem alfabética.
+
 ### 3030.4 (08/09/2026)
 * ``PR 1578``: Correção no filtro por **marcas** na consulta de produtos.
 * ``PR 1529``: Correção na exportação **Excel resumida** de Contas a Pagar com filtro por loja.
