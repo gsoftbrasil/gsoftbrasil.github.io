@@ -229,8 +229,8 @@
 | 6.4.16 CashBack                                        |31/12/2026||||12870|
 | 6.6 Operações de Estoque                               |30/09/2026||||12871|
 | 6.7 Dem. de Vendas                                     |-|-|-|
-| 6.7.1 Vendas Detalhado                                 |17/08/2026|17/08/2026||/vendas/relatorios/demonstrativo-vendas|
-| 6.7.2 Vendas Detalhado Com Itens                       |04/09/2026||/vendas/relatorios/vendas-detalhado-com-itens|12872|
+| 6.7.1 Vendas Detalhado                                 |17/08/2026|17/08/2026||/vendas/relatorios/demonstrativo-vendas|12697|
+| 6.7.2 Vendas Detalhado Com Itens                       |04/09/2026|13/09/2026||/vendas/relatorios/vendas-detalhado-com-itens|12872|
 | 6.7.3 Vendas Detalhado Por Forma de Pagto e NFe        |-|-|Não será desenvolvido|
 | 6.7.4 Análise Diária de Vendas por Produto             |30/11/2026||||12873|
 | 6.7.5 Por Categoria Resumido                           |-|-|Não será desenvolvido|
@@ -316,12 +316,12 @@
 | 8.2 Fluxo de Caixa                                     |31/08/2026||||12900|
 | 8.3 DRE                                                |31/08/2026|||/relatorios/dre|12901|
 | 8.4 Mapa de Vendas                                     |31/08/2026||||12902|
-| 8.6 Painel de Metas                                    |31/12/2026|14/09/2026|/vendas/painel-metas|12903|
+| 8.6 Painel de Metas                                    |31/12/2026|14/09/2026||/vendas/painel-metas|12903|
 | 8.7 Auditoria                                          |-|-|-|
 | 8.7.1 Auditor do Sistema                               |30/09/2026||||12904|
 | 8.7.2 Estoque                                          |-|-|-|
 | 8.7.2.1 Comparativo Cadastro x Histórico               |-|-|Não será desenvolvido|
-| 8.7.3 Produtos                                         |16/10/2026|||12981|
+| 8.7.3 Produtos                                         |16/10/2026||||12981|
 
 
 # Legenda:
