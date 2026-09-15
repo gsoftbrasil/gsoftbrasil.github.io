@@ -3,6 +3,12 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.75 / 105.1 (15/09/2026)
+**Wincash Web**
+* ``PR 1631``: Relatório de produtos **sem giro**.
+* ``PR 1618``: Módulo **Lançar Perdas** — registro e processamento de perdas de estoque.
+* ``PR 1634``: Correção no **Inventário** — as consultas voltam a funcionar corretamente.
+
 ### 1.0.73 / 103.1 (14/09/2026)
 **Wincash Web**
 * ``PR 1594``: Relatório de **orçamentos perdidos**.
