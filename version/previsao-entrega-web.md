@@ -137,7 +137,7 @@
 | 4.12 Lançamento Inventário                             |30/09/2026|||/produtos/inventario/lancamento|12836|
 | 4.13 Consulta Inventário                               |30/09/2026|||/produtos/inventario/consulta|12837|
 | 4.14 Operações de Estoque                              |30/09/2026||||12838|
-| 4.15 Lançar Perdas                                     |30/09/2026||||12839|
+| 4.15 Lançar Perdas                                     |30/09/2026|14/09/2026||/produtos/lancar-perdas|12839|
 | 4.16 Existem produtos abaixo / do estoque mínimo       |-|-|Não será desenvolvido|
 | 5. Ordem de Serviços                                   |-|-|-|
 | 5.1 Geral                                              |-|-|-|
@@ -158,7 +158,7 @@
 | 6.2.2 Produtos Vendidos                                |30/09/2026|08/09/2026||/produtos/relatorios/produtos-vendidos|12847|
 | 6.2.3 Histórico do Estoque                             |-|-|Não será desenvolvido|
 | 6.2.4 Giro de Estoque                                  |30/09/2026||||12848|
-| 6.2.5 Sem Giro                                         |30/09/2026||||12849|
+| 6.2.5 Sem Giro                                         |30/09/2026|15/09/2026||/produtos/relatorios/sem-giro|12849|
 | 6.2.6 Lista Personalizada                              |-|-|Não será desenvolvido|
 | 6.2.7 Por Fornecedor                                   |-|-|-|
 | 6.2.7.1 Varejo                                         |-|-|Não será desenvolvido|
