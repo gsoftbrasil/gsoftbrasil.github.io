@@ -130,7 +130,7 @@
 | 4.5 Pedido de Compras                                  |10/04/2026|10/04/2026||/produtos/pedidos-compras|
 | 4.6 Receber Mercadoria                                 |11/08/2026|11/08/2026||/produtos/pedidos-compras/:pedidoId/recebimento|
 | 4.7 Compras por Fornecedor                             |31/01/2027||||12835|
-| 4.8 Visualizar Compras por Produto                     |01/10/2026||||12974|
+| 4.8 Visualizar Compras por Produto                     |01/10/2026|Cancelado|Ticket Duplicado = https://github.com/gsoftbrasil/ERP-GSOFT/pull/1605|/produtos/relatorios/compras-por-produto|
 | 4.9 Pedido de Compras Web                              |-|-|Não será desenvolvido|
 | 4.10 Coletar Dados                                     |-|-|Não será desenvolvido|
 | 4.11 Ficha de Estoque                                  |-|-|Não será desenvolvido|
@@ -152,7 +152,7 @@
 | 6.1 Compras                                            |-|-|-|
 | 6.1.1 Faturas                                          |-|-|Não será desenvolvido|
 | 6.1.2 Previsão de Compras                              |04/09/2026|02/09/2026||/produtos/relatorios/previsao-compras|12844|
-| 6.1.3 Compras por Produto                              |30/11/2026||||12845|
+| 6.1.3 Compras por Produto                              |30/11/2026|10/09/2026||/produtos/relatorios/compras-por-produto|12845|
 | 6.2 Produtos                                           |-|-|-|
 | 6.2.1 Lista Geral                                      |30/09/2026|08/09/2026||/produtos/relatorios/geral|12846|
 | 6.2.2 Produtos Vendidos                                |30/09/2026|08/09/2026||/produtos/relatorios/produtos-vendidos|12847|
@@ -169,7 +169,7 @@
 | 6.2.8.2 Lista de Venda Externa                         |-|-|Não será desenvolvido|
 | 6.2.8.3 Por Setor                                      |-|-|Não será desenvolvido|
 | 6.2.9 Abaixo do Est. Mínimo                            |-|-|-|
-| 6.2.9.1 Geral                                          |01/10/2026||||12850|
+| 6.2.9.1 Geral                                          |01/10/2026|10/09/2026||/produtos/relatorios/abaixo-est-minimo|12850|
 | 6.2.9.2 Por Fornecedor                                 |-|-|Não será desenvolvido|
 | 6.2.9.2.1 Loja                                         |-|-|Não será desenvolvido|
 | 6.2.9.2.2 Depósito                                     |-|-|Não será desenvolvido|
@@ -217,7 +217,7 @@
 | 6.4.6 Data base - Vencimento                           |-|-|Não será desenvolvido|
 | 6.4.7 Alerta de Aniversariantes do Dia                 |-|-|Não será desenvolvido|
 | 6.4.8 Por Data de Cadastro                             |-|-|Não será desenvolvido|
-| 6.4.9 Que Não Compraram Entre o Período                |31/03/2027||||12865|
+| 6.4.9 Que Não Compraram Entre o Período                |31/03/2027|10/09/2026||/clientes/relatorios/nao-compraram-periodo|12865|
 | 6.4.10 Média de Atraso de Pagamento Por Cliente        |31/03/2027||||12866|
 | 6.4.11 Média do Dia que Realiza Pedidos                |-|-|Não será desenvolvido|
 | 6.4.12 Enquete                                         |-|-|Não será desenvolvido|
@@ -230,7 +230,7 @@
 | 6.6 Operações de Estoque                               |30/09/2026||||12871|
 | 6.7 Dem. de Vendas                                     |-|-|-|
 | 6.7.1 Vendas Detalhado                                 |17/08/2026|17/08/2026||/vendas/relatorios/demonstrativo-vendas|
-| 6.7.2 Vendas Detalhado Com Itens                       |04/09/2026||||12872|
+| 6.7.2 Vendas Detalhado Com Itens                       |04/09/2026||/vendas/relatorios/vendas-detalhado-com-itens|12872|
 | 6.7.3 Vendas Detalhado Por Forma de Pagto e NFe        |-|-|Não será desenvolvido|
 | 6.7.4 Análise Diária de Vendas por Produto             |30/11/2026||||12873|
 | 6.7.5 Por Categoria Resumido                           |-|-|Não será desenvolvido|
@@ -246,15 +246,15 @@
 | 6.7.15 Itens Devolvidos                                |30/11/2026||||12878|
 | 6.7.16 Vendas Detalhadas por Quantidade e Grade        |-|-|Não será desenvolvido|
 | 6.7.17 Produtos Vendidos por Forma de Pagamento        |30/11/2026||||12879|
-| 6.7.18 Orçamentos Perdidos - Motivos                   |30/11/2026||||12880|
+| 6.7.18 Orçamentos Perdidos - Motivos                   |30/11/2026|09/09/2026||/vendas/relatorios/orcamentos-perdidos|12880|
 | 6.7.19 Orçamentos - Etapas                             |05/05/2026|05/05/2026||/vendas/orcamentos/fluxo > operação; relatório `/vendas/relatorios/orcamentos-fluxo`|
 | 6.7.20 Vendas com Comissão Múltipla                    |-|-|Não será desenvolvido|
 | 6.7.21 Vendas por Rota                                 |30/11/2026||||12881|
 | 6.7.22 Média de Gastos por Cliente                     |-|-|Não será desenvolvido|
-| 6.7.23 Relatório Anual de Vendas por Classificação     |30/11/2026||||12882|
+| 6.7.23 Relatório Anual de Vendas por Classificação     |30/11/2026|09/09/2026||/vendas/relatorios/anual-classificacao|12882|
 | 6.7.24 Relatório Anual de Vendas por Vendedor          |30/11/2026||||12883|
 | 6.7.25 Relatório Anual por Itens                       |30/11/2026||||12884|
-| 6.7.26 Relatório de Vendas por Cliente e Fornecedor    |30/11/2026||||12885|
+| 6.7.26 Relatório de Vendas por Cliente e Fornecedor    |30/11/2026|10/09/2026||/vendas/relatorios/vendas-cliente-fornecedor|12885|
 | 6.7.27 Relatório de Vendas Com Desconto                |30/11/2026||||12886|
 | 6.7.28 Relatório de Vendas Semanal                     |30/11/2026||||12887|
 | 6.8 GFood                                              |-|-|-|
@@ -316,7 +316,7 @@
 | 8.2 Fluxo de Caixa                                     |31/08/2026||||12900|
 | 8.3 DRE                                                |31/08/2026|||/relatorios/dre|12901|
 | 8.4 Mapa de Vendas                                     |31/08/2026||||12902|
-| 8.6 Painel de Metas                                    |31/12/2026||||12903|
+| 8.6 Painel de Metas                                    |31/12/2026|14/09/2026|/vendas/painel-metas|12903|
 | 8.7 Auditoria                                          |-|-|-|
 | 8.7.1 Auditor do Sistema                               |30/09/2026||||12904|
 | 8.7.2 Estoque                                          |-|-|-|
