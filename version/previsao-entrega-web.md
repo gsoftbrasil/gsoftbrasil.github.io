@@ -130,7 +130,7 @@
 | 4.5 Pedido de Compras                                  |10/04/2026|10/04/2026||/produtos/pedidos-compras|
 | 4.6 Receber Mercadoria                                 |11/08/2026|11/08/2026||/produtos/pedidos-compras/:pedidoId/recebimento|
 | 4.7 Compras por Fornecedor                             |31/01/2027||||12835|
-| 4.8 Visualizar Compras por Produto                     |01/10/2026|Cancelado|Ticket Duplicado = https://github.com/gsoftbrasil/ERP-GSOFT/pull/1605|/produtos/relatorios/compras-por-produto|
+| 4.8 Visualizar Compras por Produto                     |01/10/2026|Cancelado|Ticket Duplicado = 12845|/produtos/relatorios/compras-por-produto|
 | 4.9 Pedido de Compras Web                              |-|-|Não será desenvolvido|
 | 4.10 Coletar Dados                                     |-|-|Não será desenvolvido|
 | 4.11 Ficha de Estoque                                  |-|-|Não será desenvolvido|
