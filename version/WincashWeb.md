@@ -3,6 +3,27 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.76 / 105.3 (21/09/2026)
+**Wincash Web**
+* ``PR 1638``: O **balcão** e o ajuste de estoque passam a respeitar a configuração **Permitir estoque negativo**.
+* ``PR 1640``: Exibição de **markup e margem** no balcão, com os custos da formação de preço.
+* ``PR 1641``: Melhorias na interface do **balcão** — rodapé, total no tema escuro e busca (F7) com painel de itens.
+* ``PR 1577``: Relatório de **vendas por horário**.
+* ``PR 1617``: Módulo de **operações de estoque** — transferências entre lojas e movimento simples.
+* ``PR 1576``: Relatório de **vendas por rota**.
+* ``PR 1643``: Relatório de **giro de estoque**.
+* ``PR 1650``: Atualização visual do **design system** das telas.
+* ``PR 1645``: Relatório de **inventário — diferença**.
+* ``PR 1649``: Na **Curva ABC de vendas**, filtro por subgrupo e consulta de fornecedor.
+* ``PR 1651``: Correção na **NF de entrada** — aviso claro quando o serviço fiscal está indisponível; melhor tratamento do NCM.
+* ``PR 1653``: Relatório de **inventário — histórico de estoque**.
+**Gsoft API**
+* ``PR 1654``: Correção na emissão de **NFC-e** — evita loop e melhora a mensagem de rejeição da Sefaz.
+
+### Gsoft API 105.2 (21/09/2026)
+**Gsoft API**
+* ``PR 1639``: Correção na atualização em segundo plano do **código da loja** — evita travar a API na inicialização.
+
 ### 1.0.75 / 105.1 (15/09/2026)
 **Wincash Web**
 * ``PR 1631``: Relatório de produtos **sem giro**.
