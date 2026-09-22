@@ -3,6 +3,9 @@
 
 A numeração do Wincash passou da linha **3026** para a **3030** (não há versões 3027 a 3029 publicadas nas releases).
 
+### 3030.8 (22/09/2026)
+* ``PR 1670``: Correção do **número da requisição** no Balcão Express ao alterar orçamento com vários clientes.
+
 ### 3030.7 (21/09/2026)
 * ``PR 1655``: Correção ao **alterar orçamento** no Balcão Express — os itens da requisição importada não desaparecem mais.
 

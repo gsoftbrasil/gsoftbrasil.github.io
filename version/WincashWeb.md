@@ -3,6 +3,14 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.77 / 105.4 (22/09/2026)
+**Wincash Web**
+* ``PR 1664``: Padronização das páginas — cabeçalho, filtros, **visões** salvas por usuário e trilha de navegação.
+* ``PR 1673``: Correção do filtro por **setor/grupo/subgrupo** na Curva ABC de vendas (funciona com código ou texto).
+* ``PR 1672``: Cadastro de **tipos de operação de estoque**.
+* ``PR 1674``: Exportação para **Excel** nas listas de clientes e fornecedores.
+* ``PR 1675``: Melhoria no card de **preço iFood** (preço base, adicional e promoção); correção de filtros com espaços na Curva ABC.
+
 ### 1.0.76 / 105.3 (21/09/2026)
 **Wincash Web**
 * ``PR 1638``: O **balcão** e o ajuste de estoque passam a respeitar a configuração **Permitir estoque negativo**.
