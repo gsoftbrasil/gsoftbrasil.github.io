@@ -157,7 +157,7 @@
 | 6.2.1 Lista Geral                                      |30/09/2026|08/09/2026||/produtos/relatorios/geral|12846|
 | 6.2.2 Produtos Vendidos                                |30/09/2026|08/09/2026||/produtos/relatorios/produtos-vendidos|12847|
 | 6.2.3 Histórico do Estoque                             |-|-|Não será desenvolvido|
-| 6.2.4 Giro de Estoque                                  |30/09/2026||||12848|
+| 6.2.4 Giro de Estoque                                  |30/09/2026|18/09/2026||/produtos/relatorios/giro-estoque|12848|
 | 6.2.5 Sem Giro                                         |30/09/2026|15/09/2026||/produtos/relatorios/sem-giro|12849|
 | 6.2.6 Lista Personalizada                              |-|-|Não será desenvolvido|
 | 6.2.7 Por Fornecedor                                   |-|-|-|
@@ -181,8 +181,8 @@
 | 6.2.13.2 Inventário - Modelo 1                         |-|-|Não será desenvolvido|
 | 6.2.13.3 Inventário - Modelo 2                         |-|-|Não será desenvolvido|
 | 6.2.13.4 Inventário Manual                             |-|-|Não será desenvolvido|
-| 6.2.13.5 Inventário - Hist. Estoque                    |30/09/2026||||12854|
-| 6.2.13.6 Inventário - Diferença                        |16/10/2026||||12976|
+| 6.2.13.5 Inventário - Hist. Estoque                    |30/09/2026|21/09/2026||/produtos/relatorios/inventario-historico-estoque|12854|
+| 6.2.13.6 Inventário - Diferença                        |16/10/2026|16/09/2026||/produtos/relatorios/inventario-diferenca|12976|
 | 6.2.13.7 Inventário - Contábil                         |-|-|Não será desenvolvido|
 | 6.2.14 Lista de Preços                                 |01/10/2026||||12977|
 | 6.2.14.1 Lista Completa                                |-|-|Não será desenvolvido|
@@ -227,7 +227,7 @@
 | 6.4.14.2 Por Vale-Compras                              |31/03/2027||||12868|
 | 6.4.15 Pesquisa NPS                                    |31/03/2027||||12869|
 | 6.4.16 CashBack                                        |31/12/2026||||12870|
-| 6.6 Operações de Estoque                               |30/09/2026||||12871|
+| 6.6 Operações de Estoque                               |30/09/2026|16/09/2026||/produtos/transferencia/operacoes-estoque · /produtos/relatorios/operacoes-estoque|12871|
 | 6.7 Dem. de Vendas                                     |-|-|-|
 | 6.7.1 Vendas Detalhado                                 |17/08/2026|17/08/2026||/vendas/relatorios/demonstrativo-vendas|12697|
 | 6.7.2 Vendas Detalhado Com Itens                       |04/09/2026|13/09/2026||/vendas/relatorios/vendas-detalhado-com-itens|12872|
@@ -237,7 +237,7 @@
 | 6.7.6 Resumo de Vendas por PIS/COFINS                  |-|-|Não será desenvolvido|
 | 6.7.7 Vendas por Produto/Serviço - Resumidas           |-|-|Não será desenvolvido|
 | 6.7.8 Vendas por Produto/Serviço - Detalhadas          |-|-|Não será desenvolvido|
-| 6.7.9 Vendas no Horário                                |30/11/2026||||12874|
+| 6.7.9 Vendas no Horário                                |30/11/2026|09/09/2026||/vendas/relatorios/vendas-por-horario|12874|
 | 6.7.10 Venda Bruta por Período                         |-|-|Não será desenvolvido|
 | 6.7.11 Montante Vend/Orc Por Grupo                     |-|-|Não será desenvolvido|
 | 6.7.12 Produtos Vendidos Na Promoção                   |30/11/2026||||12875|
@@ -249,7 +249,7 @@
 | 6.7.18 Orçamentos Perdidos - Motivos                   |30/11/2026|09/09/2026||/vendas/relatorios/orcamentos-perdidos|12880|
 | 6.7.19 Orçamentos - Etapas                             |05/05/2026|05/05/2026||/vendas/orcamentos/fluxo > operação; relatório `/vendas/relatorios/orcamentos-fluxo`|
 | 6.7.20 Vendas com Comissão Múltipla                    |-|-|Não será desenvolvido|
-| 6.7.21 Vendas por Rota                                 |30/11/2026||||12881|
+| 6.7.21 Vendas por Rota                                 |30/11/2026|09/09/2026||/vendas/relatorios/vendas-por-rota|12881|
 | 6.7.22 Média de Gastos por Cliente                     |-|-|Não será desenvolvido|
 | 6.7.23 Relatório Anual de Vendas por Classificação     |30/11/2026|09/09/2026||/vendas/relatorios/anual-classificacao|12882|
 | 6.7.24 Relatório Anual de Vendas por Vendedor          |30/11/2026||||12883|
