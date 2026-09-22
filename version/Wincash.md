@@ -3,6 +3,12 @@
 
 A numeração do Wincash passou da linha **3026** para a **3030** (não há versões 3027 a 3029 publicadas nas releases).
 
+### 3030.7 (21/09/2026)
+* ``PR 1655``: Correção ao **alterar orçamento** no Balcão Express — os itens da requisição importada não desaparecem mais.
+
+### 3030.6 (17/09/2026)
+* ``PR 1635``: Exige **motivo ao cancelar item** no PDV (F5); novo relatório de **itens cancelados** em Dem. Vendas (com filtro por data/hora).
+
 ### 3030.5 (14/09/2026)
 * ``PR 1625``: Na impressão A4 personalizada com **Não exibir desconto**, os totais ficam alinhados à direita sem o box de desconto; opção de ordenar os itens por descrição em ordem alfabética.
 
