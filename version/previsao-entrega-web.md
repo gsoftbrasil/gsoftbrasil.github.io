@@ -51,7 +51,7 @@
 | 1.4.11.5 Departamentos                                 |31/12/2026||||12815|
 | 1.4.11.6 Operações Internas - Vendas                   |-|-|Não será desenvolvido|
 | 1.4.11.7 Operações de Caixa - Formas de Pagto          |-|-|Não será desenvolvido|
-| 1.4.11.8 Operações de Estoque                          |31/01/2027||||12816|
+| 1.4.11.8 Operações de Estoque                          |31/01/2027|22/09/2026||/produtos/cadastro/operacoes-estoque|12816|
 | 1.4.11.9 Enquete                                       |-|-|Não será desenvolvido|
 | 1.4.12 Multi Lojas                                     |-|-|-|
 | 1.4.12.1 Lojas                                         |20/08/2026|20/08/2026||/configuracoes-empresa/empresas|
