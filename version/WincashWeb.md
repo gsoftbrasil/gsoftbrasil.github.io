@@ -3,6 +3,13 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.78 / 105.5 (23/09/2026)
+**Wincash Web**
+* ``PR 1679``: **Designer de temas** — personalização visual por empresa (cores, logo e fundo).
+* ``PR 1682``: Correção na **troca de tema** — evita travar a tela ao alternar entre temas.
+* ``PR 1693`` / ``PR 1698``: Nas **consultas**, a busca passa a usar o botão **Buscar** (F9); correção na busca com mais de uma palavra.
+* ``PR 1689``: Possibilidade de **alterar o número da NF** vinculado ao título em Contas a Receber.
+
 ### 1.0.77 / 105.4 (22/09/2026)
 **Wincash Web**
 * ``PR 1664``: Padronização das páginas — cabeçalho, filtros, **visões** salvas por usuário e trilha de navegação.
