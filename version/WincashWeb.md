@@ -3,6 +3,15 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.80 / 105.8 (25/09/2026)
+**Wincash Web**
+* ``PR 1702``: Nas **consultas**, o botão **Buscar** passa a exibir o atalho **F9**.
+* ``PR 1703``: Reformulação dos **Indicadores** — categorias em abas e widgets financeiros mais legíveis (ranking TOP 10, comparativos mensal, semanal e anual, horário de pico e formas de pagamento); o comparativo mensal de faturamento passa a mostrar os últimos 13 meses.
+* ``PR 1707``: Na **Base de Produtos FGF**, a busca carrega todo o catálogo filtrado; novos botões **Enviar tudo** e **Enviar selecionados**, com envio em lotes, barra de progresso, cancelamento e retomada apenas dos itens pendentes.
+
+**Gsoft API**
+* ``PR 1701``: O **histórico de estoque** passa a considerar a empresa ativa e a respeitar o privilégio de acesso ao estoque do produto.
+
 ### 1.0.78 / 105.5 (23/09/2026)
 **Wincash Web**
 * ``PR 1679``: **Designer de temas** — personalização visual por empresa (cores, logo e fundo).
