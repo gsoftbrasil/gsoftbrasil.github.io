@@ -3,6 +3,9 @@
 
 A numeração do Wincash passou da linha **3026** para a **3030** (não há versões 3027 a 3029 publicadas nas releases).
 
+### 3030.10 (25/09/2026)
+* ``PR 1704``: Correção de erro na **verificação de atualizações do banco de dados** ao abrir o Wincash.
+
 ### 3030.9 (23/09/2026)
 * ``PR 1624``: **Cashback** com prazo de validade (dias) nas configurações; o saldo do cliente considera só créditos válidos, com expiração e estorno corretos.
 * ``PR 1695``: Correção na **baixa de estoque** ao finalizar venda no Balcão Express a partir de requisição que já havia baixado estoque.
