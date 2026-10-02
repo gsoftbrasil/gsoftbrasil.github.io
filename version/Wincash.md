@@ -1,3 +1,23 @@
+# Wincash 3031
+[Download](https://servidor.gsoft.com.br/wincash/3031/Wincash.exe)
+
+### 3031.5 (02/10/2026)
+* ``PR 1746``: Correção na consulta de **emitentes** por loja — passam a ser considerados apenas os emitentes **ativos**.
+
+### 3031.4 (30/09/2026)
+* ``PR 1741``: Melhorias no **Balcão Express** ao alterar requisição ou orçamento (F2) — ao fechar como venda, o estoque não é baixado em duplicidade e a requisição fica vinculada à venda; o orçamento alterado mantém o mesmo número; o F2 na aba **Orçamento** carrega os itens corretamente; o próximo orçamento não reaproveita o número já faturado; correção de acentuação nas mensagens.
+
+### 3031.3 (30/09/2026)
+Não há build **3031.2** nas releases (salto **3031.1 → 3031.3**).
+
+* ``PR 1721``: Na geração de **mensalidades** com várias lojas, o usuário escolhe a **loja** dos títulos antes de gerar (cancelar interrompe a geração).
+* ``PR 1717``: Correção de **faturamento duplicado de requisição** — falhas ao finalizar a requisição passam a ser informadas ao usuário.
+
+### 3031.1 (28/09/2026)
+* Publicação da linha **3031** do Wincash.
+
+___
+
 # Wincash 3030
 [Download](https://servidor.gsoft.com.br/wincash/3030/Wincash.exe)
 
