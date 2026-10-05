@@ -3,7 +3,28 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
-### 1.0.80 / 105.8 (25/09/2026)
+### 1.0.80 / 105.9 (05/10/2026)
+**Wincash Web**
+* ``PR 1754``: No **balcão**, escolha do **tipo de documento** (Venda, Pedido ou Orçamento) já no início do pedido, com atalhos **F10**, **F11** e **F12**; bloqueio do pedido para **clientes bloqueados**; avaliação financeira do cliente no fechamento; segundo campo de **observação**; nova janela para editar e lançar o produto; reorganização da tela de fechamento.
+* ``PR 1755``: Na consulta de produtos do **balcão**, exibição da **localização** do produto (geral e da loja).
+* ``PR 1757``: No fechamento do **balcão**, melhoria na seleção da **condição de pagamento** e no posicionamento do cursor nos campos de valor.
+* ``PR 1770``: No **balcão**, seleção da **tabela de preço** em lista, respeitando os limites de preço e desconto da tabela; é possível clicar nas etapas do fechamento para navegar entre elas.
+* ``PR 1756``: O cadastro de **produtos** passa a abrir em janela sobre a lista, que é atualizada ao concluir.
+* ``PR 1723``: Exibição da **foto do produto** a partir da pasta local de imagens (cadastro, pedido de compras e balcão), com busca na base online quando não houver foto local; rankings da página inicial movidos para **Indicadores**; ajuste das colunas na consulta de produtos.
+* ``PR 1764`` / ``PR 1766`` / ``PR 1768`` / ``PR 1769``: Nova tela de **Fluxo de Caixa** (menu Relatórios) — realizado e projetado (contas a pagar, vendas a prazo, cartões e cheques), categorias por mês e comparativo entre realizado e projeção; três modelos de visão: por atividade conforme o **plano de contas**, visão diária/mensal e **saldos bancários**; colunas redimensionáveis e destaque do dia atual.
+* ``PR 1750``: Lançamento manual de **NF de entrada** sem XML, com número da nota, fornecedor e CFOP obrigatórios.
+* ``PR 1753``: Ordenação da lista de **Contas a Pagar** por código, descrição, vencimento e outros campos.
+* ``PR 1724``: No relatório de **Prazo Médio de Pagamento**, o rodapé exibe o prazo médio total, ponderado pela quantidade de compras.
+* ``PR 1710``: Exportação das tabelas para **Excel**, **CSV** e **PDF**.
+* ``PR 1715``: As **consultas** passam a carregar os dados ao abrir a tela, com paginação padronizada de 150 itens (a escolha fica salva).
+* ``PR 1711`` / ``PR 1713``: Na **Base de Produtos FGF**, a lista volta a paginar (50, 100 ou 500 itens) e o **Enviar tudo** envia todo o filtro em lotes; correção ao **salvar a configuração** do FGF, que gravava as credenciais em branco.
+* ``PR 1759``: O Wincash Web passa a se adaptar a **celulares e tablets** — menus, listas, abas e fichas de cadastro se ajustam a telas menores.
+
+**Gsoft API**
+* ``PR 1734``: No relatório de **Previsão de Compras**, itens com sugestão zero voltam a aparecer, como no Wincash desktop.
+* ``PR 1760``: Melhoria de desempenho na **consulta de preços** do balcão em buscas amplas.
+
+### 1.0.79 / 105.8 (25/09/2026)
 **Wincash Web**
 * ``PR 1702``: Nas **consultas**, o botão **Buscar** passa a exibir o atalho **F9**.
 * ``PR 1703``: Reformulação dos **Indicadores** — categorias em abas e widgets financeiros mais legíveis (ranking TOP 10, comparativos mensal, semanal e anual, horário de pico e formas de pagamento); o comparativo mensal de faturamento passa a mostrar os últimos 13 meses.
