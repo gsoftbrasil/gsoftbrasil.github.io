@@ -3,6 +3,12 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.85 / 105.10 (06/10/2026)
+**Wincash Web**
+* ``PR 1775``: Novo **menu do usuário** no topo da tela, com opção de escolher a **cor do avatar** (fica salva na conta); as **Configurações** passam a abrir em uma única janela, com as seções **Conta**, **Aparência** (prévia do tema ao vivo, desfeita ao cancelar) e as configurações da empresa (protegidas pela senha do dia).
+* ``PR 1772``: Ajustes no **Fluxo de Caixa** — a tela passa para o menu **Financeiro**, junto com o **DRE** (ambos com atalho em Análises); escolha do detalhamento diário, semanal, mensal ou anual nos filtros; o modelo escolhido fica salvo nas visões do usuário; período sem limite de um ano; movimentações classificadas por origem (fechamento de caixa, sangrias do PDV por terminal, recebimento de títulos e transferências para contas internas, como cartão e PIX).
+* ``PR 1776``: Correção nas **consultas** com mais de uma palavra ao acessar o Wincash Web remotamente pelo **túnel Gsoft**.
+
 ### 1.0.80 / 105.9 (05/10/2026)
 **Wincash Web**
 * ``PR 1754``: No **balcão**, escolha do **tipo de documento** (Venda, Pedido ou Orçamento) já no início do pedido, com atalhos **F10**, **F11** e **F12**; bloqueio do pedido para **clientes bloqueados**; avaliação financeira do cliente no fechamento; segundo campo de **observação**; nova janela para editar e lançar o produto; reorganização da tela de fechamento.
