@@ -1,6 +1,12 @@
 # Wincash 3031
 [Download](https://servidor.gsoft.com.br/wincash/3031/Wincash.exe)
 
+### 3031.6 (06/10/2026)
+* ``PR 1751``: Correção do **estoque** no Balcão Express ao alterar uma requisição (F2) e gravar novamente (F9) — ao gravar como requisição, a reserva é refeita apenas para os itens atuais; ao fechar como venda, a baixa ocorre só na venda; ao gravar como orçamento, não há nova reserva.
+* ``PR 1730``: Na **Movimentação Bancária**, a **transferência** (F4) de um crédito mantém a descrição original do lançamento, acrescida da conta de destino/origem, e já traz o valor preenchido; ao retransferir para outra conta, a descrição não se acumula; nova legenda no rodapé da tela (**G** - Grupo/plano de contas, **M** - Marcação, **T** - Pagamento, **R** - Baixa).
+* ``PR 1733``: Correção na impressão do **orçamento** com **observação** muito longa — o texto é quebrado na largura do campo, a validade aparece logo abaixo e a moldura dos totais é exibida corretamente.
+* ``PR 1736``: Em **Contas a Pagar**, novo filtro para contas **sem NF**.
+
 ### 3031.5 (02/10/2026)
 * ``PR 1746``: Correção na consulta de **emitentes** por loja — passam a ser considerados apenas os emitentes **ativos**.
 
