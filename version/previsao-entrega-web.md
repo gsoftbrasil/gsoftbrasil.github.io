@@ -12,7 +12,7 @@
 | 1.3 Produtos                                           |-|-|-|
 | 1.3.1 Cadastro de Produtos                             |10/04/2026|10/07/2026||/produtos/lista > ficha `/produtos/:id`|
 | 1.3.2 Classificação                                    |-|-|-|
-| 1.3.2.1 Setores / Grupos / Sub-Grupos / Linhas         |10/04/2026|10/07/2026||/produtos/configuracoes/classificacao/setores > placeholder; lookups em `/produtos/:id`|
+| 1.3.2.1 Setores / Grupos / Sub-Grupos / Linhas         |10/04/2026|06/10/2026||/produtos/configuracoes/classificacao/setores|13121|
 | 1.3.2.2 Marca                                          |10/04/2026|10/07/2026||/produtos/configuracoes/classificacao/marcas > placeholder; lookup no cadastro|
 | 1.3.2.3 Unidades de Medida                             |10/04/2026|10/07/2026||/produtos/configuracoes/classificacao/unidades > placeholder; lookup no cadastro|
 | 1.3.2.4 Categorias                                     |10/04/2026|10/07/2026||/produtos/configuracoes/classificacao/categorias > placeholder; lookup no cadastro|
@@ -80,7 +80,7 @@
 | 2.11 Entradas do Caixa                                 |-|-|Não será desenvolvido|
 | 2.12 Relatórios                                        |-|-|-|
 | 2.12.1 Contas a Receber                                |-|-|-|
-| 2.12.1.1 Geral Completo                                |30/09/2026||||12820|
+| 2.12.1.1 Geral Completo                                |30/09/2026|27/09/2026||/financeiro/relatorios/contas-receber-completo|12820|
 | 2.12.1.2 Período/Data Base                             |-|-|Não será desenvolvido|
 | 2.12.1.3 Pendentes Geral                               |-|-|Não será desenvolvido|
 | 2.12.1.4 Fechamento do Período                         |-|-|Não será desenvolvido|
@@ -118,10 +118,10 @@
 | 3.10 Permuta                                           |01/03/2027||||12828|
 | 3.11 Ocorrência                                        |31/03/2027||||12829|
 | 3.12 Locação                                           |31/03/2027||||12830|
-| 3.13 Relatórios de Requisições                         |30/10/2026||||12831|
+| 3.13 Relatórios de Requisições                         |30/10/2026|24/09/2026||/vendas/relatorios/requisicoes|12831|
 | 3.14 Histórico de Exclusões                            |-|-|Não será desenvolvido|
 | 3.15 Buscar Vendas Ctrl+V                              |30/06/2026|30/06/2026||/vendas/consultavenda|
-| 3.16 Buscar Requisições                                |30/11/2026||||12832|
+| 3.16 Buscar Requisições                                |30/11/2026|28/09/2026||/vendas/pedidos|12832|
 | 4. Estoque                                             |-|-|-|
 | 4.1 Nota Fiscal de Entrada - F7                        |10/06/2026|10/06/2026||/produtos/nota-fiscal-entrada|
 | 4.2 Transferência (Dep. -> Loja)                       |31/12/2026|04/09/2026||/produtos/transferencia/dep-loja|12833|
@@ -314,8 +314,8 @@
 | 8.1.3 Curva ABC de Vendedores                          |31/08/2026|28/08/2026||/relatorios/curva-abc/vendedores|12898|
 | 8.1.4 Cuva ABC de Perdas                               |31/08/2026|28/08/2026||/relatorios/curva-abc/perdas|12899|
 | 8.2 Fluxo de Caixa                                     |31/08/2026||||12900|
-| 8.3 DRE                                                |31/08/2026|||/relatorios/dre|12901|
-| 8.4 Mapa de Vendas                                     |31/08/2026||||12902|
+| 8.3 DRE                                                |31/08/2026|||/financeiro/dre|12901|
+| 8.4 Mapa de Vendas                                     |31/08/2026|06/10/2026||/relatorios/mapa-vendas|12902|
 | 8.6 Painel de Metas                                    |31/12/2026|14/09/2026||/vendas/painel-metas|12903|
 | 8.7 Auditoria                                          |-|-|-|
 | 8.7.1 Auditor do Sistema                               |30/09/2026||||12904|
