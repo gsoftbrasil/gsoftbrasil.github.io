@@ -3,6 +3,33 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.86 / 106.1 (12/10/2026)
+**Wincash Web**
+* ``PR 1813`` / ``PR 1820``: O Wincash Web pode ser **instalado como aplicativo** no computador ou no celular, com aviso de instalação na página inicial e notificação quando houver nova versão.
+* ``PR 1793``: Novo botão **Feedback** para enviar sugestões ou relatar problemas ao suporte, com captura da tela (com marcações, setas e destaques), gravação de tela e anexos de até 10 MB.
+* ``PR 1789``: Nova tela de **DRE e Balanço Patrimonial** (menu Financeiro), com abas **Balanço Patrimonial**, **DRE** (modelos gerencial e contábil, com EBITDA e lucro líquido) e **Visual** (gráficos de ativos e passivos e histórico de lucro e receita); detalhamento **trimestral** na DRE e no Fluxo de Caixa; passivos destacados em vermelho.
+* ``PR 1786``: Novo relatório **Mapa de Vendas** (Relatórios), por ano, mês ou dia, com gráficos, detalhamento por setor e produto, exportação para Excel (F12) e impressão (F8).
+* ``PR 1705``: Novo **Relatório Geral de Requisições** (Vendas > Relatórios > Requisições), com filtros, impressão e exportação para Excel.
+* ``PR 1729``: Nova tela **Vendas > Pedidos** para consultar pedidos por número, cliente, vendedor e situação, com visualização dos itens e **reimpressão (F3)**.
+* ``PR 1706``: Novo relatório **Contas a Receber Completo** (Financeiro > Relatórios), com situação a receber, recebidas, inadimplentes ou todas e visões detalhada, resumida e por grupo/rota; exportação para Excel e PDF.
+* ``PR 1790``: Novo relatório de **Produtos Compostos** (Produtos > Relatórios > Compostos), com os componentes de cada produto, indicação de compostos desativados, impressão (F8) e Excel (F12).
+* ``PR 1805``: Nova tela de **Auditoria de Produtos** (Análises > Auditoria > Produtos), com abas de dados cadastrais, classificação, impostos e formação de preço; produtos já analisados aparecem em vermelho e o Enter ou duplo clique abre o cadastro do produto.
+* ``PR 1782``: Cadastro de **classificação mercadológica** (setor, grupo, subgrupo e linha), com as mesmas regras do Wincash desktop — bloqueio de exclusão quando a classificação está em uso e atualização do markup do setor.
+* ``PR 1803``: Melhorias no **GAF** — exportação do ZIP com barra de progresso e opção de cancelar; planilha com notas, resumo por CFOP e numeração faltante; filtro de **números faltantes**; duplo clique ou Enter na nota abre o **cupom NFC-e** ou a **DANFE** da NF-e.
+* ``PR 1815``: Na **NF de entrada**, exibição lado a lado do **total dos itens** e do **total da nota no XML**.
+* ``PR 1809``: O processamento do **inventário** passa a ser feito em segundo plano, com acompanhamento do progresso; inventários processados aparecem em lista e os itens são consultados em janela.
+* ``PR 1811``: No lançamento do **inventário**, é possível alterar o **código de barras** e a **data de validade** do produto, inclusive com leitura pela câmera do celular.
+* ``PR 1796``: O lançamento do **inventário** passa a aceitar quantidade **zero** (prateleira vazia).
+* ``PR 1799``: Ajustes no **inventário** e na **consulta de produtos** para celular, com leitura do código de barras pela câmera; o **histórico de estoque** no cadastro de produto passa a exibir as movimentações mais recentes, como no Wincash desktop.
+* ``PR 1794``: Coluna de **foto** na lista de produtos (exibir/ocultar em Adaptar filtros) e filtro **Com foto / Sem foto**; clicar na miniatura amplia a imagem.
+* ``PR 1800``: Na lista de **produtos** e de **fornecedores**, o cadastro abre em colunas ao lado da lista, que se ajustam à largura da tela; listas com 150 itens por página.
+* ``PR 1795``: O cadastro de **produtos** aberto a partir da lista passa a ocupar a tela inteira, com botão para fechar.
+* ``PR 1810`` / ``PR 1817``: Lista e cadastro de **produtos** adaptados para **celular**, com ações em uma barra inferior; no celular, o menu de áreas passa a abrir em um painel lateral.
+* ``PR 1784``: Possibilidade de **redimensionar as colunas** das tabelas (duplo clique volta ao padrão); a coluna de ações fica sempre visível ao rolar para o lado.
+* ``PR 1781``: Correção das **tabelas** que passavam a ser exibidas no formato de celular em telas de computador.
+* ``PR 1812``: Correção na edição de **datas** — apagar e digitar parte da data não desloca mais os números.
+* ``PR 1818``: Correção da tela em branco ou erro ao **atualizar a página** (F5) no acesso remoto pelo **túnel Gsoft**.
+
 ### 1.0.85 / 105.10 (06/10/2026)
 **Wincash Web**
 * ``PR 1775``: Novo **menu do usuário** no topo da tela, com opção de escolher a **cor do avatar** (fica salva na conta); as **Configurações** passam a abrir em uma única janela, com as seções **Conta**, **Aparência** (prévia do tema ao vivo, desfeita ao cancelar) e as configurações da empresa (protegidas pela senha do dia).
