@@ -175,7 +175,7 @@
 | 6.2.9.2.2 Depósito                                     |-|-|Não será desenvolvido|
 | 6.2.10 Em Promoção                                     |31/12/2026||||12851|
 | 6.2.11 Alterados                                       |31/12/2026|08/09/2026||/produtos/relatorios/alterados|12852|
-| 6.2.12 Compostos                                       |09/10/2026||||12975|
+| 6.2.12 Compostos                                       |09/10/2026|07/10/2026||/produtos/relatorios/compostos|12975|
 | 6.2.13 Inventário                                      |-|-|-|
 | 6.2.13.1 Balanço Estoque/Loja                          |28/08/2026|28/08/2026||/produtos/relatorios/balanco-estoque|12853|
 | 6.2.13.2 Inventário - Modelo 1                         |-|-|Não será desenvolvido|
@@ -314,14 +314,14 @@
 | 8.1.3 Curva ABC de Vendedores                          |31/08/2026|28/08/2026||/relatorios/curva-abc/vendedores|12898|
 | 8.1.4 Cuva ABC de Perdas                               |31/08/2026|28/08/2026||/relatorios/curva-abc/perdas|12899|
 | 8.2 Fluxo de Caixa                                     |31/08/2026||||12900|
-| 8.3 DRE                                                |31/08/2026|||/financeiro/dre|12901|
+| 8.3 DRE                                                |31/08/2026|||/financeiro/dre-balanco|12901|
 | 8.4 Mapa de Vendas                                     |31/08/2026|06/10/2026||/relatorios/mapa-vendas|12902|
 | 8.6 Painel de Metas                                    |31/12/2026|14/09/2026||/vendas/painel-metas|12903|
 | 8.7 Auditoria                                          |-|-|-|
 | 8.7.1 Auditor do Sistema                               |30/09/2026||||12904|
 | 8.7.2 Estoque                                          |-|-|-|
 | 8.7.2.1 Comparativo Cadastro x Histórico               |-|-|Não será desenvolvido|
-| 8.7.3 Produtos                                         |16/10/2026||||12981|
+| 8.7.3 Produtos                                         |16/10/2026|09/10/2026||/relatorios/auditoria/produtos|12981|
 
 
 # Legenda:
