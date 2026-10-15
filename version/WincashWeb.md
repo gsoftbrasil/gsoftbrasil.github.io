@@ -3,6 +3,11 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.87 / 106.2 (15/10/2026)
+**Wincash Web**
+* ``PR 1821``: Nova organização da tela de **NF de entrada** em colunas — lista de notas, nota aberta e uma terceira coluna para o fornecedor, o cadastro do produto ou as **contas a pagar**; abas **Dados**, **Produtos** e **Contas a pagar**; pendências da nota com indicação de como corrigir; pagamentos vencidos destacados em vermelho; o campo **Data fatura** passa a se chamar **Data de entrada**; a geração de contas a pagar é oferecida apenas para a nota carregada. Nas telas em edição, a barra de ações (salvar e cancelar) passa a flutuar no rodapé da tela.
+* ``PR 1824``: **Pesquisas de satisfação** (NPS e avaliação do produto) exibidas ocasionalmente junto ao botão **Feedback**, com opção de responder depois; o Wincash Web passa a enviar à Gsoft informações de uso das telas para melhoria do produto, sem conteúdo de formulários nem dados comerciais ou fiscais.
+
 ### 1.0.86 / 106.1 (12/10/2026)
 **Wincash Web**
 * ``PR 1813`` / ``PR 1820``: O Wincash Web pode ser **instalado como aplicativo** no computador ou no celular, com aviso de instalação na página inicial e notificação quando houver nova versão.

@@ -1,6 +1,10 @@
 # Wincash 3031
 [Download](https://servidor.gsoft.com.br/wincash/3031/Wincash.exe)
 
+### 3031.7 (15/10/2026)
+* ``PR 1748``: **Locação** separada por emitente (CNPJ) — ao incluir (F2), o usuário escolhe o emitente (automático quando há apenas um ativo) e cada emitente tem numeração própria de locações; a consulta (F3) ganha filtro e colunas de **Nº** e **Emitente**; a impressão traz os dados do emitente escolhido; a tela de locação fica oculta durante o fechamento (F9). Locações já existentes continuam sem emitente vinculado.
+* ``PR 1823``: Na **Geração de Boletos Bancários**, ao gerar PDF (F4) com **Boletos Individuais**, uma mensagem informa a pasta onde os boletos foram salvos.
+
 ### 3031.6 (06/10/2026)
 * ``PR 1751``: Correção do **estoque** no Balcão Express ao alterar uma requisição (F2) e gravar novamente (F9) — ao gravar como requisição, a reserva é refeita apenas para os itens atuais; ao fechar como venda, a baixa ocorre só na venda; ao gravar como orçamento, não há nova reserva.
 * ``PR 1730``: Na **Movimentação Bancária**, a **transferência** (F4) de um crédito mantém a descrição original do lançamento, acrescida da conta de destino/origem, e já traz o valor preenchido; ao retransferir para outra conta, a descrição não se acumula; nova legenda no rodapé da tela (**G** - Grupo/plano de contas, **M** - Marcação, **T** - Pagamento, **R** - Baixa).
