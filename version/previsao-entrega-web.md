@@ -35,7 +35,7 @@
 | 1.4.4 Formas de Pagamento                              |30/10/2026||||12809|
 | 1.4.5 Plano de Contas                                  |03/08/2026|03/08/2026||/cadastro/plano-contas|
 | 1.4.6 Centro de Custos                                 |29/01/2026|29/01/2026||/financeiro/centrocustos|
-| 1.4.7 Bancos/Contas-Correntes                          |31/08/2026||Redirect `/cadastro/bancos-contas-correntes` → `/financeiro/bancos-contas-correntes` sem Route||12810|
+| 1.4.7 Bancos/Contas-Correntes                          |31/08/2026|27/09/2026|Redirect `/cadastro/bancos-contas-correntes` → `/financeiro/bancos-contas-correntes` sem Route||12810|
 | 1.4.8 Cobrança                                         |-|-|-|
 | 1.4.8.1 Cedente                                        |-|-|Não será desenvolvido|
 | 1.4.9 ECFs                                             |-|-|Não será desenvolvido|
@@ -59,7 +59,7 @@
 | 1.4.13 Depósitos                                       |-|-|Não será desenvolvido|
 | 1.4.14 Cadastro de Status de Entrega Simplificada      |-|-|Não será desenvolvido|
 | 1.4.15 Módulos Adicionais                              |-|-|-|
-| 1.4.15.1 Conexão Whatsapp                              |30/09/2026||||12817|
+| 1.4.15.1 Conexão Whatsapp                              |30/09/2026|||Em análise||12817|
 | 1.5 Favoritos                                          |25/02/2026|25/02/2026||/geral > seção Favoritos (estrela no menu)|
 | 2. Financeiro                                          |-|-|-|
 | 2.1 Movimentação Bancária - F9                         |11/06/2026|11/06/2026||/financeiro/movimentacao|
@@ -89,7 +89,7 @@
 | 2.12.1.7 Itens a Receber                               |-|-|Não será desenvolvido|
 | 2.12.1.8 Pagas                                         |-|-|Não será desenvolvido|
 | 2.12.2 Alerta Financeiro                               |-|-|Não será desenvolvido|
-| 2.12.3 Extrato Consolidado                             |30/09/2026||||12821|
+| 2.12.3 Extrato Consolidado                             |30/09/2026|05/10/2026|Cancelado||12821|
 | 2.12.4 Boletos Emitidos                                |-|-|Não será desenvolvido|
 | 2.12.5 Movimentação Bancária                           |-|-|-|
 | 2.12.5.1 Saldo Atual                                   |30/09/2026||||12822|
@@ -107,7 +107,7 @@
 | 3.1.3 Relatório de Entrega                             |-|-|Não será desenvolvido|
 | 3.2 Atacado Ctrl+A                                     |-|-|Não será desenvolvido|
 | 3.3 Vendas Internas                                    |27/04/2026|27/04/2026|Sem rota no web atual (`/vendas/internas` removida)||
-| 3.4 Balcão - F8                                        |31/08/2026|-|Em manutenção|
+| 3.4 Balcão - F8                                        |31/08/2026|13/09/2026|Em manutenção|/vendas/balcao|12781|
 | 3.5 PDV Caixa - F6                                     |-|-|Não será desenvolvido|
 | 3.6 Comissão de Vendas                                 |-|-|-|
 | 3.6.1 Comissão Simples                                 |01/03/2027||||12826|
@@ -134,9 +134,9 @@
 | 4.9 Pedido de Compras Web                              |-|-|Não será desenvolvido|
 | 4.10 Coletar Dados                                     |-|-|Não será desenvolvido|
 | 4.11 Ficha de Estoque                                  |-|-|Não será desenvolvido|
-| 4.12 Lançamento Inventário                             |30/09/2026|||/produtos/inventario/lancamento|12836|
-| 4.13 Consulta Inventário                               |30/09/2026|||/produtos/inventario/consulta|12837|
-| 4.14 Operações de Estoque                              |30/09/2026||||12838|
+| 4.12 Lançamento Inventário                             |30/09/2026|03/09/2026||/produtos/inventario/lancamento|12836|
+| 4.13 Consulta Inventário                               |30/09/2026|03/09/2026||/produtos/inventario/consulta|12837|
+| 4.14 Operações de Estoque                              |30/09/2026|22/09/2026|||12838|
 | 4.15 Lançar Perdas                                     |30/09/2026|14/09/2026||/produtos/lancar-perdas|12839|
 | 4.16 Existem produtos abaixo / do estoque mínimo       |-|-|Não será desenvolvido|
 | 5. Ordem de Serviços                                   |-|-|-|
@@ -313,12 +313,12 @@
 | 8.1.2 Curva ABC de Clientes/Grupo/Rota                 |31/08/2026|28/08/2026||/relatorios/curva-abc/clientes-grupo-rota|12897|
 | 8.1.3 Curva ABC de Vendedores                          |31/08/2026|28/08/2026||/relatorios/curva-abc/vendedores|12898|
 | 8.1.4 Cuva ABC de Perdas                               |31/08/2026|28/08/2026||/relatorios/curva-abc/perdas|12899|
-| 8.2 Fluxo de Caixa                                     |31/08/2026||||12900|
-| 8.3 DRE                                                |31/08/2026|||/financeiro/dre-balanco|12901|
+| 8.2 Fluxo de Caixa                                     |31/08/2026|05/10/2026|Cancelado||12900|
+| 8.3 DRE                                                |31/08/2026|09/09/2026||/financeiro/dre-balanco|12901|
 | 8.4 Mapa de Vendas                                     |31/08/2026|06/10/2026||/relatorios/mapa-vendas|12902|
 | 8.6 Painel de Metas                                    |31/12/2026|14/09/2026||/vendas/painel-metas|12903|
 | 8.7 Auditoria                                          |-|-|-|
-| 8.7.1 Auditor do Sistema                               |30/09/2026||||12904|
+| 8.7.1 Auditor do Sistema                               |30/09/2026|14/09/2026|||12904|
 | 8.7.2 Estoque                                          |-|-|-|
 | 8.7.2.1 Comparativo Cadastro x Histórico               |-|-|Não será desenvolvido|
 | 8.7.3 Produtos                                         |16/10/2026|09/10/2026||/relatorios/auditoria/produtos|12981|
