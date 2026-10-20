@@ -3,6 +3,13 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.88 / 106.3 (20/10/2026)
+**Wincash Web**
+* ``PR 1833``: No **Financeiro**, cadastro de **contas correntes** e **cedentes** por empresa; importação de **retorno de cobrança** (liquidação de títulos, sem baixar de novo o mesmo arquivo) e **conciliação do extrato OFX** (lançamento, vínculo a título ou transferência); rótulos mais claros em contas a pagar, a receber e movimentação; estorno de pagamento compartilhado de uma vez; melhorias nas listas e na edição de títulos a receber.
+* ``PR 1836``: Possibilidade de ter **vários inventários em aberto** na mesma loja, com consulta dos inventários abertos, lançamento por inventário e exclusão com auditoria.
+* ``PR 1835``: Ao enviar foto do produto para o **Cardápio Digital**, a imagem é **otimizada automaticamente** (tamanho reduzido), com aviso no cadastro.
+* ``PR 1843``: Na **NF de entrada**, o **desconto** e o **ICMS em valor** do XML passam a ser preservados na formação de preço quando o percentual vem zerado.
+
 ### 1.0.87 / 106.2 (15/10/2026)
 **Wincash Web**
 * ``PR 1821``: Nova organização da tela de **NF de entrada** em colunas — lista de notas, nota aberta e uma terceira coluna para o fornecedor, o cadastro do produto ou as **contas a pagar**; abas **Dados**, **Produtos** e **Contas a pagar**; pendências da nota com indicação de como corrigir; pagamentos vencidos destacados em vermelho; o campo **Data fatura** passa a se chamar **Data de entrada**; a geração de contas a pagar é oferecida apenas para a nota carregada. Nas telas em edição, a barra de ações (salvar e cancelar) passa a flutuar no rodapé da tela.
