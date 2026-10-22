@@ -3,6 +3,16 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.90 / 106.5 (22/10/2026)
+**Wincash Web**
+* ``PR 1849``: Na **NF de entrada**, ao gerar **contas a pagar**, é possível confirmar as parcelas mesmo quando a soma difere do valor da nota; a diferença continua em destaque. Parcela sem valor ou sem vencimento continua impedida.
+* ``PR 1859``: Nova tela **Etiquetas** (Produtos) para montar o modelo arrastando os campos, com várias etiquetas por linha e impressão. O modelo vale nesta sessão e ainda não fica gravado.
+* ``PR 1862``: No **balcão**, a venda a prazo de cliente **bloqueado** ou acima do **limite de crediário** pode ser liberada pelo **fiscal de caixa**; o fechamento avisa quando a liberação ainda está pendente.
+
+### 1.0.89 / 106.4 (20/10/2026)
+**Wincash Web**
+* ``PR 1850``: Correção ao gravar e alterar títulos de **Contas a Pagar** com **rateio**. Na **Movimentação bancária**, a faixa de cobertura do extrato **OFX** deixa de ser exibida.
+
 ### 1.0.88 / 106.3 (20/10/2026)
 **Wincash Web**
 * ``PR 1833``: No **Financeiro**, cadastro de **contas correntes** e **cedentes** por empresa; importação de **retorno de cobrança** (liquidação de títulos, sem baixar de novo o mesmo arquivo) e **conciliação do extrato OFX** (lançamento, vínculo a título ou transferência); rótulos mais claros em contas a pagar, a receber e movimentação; estorno de pagamento compartilhado de uma vez; melhorias nas listas e na edição de títulos a receber.
