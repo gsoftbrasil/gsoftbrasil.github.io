@@ -1,6 +1,13 @@
 # Wincash 3031
 [Download](https://servidor.gsoft.com.br/wincash/3031/Wincash.exe)
 
+### 3031.10 (23/10/2026)
+Não há builds **3031.8** e **3031.9** nas releases (salto **3031.7 → 3031.10**).
+
+* ``PR 1855``: Na emissão da **NFSe**, quando o portal está indisponível, o sistema exibe uma mensagem clara de serviço indisponível.
+* ``PR 1853``: No **histórico de estoque**, a consulta pode ser **Por produto** ou **Geral** (filtro livre por descrição, com coluna **Produto**); nova coluna **Qtd. Mov.**, listagem do mais antigo para o mais recente e total das quantidades do período na barra de status.
+* ``PR 1857``: Correção do **TEF crédito parcelado** no Balcão Express — todas as parcelas são geradas, com NSU, controle e autorização apenas na primeira; o fechamento com **TEF PIX** volta a gerar as parcelas. No **PDV**, o **Resumo de Caixa** fica no menu **Opções** (Ctrl+R) e imprime o movimento do caixa atual. No **Filtro Especial** da busca de vendas, o filtro por data e hora volta a encontrar as vendas. No fechamento com **cashback** ou crédito, a escolha do cliente não fica presa ao vendedor vinculado.
+
 ### 3031.7 (15/10/2026)
 * ``PR 1748``: **Locação** separada por emitente (CNPJ) — ao incluir (F2), o usuário escolhe o emitente (automático quando há apenas um ativo) e cada emitente tem numeração própria de locações; a consulta (F3) ganha filtro e colunas de **Nº** e **Emitente**; a impressão traz os dados do emitente escolhido; a tela de locação fica oculta durante o fechamento (F9). Locações já existentes continuam sem emitente vinculado.
 * ``PR 1823``: Na **Geração de Boletos Bancários**, ao gerar PDF (F4) com **Boletos Individuais**, uma mensagem informa a pasta onde os boletos foram salvos.
