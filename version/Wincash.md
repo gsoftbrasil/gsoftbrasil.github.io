@@ -1,6 +1,12 @@
 # Wincash 3031
 [Download](https://servidor.gsoft.com.br/wincash/3031/Wincash.exe)
 
+### 3031.12 (27/10/2026)
+* ``PR 1894``: Correção no modal de **faturas lançadas** — filtrar ou excluir itens da nota não interfere mais na atualização de produtos e estoque.
+
+### 3031.11 (27/10/2026)
+* ``PR 1888``: No **PDV**, volta a ser possível **alterar requisição (F2)** mesmo quando o estoque já estava reservado — ao fechar como venda, a reserva é estornada e a baixa ocorre na venda, como no Balcão Express.
+
 ### 3031.10 (23/10/2026)
 Não há builds **3031.8** e **3031.9** nas releases (salto **3031.7 → 3031.10**).
 

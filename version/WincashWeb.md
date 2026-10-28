@@ -3,6 +3,11 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.91 / 106.6 (27/10/2026)
+**Wincash Web**
+* ``PR 1874``: No **inventário**, o lançamento atualiza a lista sem recarregar a tela inteira e mantém o foco para o próximo item.
+* ``PR 1893``: Na busca de **Contas a Pagar**, a descrição passa a encontrar também por plano de contas, fornecedor, código do título e vencimento; títulos sem loja voltam a aparecer na empresa ativa.
+
 ### 1.0.90 / 106.5 (22/10/2026)
 **Wincash Web**
 * ``PR 1849``: Na **NF de entrada**, ao gerar **contas a pagar**, é possível confirmar as parcelas mesmo quando a soma difere do valor da nota; a diferença continua em destaque. Parcela sem valor ou sem vencimento continua impedida.

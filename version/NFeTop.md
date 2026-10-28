@@ -1,3 +1,13 @@
+# NFeTop 331
+[Download](https://servidor.gsoft.com.br/NFeTop/331/NFeTop.exe)
+
+### 331.1 (28/10/2026)
+* ``PR 1917``: Bloqueio do **NFeTop** quando a licença está expirada ou não pode ser validada — ao fechar o aviso, o sistema é encerrado.
+* ``PR 1852``: Em **Buscar Vendas**, nova aba **Perdas** para consultar perdas já processadas no Wincash e gerar a **NF-e** correspondente.
+* ``PR 1837``: Validação de **emitente duplicado** (CNPJ ou Inscrição Estadual) no cadastro de emitentes.
+
+___
+
 # NFeTop 330
 [Download](https://servidor.gsoft.com.br/NFeTop/330/NFeTop.exe)
 
