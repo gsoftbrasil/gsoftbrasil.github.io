@@ -1,6 +1,9 @@
 # NFeTop 331
 [Download](https://servidor.gsoft.com.br/NFeTop/331/NFeTop.exe)
 
+### 331.2 (29/10/2026)
+* ``PR 1937``: Correção do cálculo de **IBS e CBS** nos itens da NF-e — a partir do segundo item, os valores passam a ser gravados corretamente em cada linha.
+
 ### 331.1 (28/10/2026)
 * ``PR 1917``: Bloqueio do **NFeTop** quando a licença está expirada ou não pode ser validada — ao fechar o aviso, o sistema é encerrado.
 * ``PR 1852``: Em **Buscar Vendas**, nova aba **Perdas** para consultar perdas já processadas no Wincash e gerar a **NF-e** correspondente.
