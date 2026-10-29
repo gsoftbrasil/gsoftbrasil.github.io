@@ -3,6 +3,17 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.92 / 106.7 (29/10/2026)
+**Wincash Web**
+* ``PR 1910``: Na **NF de entrada**, exibição do **lucro bruto potencial** nos indicadores, com detalhe dos totais usados e aviso quando algum item não tem dados válidos.
+* ``PR 1880``: Na **Previsão de Compras**, novos filtros opcionais por **marca** e **código** do produto; coluna **Marca** fixa na listagem.
+* ``PR 1900``: Geração de **código de barras EAN-13** no cadastro de produtos (como no desktop), com configuração por empresa em **Configurações → Código de barras**.
+* ``PR 1876``: Impressão A4 de **pedido/orçamento** com dados fiscais e de contato da empresa e do cliente, endereço de entrega, pagamentos/parcelas e observações.
+* ``PR 1904``: No **balcão**, o painel lateral de itens do pedido fica mais largo e não deixa a tela de fundo rolar por baixo.
+* ``PR 1878``: Correção do tamanho do modal de lançamento/edição de produto no **balcão**, mantendo o layout em duas colunas.
+* ``PR 1902``: No **inventário**, o lançamento da quantidade contada aceita formato brasileiro (ponto de milhar e vírgula decimal), sem máscara que atrapalhava a digitação.
+* ``PR 1908``: Ao editar o **emitente**, campos não exibidos na tela (UF, país e emitente padrão) deixam de ser apagados.
+
 ### 1.0.91 / 106.6 (27/10/2026)
 **Wincash Web**
 * ``PR 1874``: No **inventário**, o lançamento atualiza a lista sem recarregar a tela inteira e mantém o foco para o próximo item.
