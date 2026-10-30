@@ -1,6 +1,9 @@
 # Wincash 3032
 [Download](https://servidor.gsoft.com.br/wincash/3032/Wincash.exe)
 
+### 3032.2 (30/10/2026)
+* ``PR 1949``: No **histórico de estoque**, opção de ordenar do mais recente ou do mais antigo primeiro (a preferência fica salva).
+
 ### 3032.1 (29/10/2026)
 * ``PR 1737``: Novo motor de **estoque** — saldo por loja e grade; na transferência **Depósito → Loja**, escolha da grade da loja do terminal; os movimentos passam a ser registrados pelo novo motor.
 * ``PR 1905``: Correção no **ajuste em massa de custo** no cadastro de produtos — lista filtrada por setor/grupo e opções de manter margem ou preço voltam a funcionar corretamente.

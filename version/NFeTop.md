@@ -1,3 +1,11 @@
+# NFeTop 332
+[Download](https://servidor.gsoft.com.br/NFeTop/332/NFeTop.exe)
+
+### 332.1 (30/10/2026)
+* ``PR 1951``: Parâmetro por emitente para importar **PIS/COFINS** com **CST 99** e alíquota zero (Simples Nacional) na venda e na inclusão manual, mantendo a edição posterior dos itens.
+
+___
+
 # NFeTop 331
 [Download](https://servidor.gsoft.com.br/NFeTop/331/NFeTop.exe)
 
