@@ -3,6 +3,14 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.93 / 107.1 (30/10/2026)
+**Wincash Web**
+* ``PR 1882``: No **balcão**, possibilidade de **alterar** uma requisição ou pedido encontrado na busca (F7), com cabeçalho e itens editáveis.
+* ``PR 1879``: Na lista e no detalhe de **pedidos/requisições**, indicador de **baixa de estoque**.
+* ``PR 1912``: Ao **excluir uma cor** vinculada a produtos, a confirmação lista os produtos afetados e só conclui se os vínculos não tiverem mudado; se mudarem, pede nova confirmação.
+* ``PR 1936``: Na tela de **patrimônio**, a paginação passa a percorrer todos os bens cadastrados (não só a primeira página carregada).
+* ``PR 1956``: Atualização automática do **Wincash Web** mais confiável — a nova versão carrega sem ficar presa em cache antigo.
+
 ### 1.0.92 / 106.7 (29/10/2026)
 **Wincash Web**
 * ``PR 1910``: Na **NF de entrada**, exibição do **lucro bruto potencial** nos indicadores, com detalhe dos totais usados e aviso quando algum item não tem dados válidos.
