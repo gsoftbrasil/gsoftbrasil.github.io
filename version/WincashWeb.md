@@ -3,6 +3,14 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.95 / 107.3 (04/11/2026)
+**Wincash Web**
+* ``PR 1945``: Cadastro de **departamentos de impressão** nas configurações, com seleção do departamento na aba **Atendimento** do produto.
+* ``PR 1952``: Melhoria no fluxo de pedidos **iFood** — o aceite não depende mais da impressora; as comandas saem ao **iniciar o preparo**, por departamento; falha em um item não impede os demais; nova tentativa e impressão local só do que ficou pendente; reimpressão em pedidos concluídos; aviso de **troco** no pagamento em dinheiro; a venda gerada no ERP registra valor recebido, troco e taxas de entrega/serviço.
+* ``PR 1970``: No **inventário**, após gravar o lançamento, a consulta de produtos fecha automaticamente e as ações da tela voltam a ficar disponíveis.
+* ``PR 1962``: Correção no processamento do **inventário** para produtos **sem grade** — os itens passam a ser processados corretamente.
+* ``PR 1969``: Correção do **inventário** em empresa sem multi-loja — o ajuste de estoque usa o saldo global certo.
+
 ### 1.0.93 / 107.1 (30/10/2026)
 **Wincash Web**
 * ``PR 1882``: No **balcão**, possibilidade de **alterar** uma requisição ou pedido encontrado na busca (F7), com cabeçalho e itens editáveis.

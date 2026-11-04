@@ -1,6 +1,9 @@
 # Wincash 3032
 [Download](https://servidor.gsoft.com.br/wincash/3032/Wincash.exe)
 
+### 3032.3 (04/11/2026)
+* ``PR 1966``: No **histórico de estoque**, a opção de ordenar (mais recente ou mais antigo primeiro) inverte só as linhas da página atual — a paginação continua sempre do movimento mais novo para o mais antigo.
+
 ### 3032.2 (30/10/2026)
 * ``PR 1949``: No **histórico de estoque**, opção de ordenar do mais recente ou do mais antigo primeiro (a preferência fica salva).
 
