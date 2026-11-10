@@ -1,6 +1,19 @@
 # Wincash 3032
 [Download](https://servidor.gsoft.com.br/wincash/3032/Wincash.exe)
 
+### 3032.7 (10/11/2026)
+Não há alterações de usuário documentadas na **3032.6** (build intermediário na mesma release).
+
+* ``PR 2010``: Correção na **Geração de Boletos Bancários** — o filtro (F9) deixa de falhar quando o cedente ainda não tem configuração de boleto cadastrada.
+* ``PR 2008``: Na **NF de entrada**, ao associar o item e abrir a consulta de produtos (Ctrl+F6), o código de barras pré-preenchido prioriza o **cEAN** e, se necessário, usa o **cEANTrib**.
+* ``PR 2026``: Correção na conversão de **quantidades decimais** no **histórico de estoque**.
+
+### 3032.5 (10/11/2026)
+* ``PR 1997``: Correção na impressão do **orçamento** (modelo personalizado sem foto) — evita páginas quase vazias no meio da lista de itens.
+
+### 3032.4 (05/11/2026)
+* ``PR 1986``: Ao **gerar mensalidades**, o sistema cria a venda de competência (1º dia do mês de referência) e vincula o título, para a receita aparecer corretamente na **DRE**.
+
 ### 3032.3 (04/11/2026)
 * ``PR 1966``: No **histórico de estoque**, a opção de ordenar (mais recente ou mais antigo primeiro) inverte só as linhas da página atual — a paginação continua sempre do movimento mais novo para o mais antigo.
 

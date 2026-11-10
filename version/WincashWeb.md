@@ -3,6 +3,22 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.97 (10/11/2026)
+**Wincash Web**
+* ``PR 1999``: No **histórico de estoque** do cadastro de produtos, a **transferência Depósito → Loja** abre corretamente (distinta da operação de estoque).
+* ``PR 2003``: Na importação de **retorno CNAB**, é possível selecionar os títulos e baixar só os escolhidos, ou baixar todos com confirmação.
+
+### 1.0.96 / 107.4 (05/11/2026)
+**Wincash Web**
+* ``PR 1984``: Na **DRE**, a receita passa a considerar as vendas emitidas (incluindo mensalidades sem espelho de NF-e).
+* ``PR 1987``: Na **DRE**, receitas classificadas em **recorrentes** e **não recorrentes**; no cadastro de produto (serviço) e em Contas a Receber, indicação de recorrência.
+* ``PR 1991``: Na tela de **DRE e Balanço**, a **DRE** abre como aba inicial, os filtros ficam salvos e o aviso informativo acima da árvore é removido.
+* ``PR 1983``: Em **Contas a Receber**, título com vencimento em sábado, domingo ou feriado nacional só aparece como **vencido** a partir do próximo dia útil.
+* ``PR 1988``: Em **Contas a Pagar**, coluna e filtro por data de **emissão** (além do lançamento).
+* ``PR 1982``: No **Balcão**, privilégios separados para lançar, alterar e excluir **venda**, **pedido** e **orçamento**.
+* ``PR 1993``: Correção na liberação de privilégios (**Ctrl+X**) — só confirma se a concessão realmente valeu para o usuário na loja.
+* ``PR 1985``: Correção nos campos de **busca/lookup** — o clique abre a lista imediatamente (melhoria no Safari).
+
 ### 1.0.95 / 107.3 (04/11/2026)
 **Wincash Web**
 * ``PR 1945``: Cadastro de **departamentos de impressão** nas configurações, com seleção do departamento na aba **Atendimento** do produto.
