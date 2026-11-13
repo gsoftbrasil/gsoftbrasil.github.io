@@ -3,6 +3,16 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.98 / 107.6 (13/11/2026)
+**Wincash Web**
+* ``PR 2001``: Em **Contas a Receber**, **Contas a Pagar** e na **DRE**, filtro de período em um único campo (intervalo de dias, meses ou anos).
+* ``PR 2005``: Na integração **FGF**, o código de benefício fiscal vazio deixa de gravar valor inválido (evita rejeição na NFC-e); na lista de itens pendentes, seleção por checkbox e rolagem horizontal das colunas.
+* ``PR 2013``: Na **DRE**, a receita (recorrente e não recorrente) detalha por **setor, grupo, subgrupo e produto**.
+* ``PR 2043``: Em **Contas a Pagar**, o campo **Previsão de pagamento** volta a entrar na navegação por Tab/Enter.
+* ``PR 2044``: Correção ao **cadastrar cliente novo** (incluindo pelo Balcão com F7); melhorias na lista e na ficha de clientes (filtros avançados, layout em colunas e colunas redimensionáveis).
+* ``PR 2067``: Correção do modal de **baixa de estoque**, que ficava atrás de outras telas.
+* ``PR 2070``: Correção do **markup e da margem** em pedidos com **tabela de preços**, e da validação de preço ao alterar o pedido.
+
 ### 1.0.97 (10/11/2026)
 **Wincash Web**
 * ``PR 1999``: No **histórico de estoque** do cadastro de produtos, a **transferência Depósito → Loja** abre corretamente (distinta da operação de estoque).
