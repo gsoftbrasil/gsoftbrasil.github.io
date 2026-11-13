@@ -1,6 +1,11 @@
 # Wincash 3032
 [Download](https://servidor.gsoft.com.br/wincash/3032/Wincash.exe)
 
+### 3032.9 (13/11/2026)
+Não há alterações de usuário documentadas na **3032.8** (apenas build).
+
+* ``PR 2074``: Correção no fechamento com **parcelas** — quando o valor restante é zero e as parcelas já estão corretas, o sistema não tenta gerar parcelas de novo nem exibe divergência enganosa.
+
 ### 3032.7 (10/11/2026)
 Não há alterações de usuário documentadas na **3032.6** (build intermediário na mesma release).
 
