@@ -3,6 +3,17 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.100 / 107.8 (17/11/2026)
+**Wincash Web**
+* ``PR 2115``: Na busca do **Balcão** (F7), a data de **emissão** passa a aparecer no formato brasileiro (dd/mm/aaaa).
+* ``PR 2113``: No **histórico de estoque**, exibição do **saldo anterior** e do **saldo atual** em cada movimentação, com link para a origem quando disponível (venda, NF de entrada, transferência ou operação de estoque).
+* ``PR 2117``: Na busca do **Balcão** (F7), ao digitar um **número**, a situação passa para **Todas** para encontrar o documento; ao limpar o número, o filtro anterior é restaurado.
+* ``PR 2114``: No **Balcão**, possibilidade de **alterar** um orçamento pendente encontrado na busca (F7), com validação de privilégios.
+
+### 1.0.99 / 107.7 (17/11/2026)
+**Wincash Web**
+* ``PR 2079``: No **Balcão**, a busca considera também as **aplicações** do produto; no cadastro, edição das aplicações e das **localizações** da loja e do depósito.
+
 ### 1.0.98 / 107.6 (13/11/2026)
 **Wincash Web**
 * ``PR 2001``: Em **Contas a Receber**, **Contas a Pagar** e na **DRE**, filtro de período em um único campo (intervalo de dias, meses ou anos).

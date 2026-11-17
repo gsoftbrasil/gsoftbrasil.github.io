@@ -1,6 +1,9 @@
 # Wincash 3032
 [Download](https://servidor.gsoft.com.br/wincash/3032/Wincash.exe)
 
+### 3032.10 (17/11/2026)
+* ``PR 2116``: No relatório **Vendas Detalhado** (Demonstrativo de Vendas), exibe a legenda **Emitido em:** com data e hora completa da emissão.
+
 ### 3032.9 (13/11/2026)
 Não há alterações de usuário documentadas na **3032.8** (apenas build).
 
