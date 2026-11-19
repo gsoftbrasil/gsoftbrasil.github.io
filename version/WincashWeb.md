@@ -3,6 +3,25 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.102 / 108.3 (18/11/2026)
+**Wincash Web**
+* ``PR 2154``: Novo relatório **Produtos Vendidos na Promoção**, com período, totais, impressão e exportação (Excel, CSV e outros), alinhado ao relatório do desktop.
+
+### Gsoft API 108.2 (18/11/2026)
+**Gsoft API**
+* ``PR 2144``: Na emissão fiscal, o **protocolo de autorização** da nota passa a ser informado corretamente no acompanhamento da emissão.
+
+### 1.0.101 / 108.1 (18/11/2026)
+**Wincash Web**
+* ``PR 2016``: Na **DRE**, a linha de **investimentos** deixa de aparecer e não reduz mais o lucro líquido; os investimentos continuam no **Fluxo de Caixa**.
+* ``PR 2131``: Correção ao clicar em um valor da **DRE** para ver a lista de documentos — a consulta volta a abrir corretamente.
+* ``PR 2126``: Melhoria no fluxo de pedidos **iFood** — configurações por loja para aceite automático, início de preparo e departamento padrão; impressão por departamento e comanda geral; logo opcional nos comprovantes; na Central iFood, resumo financeiro por responsável pelo desconto; no dashboard, vendas agrupadas por data.
+* ``PR 2077``: Novo relatório de análise de **taxas iFood**.
+
+### Gsoft API 107.9 (18/11/2026)
+**Gsoft API**
+* ``PR 2137``: Na emissão de **NFC-e**, o município de IBS deixa de ser enviado indevidamente; o retorno do **terminal** passa a incluir nome fantasia, CNPJ e telefone da empresa.
+
 ### 1.0.100 / 107.8 (17/11/2026)
 **Wincash Web**
 * ``PR 2115``: Na busca do **Balcão** (F7), a data de **emissão** passa a aparecer no formato brasileiro (dd/mm/aaaa).

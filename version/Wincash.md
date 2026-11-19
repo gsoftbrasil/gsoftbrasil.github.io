@@ -1,3 +1,11 @@
+# Wincash 3033
+[Download](https://servidor.gsoft.com.br/wincash/3033/Wincash.exe)
+
+### 3033.1 (18/11/2026)
+* ``PR 2124``: Correção nos relatórios de vendas.
+
+___
+
 # Wincash 3032
 [Download](https://servidor.gsoft.com.br/wincash/3032/Wincash.exe)
 
