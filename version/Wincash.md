@@ -2,7 +2,7 @@
 [Download](https://servidor.gsoft.com.br/wincash/3033/Wincash.exe)
 
 ### 3033.1 (18/11/2026)
-* ``PR 2124``: Correção do **crédito de devolução** nos relatórios de vendas — o valor passa a ser calculado pelos movimentos de crédito vinculados aos itens devolvidos (liberação e estorno), respeitando filtros por cliente e vendedor; o crédito usado na baixa de títulos continua separado e informativo.
+* ``PR 2124``: Correção nos relatórios de vendas.
 
 ___
 
