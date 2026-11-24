@@ -5,12 +5,12 @@ A atualização é automática — não há download manual.
 
 ### 1.0.105 / 108.6 (24/11/2026)
 **Wincash Web**
-* ``PR 2217``: Central iFood reorganizada para acompanhar pedidos, expedição e taxas; inclui resumo financeiro, edição de horários e acesso ao chat por widget.
-* ``PR 2242``: No **Balcão Web**, permite buscar, carregar, salvar e consultar comandas durante o atendimento.
-* ``PR 2243``: Filtro opcional por cliente no relatório de **Orçamentos Perdidos**.
+* ``PR 2217``: Central iFood reorganizada para acompanhar pedidos, expedição e taxas; inclui resumo financeiro, edição de horários e acesso ao chat por widget. — **Eivold** (`eivold/wincash-web/feat/13448/reformulacao-central-ifood`)
+* ``PR 2242``: No **Balcão Web**, permite buscar, carregar, salvar e consultar comandas durante o atendimento. — **Eivold** (`eivold/wincash-web/feat/12814/comandas-web`)
+* ``PR 2243``: Filtro opcional por cliente no relatório de **Orçamentos Perdidos**. — **Eivold** (`eivold/wincash/feat/13101/filtro-cliente-relatorio-orcamentos-perdidos`)
 
 **Gsoft API**
-* ``PR 2262``: Compatibilidade na emissão de NF-e com a atualização do protocolo fiscal usado para montar o XML.
+* ``PR 2262``: Compatibilidade na emissão de NF-e com a atualização do protocolo fiscal usado para montar o XML. — **Érique Toledo** (`erique/erp-gsoft/refact/13478/conversao-componentes-acbr`)
 
 ### 1.0.104 / 108.4 (24/11/2026)
 **Wincash Web**
