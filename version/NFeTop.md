@@ -1,6 +1,9 @@
 # NFeTop 332
 [Download](https://servidor.gsoft.com.br/NFeTop/332/NFeTop.exe)
 
+### 332.3 (18/11/2026)
+* ``PR 2142``: Na importação de operações de estoque e perdas, o sistema preenche o **cBenef** conforme as regras fiscais aplicáveis.
+
 ### 332.2 (04/11/2026)
 * ``PR 1964``: A baixa automática de estoque na transmissão da NF-e passa a ocorrer apenas em notas de **devolução**, evitando o aviso de estoque não baixado em notas de venda comuns.
 
