@@ -1,6 +1,12 @@
 # Wincash 3033
 [Download](https://servidor.gsoft.com.br/wincash/3033/Wincash.exe)
 
+### 3033.3 (21/11/2026)
+* ``PR 2218``: Na consulta de produtos (F9), o grid continua visível ao abrir o ajuste de estoque, facilitando conferir o produto selecionado.
+
+### 3033.2 (18/11/2026)
+* ``PR 2160``: No **Dashboard de Vendas**, as vendas passam a ser agrupadas por dia.
+
 ### 3033.1 (18/11/2026)
 * ``PR 2124``: Correção nos relatórios de vendas.
 
