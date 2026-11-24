@@ -37,6 +37,7 @@ A atualização é automática — não há download manual.
 * ``PR 2215``: Melhorias de carregamento e foco no cadastro de produtos, com exibição do último valor de venda.
 * ``PR 2216``: Acesso ao chat iFood pela Central iFood.
 * ``PR 2221``: Atalho para consultar as vendas mais recentes e abrir seus detalhes.
+* ``PR 2102``: Novo portal **Gsoft Cloud** com acesso ao **Wincash** e ao **Gsoft CRM**, incluindo uma área inicial de vendas para acompanhar leads, oportunidades, tarefas e o funil comercial.
 * ``PR 2231``: Correção da recorrência diária em contas a pagar.
 * ``PR 2233``: Ajustes na apuração do custo de vendas e nos detalhamentos hierárquicos da DRE.
 * ``PR 2237``: Novo relatório de produtos vendidos por forma de pagamento.
