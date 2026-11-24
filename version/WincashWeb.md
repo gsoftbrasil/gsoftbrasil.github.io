@@ -5,9 +5,8 @@ A atualização é automática — não há download manual.
 
 ### 1.0.104 / 108.4 (24/11/2026)
 **Wincash Web**
-* ``PR 2119``: Nova operação fiscal para gerar **NF-e de devolução** a partir de cupom **NFC-e**.
-* ``PR 2120``: Nova análise diária de vendas por produto e classificação mercadológica.
 * ``PR 2162``: Novo relatório de **vendas canceladas**.
+* ``PR 2120``: Nova análise diária de vendas por produto e classificação mercadológica.
 * ``PR 2168``: Identificação do cliente no início do pedido.
 * ``PR 2169``: Exibição do preço unitário anterior do produto para o cliente selecionado.
 * ``PR 2170``: Permissão para limitar o desconto conforme a faixa da tabela de preços.
@@ -16,34 +15,37 @@ A atualização é automática — não há download manual.
 * ``PR 2173``: Edição dos valores e vencimentos das parcelas no fechamento.
 * ``PR 2174``: Limite do desconto geral conforme o máximo configurado para o vendedor.
 * ``PR 2175``: Escolha da forma de entrega: retirada ou endereço cadastrado.
-* ``PR 2176``: Mais dados no painel do orçamento: observação, motivo da perda, endereço, emitente e fotos.
 * ``PR 2178``: Preferências de impressão para NCM, CNPJ do emitente e desconto.
+* ``PR 2176``: Mais dados no painel do orçamento: observação, motivo da perda, endereço, emitente e fotos.
 * ``PR 2180``: Seleção do emitente no fechamento e manutenção dessa escolha na reimpressão.
-* ``PR 2181`` / ``2209``: Validação dos dados do cliente e vendedor para concluir pedidos e documentos fiscais, com confirmação para cancelamento e limpeza de identificação.
-* ``PR 2185``: Novo relatório de vendas com devoluções.
-* ``PR 2192``: Novo relatório de itens devolvidos.
-* ``PR 2193``: Novo relatório de vendas com desconto.
-* ``PR 2195``: Novo relatório semanal de vendas.
-* ``PR 2196``: Novo relatório detalhado de movimentação de caixa.
-* ``PR 2197``: Novo relatório de movimentações de caixa por categoria.
-* ``PR 2199``: Consulta dos saldos atuais dos caixas abertos.
-* ``PR 2201``: Novo resumo das movimentações de caixa.
-* ``PR 2202``: Consulta mobile da classificação mercadológica dos produtos.
-* ``PR 2203``: Configuração de departamentos para impressão.
-* ``PR 2211`` / ``2241``: Ajustes de layout e resumo no fechamento, com subtotal e informações da venda.
+* ``PR 2181``: Vendedor obrigatório para concluir a venda.
+* ``PR 2119``: Nova operação fiscal para gerar **NF-e de devolução** a partir de cupom **NFC-e**.
+* ``PR 2209``: Cliente e vendedor obrigatórios em venda, pedido e orçamento; confirmação antes de cancelar e limpar o rascunho.
+* ``PR 2211``: Área de lançamento reorganizada, com total no card lateral, botão Finalizar e indicadores de markup/margem em faixa separada.
 * ``PR 2212``: Navegação por teclado no fechamento.
 * ``PR 2213``: Busca e detalhes de pedidos e orçamentos no painel lateral.
 * ``PR 2214``: Ajustes de fluxo e layout na impressão de documentos.
 * ``PR 2215``: Melhorias de carregamento e foco no cadastro de produtos, com exibição do último valor de venda.
-* ``PR 2216``: Acesso ao chat iFood pela Central iFood.
+* ``PR 2202``: Consulta mobile da classificação mercadológica dos produtos.
+* ``PR 2199``: Consulta dos saldos atuais dos caixas abertos.
+* ``PR 2195``: Novo relatório semanal de vendas.
+* ``PR 2192``: Novo relatório de itens devolvidos.
+* ``PR 2203``: Configuração de departamentos para impressão.
+* ``PR 2193``: Novo relatório de vendas com desconto.
+* ``PR 2196``: Novo relatório detalhado de movimentação de caixa.
+* ``PR 2197``: Novo relatório de movimentações de caixa por categoria.
+* ``PR 2201``: Novo resumo das movimentações de caixa.
+* ``PR 2185``: Novo relatório de vendas com devoluções.
 * ``PR 2221``: Atalho para consultar as vendas mais recentes e abrir seus detalhes.
 * ``PR 2102``: Novo portal **Gsoft Cloud** com acesso ao **Wincash** e ao **Gsoft CRM**, incluindo uma área inicial de vendas para acompanhar leads, oportunidades, tarefas e o funil comercial.
 * ``PR 2231``: Correção da recorrência diária em contas a pagar.
 * ``PR 2233``: Ajustes na apuração do custo de vendas e nos detalhamentos hierárquicos da DRE.
 * ``PR 2237``: Novo relatório de produtos vendidos por forma de pagamento.
+* ``PR 2216``: Acesso ao chat iFood pela Central iFood.
+* ``PR 2241``: Destaque do subtotal após ajustes por item, botões Venda/Pedido/Orçamento sem cortes e melhor distribuição dos campos de cliente e vendedor.
 
 **Gsoft API**
-* ``PR 2191``: Correção da validação de formas de pagamento do Balcão para aceitar as operações previstas pela API.
+* ``PR 2191``: A API também passa a exigir vendedor ao concluir venda e ao alterar pedido ou orçamento.
 
 ### 1.0.103 (18/11/2026)
 **Wincash Web**
