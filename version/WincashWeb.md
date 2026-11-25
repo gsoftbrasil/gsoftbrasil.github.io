@@ -3,6 +3,15 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.105 / 108.6 (24/11/2026)
+**Wincash Web**
+* ``PR 2217``: Central iFood reorganizada para acompanhar pedidos, expedição e taxas; inclui resumo financeiro, edição de horários e acesso ao chat por widget.
+* ``PR 2242``: No **Balcão Web**, permite buscar, carregar, salvar e consultar comandas durante o atendimento.
+* ``PR 2243``: Filtro opcional por cliente no relatório de **Orçamentos Perdidos**.
+
+**Gsoft API**
+* ``PR 2262``: Compatibilidade na emissão de NF-e com a atualização do protocolo fiscal usado para montar o XML.
+
 ### 1.0.104 / 108.4 (24/11/2026)
 **Wincash Web**
 * ``PR 2162``: Novo relatório de **vendas canceladas**.
