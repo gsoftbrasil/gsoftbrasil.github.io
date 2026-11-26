@@ -1,6 +1,9 @@
 # Wincash 3033
 [Download](https://servidor.gsoft.com.br/wincash/3033/Wincash.exe)
 
+### 3033.4 (25/11/2026)
+* ``PR 2267``: A autorização do supervisor para estoque negativo vale só para a venda atual; se a baixa falhar, o sistema interrompe o fluxo e alerta o usuário.
+
 ### 3033.3 (21/11/2026)
 * ``PR 2218``: Na consulta de produtos (F9), o grid continua visível ao abrir o ajuste de estoque, facilitando conferir o produto selecionado.
 

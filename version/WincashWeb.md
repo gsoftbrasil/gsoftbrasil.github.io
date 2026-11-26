@@ -3,6 +3,15 @@
 Esta página reúne as alterações do **Wincash Web** e da **Gsoft API** (serviço local de integração).
 A atualização é automática — não há download manual.
 
+### 1.0.107 / 108.8 (25/11/2026)
+**Wincash Web**
+* ``PR 2273``: A geração em lote de NF-e de devolução continua com os cupons válidos; cupons sem XML ou inelegíveis são informados, e os que não cabem na nota atual podem seguir para a próxima.
+* ``PR 2277``: No **Balcão**, o campo de código de barras fica acima da tabela de itens, com a área de lançamento reorganizada.
+
+### 1.0.106 / 108.7 (25/11/2026)
+**Wincash Web**
+* ``PR 2265``: Na operação de devolução de CF-e, a tela informa os limites da nota e permite excluir notas geradas que ainda não estão autorizadas nem em processamento.
+
 ### 1.0.105 / 108.6 (24/11/2026)
 **Wincash Web**
 * ``PR 2217``: Central iFood reorganizada para acompanhar pedidos, expedição e taxas; inclui resumo financeiro, edição de horários e acesso ao chat por widget.
