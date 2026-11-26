@@ -59,7 +59,7 @@ A atualização é automática — não há download manual.
 * ``PR 2231``: Correção da recorrência diária em contas a pagar.
 * ``PR 2233``: Ajustes na apuração do custo de vendas e nos detalhamentos hierárquicos da DRE.
 * ``PR 2237``: Novo relatório de produtos vendidos por forma de pagamento.
-* ``PR 2216``: Acesso ao chat iFood pela Central iFood.
+* ``PR 2216``: Acesso ao chat iFood pela Central iFood; no WinCash Desktop 3033.4, as janelas de autorização do widget abrem no navegador padrão.
 * ``PR 2241``: Destaque do subtotal após ajustes por item, botões Venda/Pedido/Orçamento sem cortes e melhor distribuição dos campos de cliente e vendedor.
 
 **Gsoft API**
